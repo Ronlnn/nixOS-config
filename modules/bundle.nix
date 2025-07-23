@@ -6,6 +6,7 @@
 		./network.nix
 		./sound.nix
 		./nvidia.nix
-		./gnome.nix
+		#./gnome.nix
+		./hyprland.nix
 	];
 }
