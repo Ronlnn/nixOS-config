@@ -16,6 +16,7 @@
         inherit system;
       };
     in {
+      # NixOS system configuration
       nixosConfigurations.omen = nixpkgs.lib.nixosSystem {
         inherit system;
         modules = [
@@ -28,12 +29,11 @@
           }
         ];
       };
-      
+
+      # Home Manager standalone configuration
       homeConfigurations.roninn = home-manager.lib.homeManagerConfiguration {
-      	pkgs = pkgs;
-      	username = "roninn";
-      	homeDirectory = "/home/roninn";
-      	configuration = import ./home-manager/home.nix;
+        inherit pkgs;
+        modules = [ ./home-manager/home.nix ];
       };
     };
 }
