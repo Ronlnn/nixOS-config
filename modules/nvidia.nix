@@ -27,6 +27,6 @@
     ## Мониторинг загрузки видеокарты в реальном времени
     nvtopPackages.full
     ## CLI-утилита для мониторинга и управления NVIDIA GPU
-    pkgs.nvidia-x11.nvidia-smi
+     config.boot.kernelPackages.nvidiaPackages.stable.nvidia-smi
   ];
 }
