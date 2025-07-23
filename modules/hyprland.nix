@@ -19,6 +19,8 @@
     brightnessctl
     networkmanagerapplet
     pavucontrol
+    polkit
+    dconf
   ];
 
   # Настройка переменных окружения
