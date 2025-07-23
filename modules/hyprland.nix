@@ -11,7 +11,7 @@
     rofi-wayland
     dunst
     kitty
-    thunar
+    #thunar
     wofi
     grim
     slurp
