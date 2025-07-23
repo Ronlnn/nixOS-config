@@ -5,6 +5,5 @@
 		./bootloader.nix
 		./network.nix
 		./sound.nix
-		./
 	];
 }
