@@ -2,6 +2,7 @@
 {
   imports = [
     ./modules/bundle.nix
+    ./modules/wms/hyprland.nix
   ];
   home = {
     username = "roninn";
