@@ -28,8 +28,9 @@
           }
         ];
       };
+      
       homeConfigurations.roninn = home-manager.lib.homeManagerConfiguration {
-      	inherit pkgs system;
+      	pkgs = pkgs;
       	username = "roninn";
       	homeDirectory = "/home/roninn";
       	configuration = import ./home-manager/home.nix;
