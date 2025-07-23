@@ -4,6 +4,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./modules/bundle.nix
     ];
 
   # Bootloader.
@@ -70,15 +71,7 @@
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.roninn = {
-    isNormalUser = true;
-    description = "RonInn";
-    extraGroups = [ "networkmanager" "wheel" "video" "audio" "input" ];
-    packages = with pkgs; [
-    #  thunderbird
-    ];
-  };
+  
 
   # Install firefox.
   programs.firefox.enable = true;
