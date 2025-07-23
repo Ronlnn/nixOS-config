@@ -105,5 +105,7 @@
     libsForQt5.qtstyleplugin-kvantum
     ### утилита для настройки Qt5 тем и стилей.
     libsForQt5.qt5ct
+    pciutils
+    
   ];
 }
