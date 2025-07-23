@@ -3,6 +3,5 @@
   imports = [
     ./git.nix
     ./htop.nix
-    ./wms/hyprland.nix
   ];
 }
