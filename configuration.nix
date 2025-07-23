@@ -28,33 +28,13 @@
     LC_TIME = "ru_RU.UTF-8";
   };
 
-  # Enable the X11 windowing system.
-   services.xserver.enable = true;
-
-  # Enable the GNOME Desktop Environment.
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
-
-  # Configure keymap in X11
-  services.xserver.xkb = {
-    layout = "us";
-    variant = "";
-  };
-
 
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
-  # Install firefox.
-  programs.firefox.enable = true;
 
-  # List services that you want to enable:
-
-  # Enable the OpenSSH daemon.
   services.openssh.enable = true;
-
-
   networking.firewall.enable = false;
 
   system.stateVersion = "25.05";

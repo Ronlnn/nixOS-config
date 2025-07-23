@@ -6,5 +6,6 @@
 		./network.nix
 		./sound.nix
 		./nvidia.nix
+		./gnome.nix
 	];
 }
