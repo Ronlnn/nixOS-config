@@ -1,12 +1,10 @@
 { config, pkgs, ... }:
-{
-  imports = [
-    ./modules/bundle.nix
-    ./modules/wms/hyprland.nix
-  ];
-  
-  programs.git.enable = true;
-  programs.zsh.enable = true;
-  programs.bash.enable = true;
 
+{
+  home.username = "roninn";
+  home.homeDirectory = "/home/roninn";
+  home.stateVersion = "25.05";
+
+  programs.zsh.enable = true;
+  programs.git.enable = true;
 }
