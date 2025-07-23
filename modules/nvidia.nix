@@ -26,8 +26,6 @@
     vulkan-tools
     ## Мониторинг загрузки видеокарты в реальном времени
     nvtopPackages.full
-    ## GUI-интерфейс для управления видеокартой
-    pkgs.nvidia-x11.nvidia-settings
     ## CLI-утилита для мониторинга и управления NVIDIA GPU
     pkgs.nvidia-x11.nvidia-smi
   ];
