@@ -108,6 +108,6 @@
     ### утилита для настройки Qt5 тем и стилей.
     libsForQt5.qt5ct
     pciutils
-
+    home-manager
   ];
 }
