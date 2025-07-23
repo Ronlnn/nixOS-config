@@ -89,9 +89,9 @@
     ## Мониторинг загрузки видеокарты в реальном времени
     nvtopPackages.full
     ## GUI-интерфейс для управления видеокартой
-    nvidia-x11.nvidia-settings
+    pkgs.nvidia-x11.nvidia-settings
     ## CLI-утилита для мониторинга и управления NVIDIA GPU
-    nvidia-x11.nvidia-smi
+    pkgs.nvidia-x11.nvidia-smi
 
     # Звук
     pipewire
