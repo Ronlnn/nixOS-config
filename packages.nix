@@ -55,11 +55,11 @@
     #mako
 
     # Xorg stuff
-    #терминал для Х11
+    # терминал для Х11
     #xterm
-    #буфер обмена в Х11
+    # буфер обмена в Х11
     #xclip
-    #яркость
+    # яркость
     #xorg.xbacklight
 
     # Wayland stuff
@@ -80,6 +80,18 @@
     #polybar
     #waybar
 
+
+    # NVIDIA
+    ## Показывает инфу о текущей OpenGL-конфигурации
+    glxinfo
+    ## Диагностика Vulkan
+    vulkan-tools
+    ## Мониторинг загрузки видеокарты в реальном времени
+    nvtopPackages.full
+    ## GUI-интерфейс для управления видеокартой
+    nvidia-x11.nvidia-settings
+    ## CLI-утилита для мониторинга и управления NVIDIA GPU
+    nvidia-x11.nvidia-smi
 
     # Звук
     pipewire
@@ -106,6 +118,6 @@
     ### утилита для настройки Qt5 тем и стилей.
     libsForQt5.qt5ct
     pciutils
-    
+
   ];
 }

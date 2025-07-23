@@ -8,7 +8,8 @@
     powerManagement.enable = true;
     nvidiaSettings = true;
     open = false; # GTX 1650 — проприетарный драйвер
-
+    package = config.boot.kernelPackages.nvidiaPackages.stable;
+    
     prime = {
       sync.enable = true;  # вместо offload
       intelBusId = "PCI:0:2:0";
