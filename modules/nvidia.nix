@@ -3,6 +3,9 @@
 {
   services.xserver.videoDrivers = [ "nvidia" ];
 
+  # Тачпад
+  services.libinput.enable = true;
+
   hardware.nvidia = {
     modesetting.enable = true;
     powerManagement.enable = true;
