@@ -18,7 +18,6 @@
 
   # (опционально) добавить nvidia-smi, nvidia-settings
   environment.systemPackages = with pkgs; [
-    glxinfo
-    nvidia-settings
+
   ];
 }
