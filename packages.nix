@@ -64,21 +64,21 @@
 
     # Wayland stuff
     # Позволяет запускать +-приложения под wayland
-    #xwayland
+    xwayland
     # Буферв обмена
-    #wl-clipboard
+    wl-clipboard
     # Менеджер истории буфера обмена
     cliphist
 
 
     # WMs
-    #hyprland
+    hyprland
     # Демон управления устройствами ввода
-    #seatd
+    seatd
     # мост для интеграции Wayland-приложений с Hyprland, например для screencast и screenshot.
-    #xdg-desktop-portal-hyprland
+    xdg-desktop-portal-hyprland
     #polybar
-    #waybar
+    waybar
 
 
 
