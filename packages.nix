@@ -13,7 +13,6 @@
     # Coding stuff
     vscode
     nodejs
-    npm
 
     #CLI utils
     ## Системные
