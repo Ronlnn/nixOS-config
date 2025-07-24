@@ -28,6 +28,7 @@
     LC_TIME = "ru_RU.UTF-8";
   };
 
+
   programs.appimage.enable = true;
   services.openssh.enable = true;
 
