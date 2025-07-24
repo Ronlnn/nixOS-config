@@ -1,3 +1,4 @@
+{config, pkgs, ...}:
 {
     # Enable networking
   networking.networkmanager.enable = true;
@@ -8,9 +9,12 @@
   networking.firewall.allowedTCPPorts = [1080 8443];
 
   security.wrappers.xray = {
-    source = "/nix/store/your-xray-path/bin/xray";
-    owner = "root";
-    group = "root";
-    capabilities = "cap_net_admin,cap_net_raw+ep";
-  };
+  source = "${pkgs.xray}/bin/xray";
+  owner = "root";
+  group = "root";
+  capabilities = "cap_net_admin,cap_net_raw+ep";
+};
+
+
+
 }
