@@ -35,7 +35,6 @@
 
 
   services.openssh.enable = true;
-  networking.firewall.enable = true;
 
   system.stateVersion = "25.05";
 
