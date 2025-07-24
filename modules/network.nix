@@ -19,9 +19,7 @@ in
     capabilities = "cap_net_admin,cap_net_raw+ep";
   };
 
-  environment.sessionVariables = {
-    LD_LIBRARY_PATH = lib.makeLibraryPath appDeps;
-  };
+
 
   systemd.services.nekoray = {
     description = "Nekoray VPN service";
