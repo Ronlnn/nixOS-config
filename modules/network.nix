@@ -3,7 +3,7 @@
     # Enable networking
   networking.networkmanager.enable = true;
   networking.enableIPv6 = true;
-  networking.useNetworkd = true;
+  networking.useNetworkd = false;
   boot.kernelModules = ["tun"];
   networking.firewall.allowedUDPPorts = [8443];
   networking.firewall.allowedTCPPorts = [1080 8443];
@@ -15,7 +15,7 @@
   capabilities = "cap_net_admin,cap_net_raw+ep";
 };
 
-systemd.services."systemd-networkd-wait-online".enable = false;
+
 
 
 }
