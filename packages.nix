@@ -27,8 +27,12 @@
     lazygit
     micro
     appimage-run
-    libpng
     libepoxy
+    libpng
+    fuse3
+    zlib
+    glib
+    fuse-emulator
 
     ## Мультимедиа и звук
     ffmpeg
