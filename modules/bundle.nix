@@ -3,7 +3,7 @@
 	imports = [
 		./user.nix
 		./bootloader.nix
-		./network.nix
+		#./network.nix
 		./sound.nix
 		./nekoray.nix
 		./nvidia.nix
