@@ -1,5 +1,9 @@
-{
-  programs.appimage.enable = true;
-programs.appimage.binfmt = true;
-
+{pkgs, ...}:{
+   programs.appimage = {
+    enable = true;
+    binfmt = true;
+    package = pkgs.appimage-run.override {
+      extraPkgs = pkgs: [ pkgs.libepoxy ];
+    };
+  };
 }
