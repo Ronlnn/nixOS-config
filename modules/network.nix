@@ -8,7 +8,7 @@ in
   networking.enableIPv6 = true;
   networking.useNetworkd = false;
   boot.kernelModules = [ "tun" "fuse" ];
-  networking.useDHCP = true;
+  #networking.useDHCP = true;
 
   networking.firewall.enable = false;
 
