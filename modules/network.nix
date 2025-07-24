@@ -14,10 +14,6 @@
   group = "root";
   capabilities = "cap_net_admin,cap_net_raw+ep";
 
-  programs.nekoray = {
-    enable = true;
-    tunMode.enable = true;
-  };
 };
 
 

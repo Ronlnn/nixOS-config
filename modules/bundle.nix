@@ -3,9 +3,9 @@
 	imports = [
 		./user.nix
 		./bootloader.nix
-		./network.nix
+		# ./network.nix
 		./sound.nix
-		#./nekoray.nix
+		./nekoray.nix
 		./nvidia.nix
 		./gnome.nix
 		#./hyprland.nix

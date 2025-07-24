@@ -1,6 +1,8 @@
 { config, pkgs, lib, ... }:
 
 {
+  services.sing-box.enable = true;
+
   programs.nekoray = {
     enable = true;
     tunMode.enable = true;
