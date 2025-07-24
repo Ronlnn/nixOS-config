@@ -28,6 +28,7 @@
     micro
     appimage-run
     libpng
+    libepoxy
 
     ## Мультимедиа и звук
     ffmpeg
