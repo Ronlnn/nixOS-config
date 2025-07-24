@@ -9,7 +9,7 @@
     alacritty
     obsidian
     firefox
-
+    hiddify-app
     # Coding stuff
     vscode
     nodejs
@@ -104,6 +104,7 @@
     # ВПН
     nekoray
     xray
+    v2ray
     sing-box
     v2rayn
 
@@ -119,5 +120,5 @@
     home-manager
     gnome-tweaks
   ];
-  
+
 }
