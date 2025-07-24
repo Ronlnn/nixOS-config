@@ -9,12 +9,18 @@
     alacritty
     obsidian
     firefox
-    hiddify-app
+
     # Coding stuff
     vscode
     nodejs
-
     flatpak
+
+    # VPN
+    hiddify-app
+    xray
+    v2ray
+    sing-box
+    v2rayn
 
     #CLI utils
     ## Системные
@@ -100,15 +106,6 @@
 
     # Скриншоты
     flameshot
-
-    # ВПН
-    nekoray
-    xray
-    v2ray
-    sing-box
-    v2rayn
-
-
 
 
     # Другое
