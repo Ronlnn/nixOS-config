@@ -1,4 +1,8 @@
+{ pkgs, ... }:
+
 {
-  programs.nekoray.enable = true;
-  programs.nekoray.tunMode.enable = true;
+  programs.nekoray = {
+    enable = true;
+    tunMode.enable = true;
+  };
 }
