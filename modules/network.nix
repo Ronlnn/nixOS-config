@@ -15,6 +15,7 @@
   capabilities = "cap_net_admin,cap_net_raw+ep";
 };
 
+systemd.services."systemd-networkd-wait-online".enable = false;
 
 
 }
