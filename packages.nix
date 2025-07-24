@@ -14,6 +14,8 @@
     vscode
     nodejs
 
+    flatpak
+
     #CLI utils
     ## Системные
     neofetch
@@ -117,4 +119,5 @@
     home-manager
     gnome-tweaks
   ];
+  
 }

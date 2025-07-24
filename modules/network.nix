@@ -10,7 +10,7 @@ in
   boot.kernelModules = [ "tun" "fuse" ];
   #networking.useDHCP = true;
 
-  networking.firewall.enable = false;
+
 
   security.wrappers.xray = {
     source = "${pkgs.xray}/bin/xray";
