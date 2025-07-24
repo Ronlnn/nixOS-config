@@ -28,12 +28,6 @@
     LC_TIME = "ru_RU.UTF-8";
   };
 
-
-
-  # Enable touchpad support (enabled default in most desktopManager).
-  # services.xserver.libinput.enable = true;
-
-
   services.openssh.enable = true;
 
   system.stateVersion = "25.05";

@@ -96,10 +96,8 @@
     xray
     sing-box
     v2rayn
-    fuse3
-    knot-dns
-    zlib
-    libpng
+
+
 
 
     # Другое
@@ -109,5 +107,6 @@
     libsForQt5.qt5ct
     pciutils
     home-manager
+    gnome-tweaks
   ];
 }
