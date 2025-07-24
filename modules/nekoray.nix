@@ -2,7 +2,7 @@
 
 {
   services.sing-box.enable = true;
-  enable_dns_server
+
   programs.nekoray = {
     enable = true;
     tunMode.enable = true;
