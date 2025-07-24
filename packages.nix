@@ -26,6 +26,7 @@
     openssl
     lazygit
     micro
+    # appimage-run
     appimage-run
     libepoxy
     libpng

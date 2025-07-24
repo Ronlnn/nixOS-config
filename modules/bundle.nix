@@ -6,7 +6,6 @@
 		./network.nix
 		./sound.nix
 		./nvidia.nix
-		./appimage-run.nix
 		./gnome.nix
 		#./hyprland.nix
 	];
