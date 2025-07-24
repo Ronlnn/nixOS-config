@@ -7,7 +7,6 @@
     enable = true;
     tunMode.enable = true;
   };
-  me
 
 networking.firewall.enable = true;
 networking.firewall.allowedUDPPorts = [53];
