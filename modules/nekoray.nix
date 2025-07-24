@@ -2,12 +2,18 @@
 
 {
   services.sing-box.enable = true;
-
+  enable_dns_server
   programs.nekoray = {
     enable = true;
     tunMode.enable = true;
   };
+  me
 
+networking.firewall.enable = true;
+networking.firewall.allowedUDPPorts = [53];
+networking.firewall.allowedTCPPorts = [  22
+  80
+];
   # Обязательно, если используешь tun
   boot.kernelModules = [ "tun" ];
   networking.networkmanager.enable = true;
