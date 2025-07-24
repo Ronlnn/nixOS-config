@@ -92,7 +92,7 @@
     flameshot
 
     # ВПН
-    nekoray
+    #nekoray
     xray
     sing-box
     v2rayn
