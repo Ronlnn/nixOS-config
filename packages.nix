@@ -30,7 +30,8 @@
     appimage-run
     libepoxy
     libpng
-    fuse3
+    fuse
+    fuse2
     zlib
     glib
     fuse-emulator
