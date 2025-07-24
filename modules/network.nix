@@ -21,23 +21,8 @@ in
 
 
 
-  systemd.services.nekoray = {
-    description = "Nekoray VPN service";
-    wantedBy = [ "multi-user.target" ];
-    after = [ "network.target" ];
-    serviceConfig = {
-      ExecStart = "${pkgs.nekoray}/bin/nekoray";
-      Restart = "on-failure";
-      CapabilityBoundingSet = "CAP_NET_ADMIN CAP_NET_BIND_SERVICE";
-      AmbientCapabilities = "CAP_NET_ADMIN CAP_NET_BIND_SERVICE";
-    };
-  };
-
   programs.nekoray = {
     enable = true;
     tunMode.enable = true;
   };
-
-  services.sing-box.enable = true;
-   environment.variables.LD_LIBRARY_PATH = lib.makeLibraryPath [ pkgs.libpng ];
 }
