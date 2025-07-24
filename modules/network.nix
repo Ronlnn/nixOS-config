@@ -41,4 +41,5 @@ in
   };
 
   services.sing-box.enable = true;
+   environment.variables.LD_LIBRARY_PATH = lib.makeLibraryPath [ pkgs.libpng ];
 }

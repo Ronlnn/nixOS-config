@@ -27,6 +27,7 @@
     lazygit
     micro
     appimage-run
+    libpng
 
     ## Мультимедиа и звук
     ffmpeg
