@@ -10,8 +10,6 @@ in
   boot.kernelModules = [ "tun" "fuse" ];
   #networking.useDHCP = true;
 
-
-
   security.wrappers.xray = {
     source = "${pkgs.xray}/bin/xray";
     owner = "root";
@@ -20,9 +18,4 @@ in
   };
 
 
-
-  programs.nekoray = {
-    enable = true;
-    tunMode.enable = true;
-  };
 }

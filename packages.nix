@@ -34,6 +34,7 @@
     openssl
     lazygit
     micro
+
     # appimage-run
     appimage-run
     libepoxy
@@ -42,7 +43,6 @@
     fuse2
     zlib
     glib
-    fuse-emulator
 
     ## Мультимедиа и звук
     ffmpeg
@@ -95,9 +95,6 @@
     #xdg-desktop-portal-hyprland
     #polybar
     #waybar
-
-
-
 
     # Звук
     pipewire
