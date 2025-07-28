@@ -5,68 +5,69 @@
 
    environment.systemPackages = with pkgs; [
     # Desktop apps
-    telegram-desktop
-    alacritty
-    obsidian
-    firefox
+    pkgs.telegram-desktop
+    pkgs.alacritty
+    pkgs.obsidian
+    pkgs.firefox
+    pkgs.spotify
 
     # Coding stuff
-    vscode
-    nodejs
-    flatpak
+    pkgs.vscode
+    pkgs.nodejs
+    pkgs.flatpak
 
     # VPN
-    hiddify-app
-    xray
-    v2ray
-    sing-box
-    v2rayn
+    pkgs.hiddify-app
+    pkgs.xray
+    pkgs.v2ray
+    pkgs.sing-box
+    pkgs.v2rayn
 
     #CLI utils
     ## Системные
-    neofetch
-    fastfetch
-    tree
-    htop
-    nix-index
-    unzip
-    zip
-    openssl
-    lazygit
-    micro
+    pkgs.neofetch
+    pkgs.fastfetch
+    pkgs.tree
+    pkgs.htop
+    pkgs.nix-index
+    pkgs.unzip
+    pkgs.zip
+    pkgs.openssl
+    pkgs.lazygit
+    pkgs.micro
 
     # appimage-run
-    appimage-run
-    libepoxy
-    libpng
-    fuse
-    fuse2
-    zlib
-    glib
+    pkgs.appimage-run
+    pkgs.libepoxy
+    pkgs.libpng
+    pkgs.fuse
+    pkgs.fuse2
+    pkgs.zlib
+    pkgs.glib
 
     ## Мультимедиа и звук
-    ffmpeg
-    cava
+    pkgs.ffmpeg
+    pkgs.cava
 
     ## Яркость
-    light
-    lux
-    brightnessctl
+    pkgs.light
+    pkgs.lux
+    pkgs.brightnessctl
 
     ## Сетевые и файловые
-    wget
-    bluez
-    bluez-tools
+    pkgs.wget
+    pkgs.bluez
+    pkgs.bluez-tools
 
     ## Файловые менеджеры и оформление
-    ranger
+    pkgs.ranger
     ### обои в среде wayland
     #swww
 
     # GUI utils
-    feh
-    imv
-    dmenu
+    pkgs.feh
+    pkgs.imv
+    pkgs.dmenu
     ### нотивикатор для wayland
     #mako
 
@@ -97,22 +98,22 @@
     #waybar
 
     # Звук
-    pipewire
-    pulseaudio
-    pamixer
+    pkgs.pipewire
+    pkgs.pulseaudio
+    pkgs.pamixer
 
     # Скриншоты
-    flameshot
+    pkgs.flameshot
 
 
     # Другое
     ### тема оформления Qt (Kvantum) для улучшенного внешнего вида приложений Qt
-    libsForQt5.qtstyleplugin-kvantum
+    pkgs.libsForQt5.qtstyleplugin-kvantum
     ### утилита для настройки Qt5 тем и стилей.
-    libsForQt5.qt5ct
-    pciutils
-    home-manager
-    gnome-tweaks
+    pkgs.libsForQt5.qt5ct
+    pkgs.pciutils
+    pkgs.home-manager
+    pkgs.gnome-tweaks
   ];
 
 }
