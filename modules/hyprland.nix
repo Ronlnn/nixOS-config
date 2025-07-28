@@ -1,6 +1,6 @@
 {config,pkgs,...}:{
-  services.displayManager.sddm.enable = true;
-  services.displayManager.sddm.wayland.enable = true;
+#  services.displayManager.sddm.enable = true;
+ # services.displayManager.sddm.wayland.enable = true;
   #services.displayManager.defaultSession = "hyprland";
 
   programs.hyprland = {
@@ -8,7 +8,7 @@
     xwayland.enable = true;
   };
 
-  services.xserver.enable = false;
+  #services.xserver.enable = false;
 
   hardware = {
     opengl.enable = true;
