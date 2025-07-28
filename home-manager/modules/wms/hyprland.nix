@@ -69,8 +69,10 @@ in {
 
     };
 
-    "$mod" = "SUPER";
-    bind = "$mod, RETURN, exec, alacritty";
+    bind = [
+  "SUPER, RETURN, exec, alacritty"
+];
+
 
 
     # Дополнительные правила для окон
