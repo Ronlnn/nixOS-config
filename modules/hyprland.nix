@@ -1,27 +1,22 @@
-{ config, pkgs, ... }:
-
 {
-  # Включение Wayland и необходимых компонентов
   services.displayManager.sddm.enable = true;
+  services.displayManager.sddm.wayland.enable = true;
   services.displayManager.defaultSession = "hyprland";
 
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
-    withUWSM = true;
   };
-  # Настройки NVIDIA
+
+  services.xserver.enable = false;
+
   hardware = {
     opengl.enable = true;
     nvidia.modesetting.enable = true;
     nvidia.powerManagement.enable = true;
     nvidia.open = false;
   };
-   # Отключение X11, если используется только Wayland
-  services.xserver.enable = false;
 
-
-  # Необходимые переменные среды для Wayland + NVIDIA
   environment.sessionVariables = {
     WLR_NO_HARDWARE_CURSORS = "1";
     NIXOS_OZONE_WL = "1";
@@ -44,15 +39,14 @@
   };
 
   xdg.portal.enable = true;
-  xdg.portal.extraPortals = [pkgs.xdg-desktop-portal-gtk];
+  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
 
-   # Дополнительные пакеты для системы
   environment.systemPackages = with pkgs; [
-    grim         # Скриншоты
-    slurp        # Выбор области для скриншота
-    wl-clipboard # Буфер обмена Wayland
-    mako         # Уведомления
-    swaylock     # Блокировка экрана
-    swayidle     # Управление бездействием
+    grim
+    slurp
+    wl-clipboard
+    mako
+    swaylock
+    swayidle
   ];
 }
