@@ -29,6 +29,7 @@
     pkgs.fastfetch
     pkgs.tree
     pkgs.htop
+    pkgs.btop
     pkgs.nix-index
     pkgs.unzip
     pkgs.zip
