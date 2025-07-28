@@ -60,11 +60,11 @@ in {
   '';
 
   # Панель Waybar (пример)
-  programs.waybar = {
-    enable = true;
-    settings = {...}; # ваши настройки waybar
-    style = ''...'';  # ваш CSS стиль
-  };
+  # programs.waybar = {
+  #   enable = true;
+  #   settings = {...}; # ваши настройки waybar
+  #   style = ''...'';  # ваш CSS стиль
+  # };
 
   # Необходимые пакеты
   home.packages = with pkgs; [
