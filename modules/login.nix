@@ -1,14 +1,21 @@
 { config, pkgs, ... }:
 
 {
-  services.xserver.enable = true;
-
+  services.xserver.enable = true;  # Нужен для GNOME на Xorg
   services.displayManager.sddm.enable = true;
+
+  programs.hyprland.enable = true;
 
   services.xserver.desktopManager.gnome.enable = true;
 
-  # Файл сессии Hyprland для выбора в SDDM
-  environment.etc."xdg/sessions/hyprland.desktop".text = ''
+  environment.systemPackages = with pkgs; [
+    hyprland
+    mako
+    swayidle
+    swaylock
+  ];
+
+  environment.etc."xdg/wayland-sessions/hyprland.desktop".text = ''
     [Desktop Entry]
     Name=Hyprland
     Comment=Hyprland Wayland compositor
@@ -16,12 +23,4 @@
     Type=Application
     DesktopNames=Hyprland
   '';
-
-  # Дополнительные пакеты
-  environment.systemPackages = with pkgs; [
-    hyprland
-    mako
-    swayidle
-    swaylock
-  ];
 }
