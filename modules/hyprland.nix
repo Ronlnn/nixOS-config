@@ -2,7 +2,9 @@
 
 {
   # Включение Wayland и необходимых компонентов
-  
+  services.displayManager.sddm.enable = true;
+  services.displayManager.defaultSession = "hyprland";
+
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
