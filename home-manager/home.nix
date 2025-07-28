@@ -2,7 +2,8 @@
 
 {
   imports = [
-    #./modules/wms/hyprland.nix
+    ./modules/wms/hyprland.nix
+    ./modules/bundle.nix
   ];
   home.username = "roninn";
   home.homeDirectory = "/home/roninn";
