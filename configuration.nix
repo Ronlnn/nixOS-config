@@ -29,11 +29,7 @@
     LC_TELEPHONE = "ru_RU.UTF-8";
     LC_TIME = "ru_RU.UTF-8";
   };
-
-
   programs.appimage.enable = true;
-  services.openssh.enable = true;
-
   system.stateVersion = "25.05";
 
 }
