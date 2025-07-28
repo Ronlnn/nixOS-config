@@ -3,6 +3,29 @@
 let
   hyprland = pkgs.hyprland;
 in {
+
+  systemd.user.services.hyprland-session = {
+  Unit = {
+    Description = "Start Hyprland on tty1";
+    After = [ "graphical-session-pre.target" ];
+    Wants = [ "graphical-session.target" ];
+    ConditionEnvironment = "!WAYLAND_DISPLAY";
+    ConditionPathExists = "%h/.config/hypr/hyprland.conf"; # если нужно
+  };
+
+  Service = {
+    ExecStart = "${pkgs.hyprland}/bin/Hyprland";
+    Restart = "on-failure";
+    Environment = [
+      "WLR_NO_HARDWARE_CURSORS=1"
+    ];
+  };
+
+  Install = {
+    WantedBy = [ "graphical-session.target" ];
+  };
+};
+
   wayland.windowManager.hyprland = {
     enable = true;
     package = hyprland;
@@ -57,17 +80,6 @@ in {
       windowrule = center,^(pavucontrol)$
       windowrule = size 800 600,^(pavucontrol)$
     '';
-  };
-
-  # Автозапуск Hyprland при входе в TTY1
-  programs = {
-    bash = {
-      interactiveShellInit = ''
-        if [ -z $DISPLAY ] && [ "$(tty)" = "/dev/tty1" ]; then
-           WLR_NO_HARDWARE_CURSORS=1 Hyprland
-        fi
-      '';
-    };
   };
 
   # Панель Waybar (пример)

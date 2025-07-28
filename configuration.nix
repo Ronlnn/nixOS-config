@@ -2,11 +2,13 @@
 
 {
   imports =
-    [ 
+    [
       ./hardware-configuration.nix
       ./modules/bundle.nix
       ./packages.nix
     ];
+
+
 
   networking.hostName = "omen";
 
