@@ -42,14 +42,13 @@ in {
         "col.inactive_border" = "rgba(414868aa)";
       };
 
-      "$mod" = "SUPER";
-      bindm = [
-        "$mod, mouse:272, movewindow"
-        "$mod, mouse:273, resizewindow"
-        "$mod ALT, mouse:272, resizewindow"
-        "$mod, Return, exec, ${pkgs.alacritty}/bin/alacritty"
-      ];
+
+
     };
+
+    "$mod" = "SUPER";
+    bind = "$mod, RETURN, exec, alacritty";
+
 
     # Дополнительные правила для окон
     extraConfig = ''
@@ -61,11 +60,15 @@ in {
   };
 
   # Автозапуск Hyprland при входе в TTY1
-  programs.bash.profileExtra = ''
-    if [ -z "$DISPLAY" ] && [ "$(tty)" = "/dev/tty1" ]; then
-      exec dbus-run-session Hyprland
-    fi
-  '';
+  programs = {
+    bash = {
+      interactiveShellInit = ''
+        if [ -z $DISPLAY ] && [ "$(tty)" = "/dev/tty1" ]; then
+           WLR_NO_HARDWARE_CURSORS=1 Hyprland
+        fi
+      '';
+    };
+  };
 
   # Панель Waybar (пример)
   # programs.waybar = {
