@@ -8,7 +8,7 @@
 		./nvidia.nix
 		./nix-ld.nix
 		./flatpak.nix
-		./gnome.nix
+		#./gnome.nix
 		./hyprland.nix
 	];
 }
