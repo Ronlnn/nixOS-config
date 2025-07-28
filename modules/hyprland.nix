@@ -2,9 +2,11 @@
 
 {
   # Включение Wayland и необходимых компонентов
+  
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
+    withUWSM = true;
   };
   # Настройки NVIDIA
   hardware = {

@@ -10,7 +10,7 @@ in {
     xwayland.enable = true;
 
     settings = {
-      monitor = ",preferred,auto,1";
+      monitor = "eDP-1,1920x1080,0x0,1";
 
       # Базовые настройки
       env = [
@@ -41,6 +41,14 @@ in {
         "col.active_border" = "rgba(7aa2f7ee) rgba(bb9af7ee) 45deg";
         "col.inactive_border" = "rgba(414868aa)";
       };
+
+      "$mod" = "SUPER";
+      bindm = [
+        "$mod, mouse:272, movewindow"
+        "$mod, mouse:273, resizewindow"
+        "$mod ALT, mouse:272, resizewindow"
+        "$mod, Return, exec, ${pkgs.alacritty}/bin/alacritty"
+      ];
     };
 
     # Дополнительные правила для окон
@@ -68,7 +76,6 @@ in {
 
   # Необходимые пакеты
   home.packages = with pkgs; [
-    kitty          # Терминал
     firefox-wayland # Браузер с поддержкой Wayland
     swaylock       # Блокировщик экрана
     swayidle       # Управление бездействием
