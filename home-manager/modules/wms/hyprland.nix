@@ -93,12 +93,12 @@ in {
 
   # Необходимые пакеты
   home.packages = with pkgs; [
-    firefox-wayland # Браузер с поддержкой Wayland
-    swaylock       # Блокировщик экрана
-    swayidle       # Управление бездействием
-    wofi           # Меню приложений
-    networkmanagerapplet # Апплет NetworkManager
-    brightnessctl   # Управление яркостью
-    pulseaudio     # Для звука (или pipewire)
+    #firefox-wayland # Браузер с поддержкой Wayland
+    #swaylock       # Блокировщик экрана
+    #swayidle       # Управление бездействием
+    #wofi           # Меню приложений
+    #networkmanagerapplet # Апплет NetworkManager
+    #brightnessctl   # Управление яркостью
+    #pulseaudio     # Для звука (или pipewire)
   ];
 }
