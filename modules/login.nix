@@ -8,7 +8,8 @@
 
   #services.xserver.desktopManager.gnome.enable = true;
 
-
+ # Выключаем дефолтные программы
+  services.gnome.core-apps.enable = false;
   environment.etc."xdg/wayland-sessions/hyprland.desktop".text = ''
     [Desktop Entry]
     Name=Hyprland

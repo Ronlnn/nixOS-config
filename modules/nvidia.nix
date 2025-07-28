@@ -7,6 +7,7 @@
   services.libinput.enable = true;
 
   hardware.nvidia = {
+    opengl.enable = true;
     modesetting.enable = true;
     powerManagement.enable = true;
     nvidiaSettings = true;

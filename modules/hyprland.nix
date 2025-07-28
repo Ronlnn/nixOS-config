@@ -10,12 +10,7 @@
 
   #services.xserver.enable = false;
 
-  hardware = {
-    opengl.enable = true;
-    nvidia.modesetting.enable = true;
-    nvidia.powerManagement.enable = true;
-    nvidia.open = false;
-  };
+
 
   environment.sessionVariables = {
     WLR_NO_HARDWARE_CURSORS = "1";
