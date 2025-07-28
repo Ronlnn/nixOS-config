@@ -10,6 +10,7 @@
     pkgs.obsidian
     pkgs.firefox
     pkgs.spotify
+    pkgs.onlyoffice-desktopeditors
 
     # Coding stuff
     pkgs.vscode
