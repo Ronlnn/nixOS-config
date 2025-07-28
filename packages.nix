@@ -8,7 +8,7 @@
     pkgs.telegram-desktop
     pkgs.alacritty
     pkgs.obsidian
-    pkgs.firefox
+    firefox
     pkgs.spotify
     pkgs.onlyoffice-desktopeditors
     pkgs.kdePackages.okular
