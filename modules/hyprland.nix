@@ -5,7 +5,6 @@
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
-    nvidiaPatches = true;
   };
   # Настройки NVIDIA
   hardware = {
@@ -42,7 +41,7 @@
 
   xdg.portal.enable = true;
   xdg.portal.extraPortals = [pkgs.xdg-desktop-portal-gtk];
-  
+
    # Дополнительные пакеты для системы
   environment.systemPackages = with pkgs; [
     grim         # Скриншоты
