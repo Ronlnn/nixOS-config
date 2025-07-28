@@ -65,13 +65,13 @@ in {
         "col.inactive_border" = "rgba(414868aa)";
       };
 
-
+      bind = [
+        "SUPER, RETURN, exec, alacritty"
+];
 
     };
 
-    bind = [
-  "SUPER, RETURN, exec, alacritty"
-];
+
 
 
 
