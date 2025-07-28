@@ -29,6 +29,7 @@
     LC_TELEPHONE = "ru_RU.UTF-8";
     LC_TIME = "ru_RU.UTF-8";
   };
+  programs.firefox.enable = true;
   programs.appimage.enable = true;
   system.stateVersion = "25.05";
 

@@ -11,8 +11,6 @@
     variant = "";
   };
 
-  programs.firefox.enable = true;
-
   # Выключаем дефолтные программы
   services.gnome.core-apps.enable = false;
 }
