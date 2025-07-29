@@ -3,7 +3,6 @@
 {
   imports = [
    # ./modules/wms/hyprland.nix
-   ./modules/wms/gnome.nix
     ./modules/bundle.nix
   ];
   home.username = "roninn";
