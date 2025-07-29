@@ -3,5 +3,6 @@
   imports = [
     ./git.nix
     ./htop.nix
+    ./hiddify.nix
   ];
 }
