@@ -25,9 +25,7 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.roninn = import ./home-manager/home.nix{
-              inherit config pkgs;
-            };
+            home-manager.users.roninn = import ./home-manager/home.nix;z
           }
         ];
       };
