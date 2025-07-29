@@ -108,6 +108,11 @@
     # Скриншоты
     pkgs.flameshot
 
+    # Для gnome + gtk
+    catppuccin-gtk
+    gnome.gnome-themes-extra
+    papirus-icon-theme
+    catppuccin-cursors.mochaLavender
 
     # Другое
     ### тема оформления Qt (Kvantum) для улучшенного внешнего вида приложений Qt
