@@ -1,34 +1,6 @@
 {
   programs.dconf.enable = true;
 
-  gtk = {
-    enable = true;
-    theme = {
-      name = "Catppuccin-Mocha-Standard-Blue-Dark";
-      package = pkgs.catppuccin-gtk.override {
-        variant = "mocha";
-        accents = [ "blue" ];
-      };
-    };
-    iconTheme = {
-      name = "cat-mocha-blue";
-      package = pkgs.catppuccin-papirus-folders.override {
-        flavor = "mocha";
-        accent = "blue";
-      };
-    };
-    cursorTheme = {
-      name = "catppuccin-mocha-lavender-cursors";
-      package = pkgs.catppuccin-cursors.mochaLavender;
-    };
-    gtk3.extraConfig = {
-      "gtk-application-prefer-dark-theme" = 1;
-    };
-    gtk4.extraConfig = {
-      "gtk-application-prefer-dark-theme" = 1;
-    };
-  };
-
   dconf.settings = {
     "org/gnome/desktop/interface" = {
       gtk-theme = "Catppuccin-Mocha-Standard-Blue-Dark";
