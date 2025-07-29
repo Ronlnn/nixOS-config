@@ -8,6 +8,6 @@
     packages = with pkgs; [];
   };
  };
- services.getty.autologinUser = "roninn";
+# services.getty.autologinUser = "roninn";
 
 }
