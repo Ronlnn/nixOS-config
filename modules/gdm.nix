@@ -10,7 +10,7 @@
 
   # Установка системных тем, иконок и курсоров
   environment.systemPackages = with pkgs; [
-    gnome.gnome-themes-extra
+    pkgs.gnome-themes-extra
     gnome.adwaita-icon-theme
     catppuccin-gtk
     catppuccin-cursors.mochaLavender
