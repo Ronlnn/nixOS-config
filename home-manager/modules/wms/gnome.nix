@@ -1,4 +1,5 @@
-{config, pkgs, ...}:
+{ pkgs, config, ... }:
+
 {
   programs.dconf.enable = true;
 
@@ -23,10 +24,10 @@
       package = pkgs.catppuccin-cursors.mochaLavender;
     };
     gtk3.extraConfig = {
-      Settings = "gtk-application-prefer-dark-theme=1";
+      "gtk-application-prefer-dark-theme" = 1;
     };
     gtk4.extraConfig = {
-      Settings = "gtk-application-prefer-dark-theme=1";
+      "gtk-application-prefer-dark-theme" = 1;
     };
   };
 
@@ -40,8 +41,8 @@
     };
 
     "org/gnome/desktop/background" = {
-      picture-uri = "~/Pictures/Walls/guts-armor-blue.jpg";
-      picture-uri-dark = "~/Pictures/Walls/guts-armor-blue.jpg";
+      picture-uri = "file://${config.home.homeDirectory}/Pictures/Walls/guts-armor-blue.jpg";
+      picture-uri-dark = "file://${config.home.homeDirectory}/Pictures/Walls/guts-armor-blue.jpg";
       primary-color = "#8627E6";
     };
 
