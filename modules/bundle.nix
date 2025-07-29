@@ -10,7 +10,6 @@
 		./flatpak.nix
 		./gnome.nix
 		#./hyprland.nix
-		./gdm.nix
 
 	];
 }
