@@ -6,7 +6,7 @@
   # Тачпад
   services.libinput.enable = true;
 
-  hardware.opengl.enable = true;
+  hardware.graphics.opengl.enable = true;
   hardware.nvidia = {
     modesetting.enable = true;
     powerManagement.enable = true;
