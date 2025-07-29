@@ -9,7 +9,7 @@
 		./nix-ld.nix
 		./flatpak.nix
 		./gnome.nix
-		./hyprland.nix
-		./login.nix
+		#./hyprland.nix
+
 	];
 }
