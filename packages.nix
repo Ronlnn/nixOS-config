@@ -110,7 +110,6 @@
 
     # Для gnome + gtk
     catppuccin-gtk
-    pkgs.gnome-themes-extra
     papirus-icon-theme
     catppuccin-cursors.mochaLavender
 
