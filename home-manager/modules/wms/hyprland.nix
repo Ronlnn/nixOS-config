@@ -8,6 +8,7 @@
 
       settings = {
         bind = [
+          # bind
           "SUPER, RETURN, exec, alacritty"
         ];
       };

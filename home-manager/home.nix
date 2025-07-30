@@ -16,5 +16,11 @@
   programs.zsh.enable = true;
   programs.git.enable = true;
 
+   programs.bash = {
+    enable = true;
+    shellAliases = {
+      nix-backup = "~/nix-backup.sh";
+    };
+  };
 
 }

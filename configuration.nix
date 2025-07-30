@@ -37,8 +37,4 @@
   programs.appimage.enable = true;
   system.stateVersion = "25.05";
 
-  environment.shellAliases = {
-  "nix-backup" = "/home/roninn/nix-backup.sh";
-};
-
 }
