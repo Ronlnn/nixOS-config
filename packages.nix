@@ -12,6 +12,7 @@
     pkgs.spotify
     pkgs.onlyoffice-desktopeditors
     pkgs.kdePackages.okular
+    pkgs.anydesk
 
     # Coding stuff
     pkgs.vscode

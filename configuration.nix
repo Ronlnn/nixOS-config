@@ -8,8 +8,6 @@
       ./packages.nix
     ];
 
-
-
   networking.hostName = "omen";
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
