@@ -13,24 +13,26 @@
   outputs = { self, nixpkgs, home-manager, ... }:
     let
       system = "x86_64-linux";
-      pkgs = import nixpkgs {
-        inherit system;
-      };
+      pkgs = import nixpkgs {inherit system;};
+
+      # Переменные окружения
+      gnomeEnabled = true;
+      hyprlandEnabled = false;
     in {
       # NixOS system configuration
       nixosConfigurations.omen = nixpkgs.lib.nixosSystem {
         inherit system;
+        specialArgs = {
+          inherit gnomeEnabled hyprlandEnabled;
+        };
+
         modules = [
           ./configuration.nix
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.roninn = {
-              imports = [ ./home-manager/home.nix];
-              gnome.enable = config.gnome.enable;
-              hyprland.enable = config.hyprland.enable;
-            };
+            home-manager.users.roninn = import ./home-manager/home.nix;
           }
         ];
       };
