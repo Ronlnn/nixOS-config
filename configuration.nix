@@ -38,7 +38,7 @@
   system.stateVersion = "25.05";
 
   environment.shellAliases = {
-  nix-backup = "~/nix-backup.sh";
+  "nix-backup" = "/home/roninn/nix-backup.sh";
 };
 
 }
