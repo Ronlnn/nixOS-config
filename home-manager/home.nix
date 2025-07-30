@@ -13,13 +13,11 @@
   home.stateVersion = "25.05";
 
   systemd.user.startServices = true;
-  programs.zsh.enable = true;
-  programs.git.enable = true;
 
    programs.bash = {
     enable = true;
     shellAliases = {
-      nix-backup = "~/nix-backup.sh";
+      nix-backup = "home/roninn/nix-backup.sh";
     };
   };
 
