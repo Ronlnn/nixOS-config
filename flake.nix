@@ -15,16 +15,10 @@
       system = "x86_64-linux";
       pkgs = import nixpkgs {inherit system;};
 
-      # Переменные окружения
-      gnomeEnabled = true;
-      hyprlandEnabled = false;
     in {
       # NixOS system configuration
       nixosConfigurations.omen = nixpkgs.lib.nixosSystem {
         inherit system;
-        specialArgs = {
-          inherit gnomeEnabled hyprlandEnabled;
-        };
 
         modules = [
           ./configuration.nix

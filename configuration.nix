@@ -1,4 +1,4 @@
-{ config, pkgs, gnomeEnabled ? false, hyprlandEnabled ? false, ... }:
+{ config, pkgs,  ... }:
 
 {
   imports =
@@ -10,8 +10,9 @@
       ./modules/env/hyprland.nix
     ];
 
-  gnome.enable = gnomeEnabled;
-  hyprland.enable = hyprlandEnabled;
+  gnome.enable = true;
+  hyprland.enable = false;
+
 
   networking.hostName = "omen";
 
