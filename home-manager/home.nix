@@ -14,11 +14,13 @@
 
   systemd.user.startServices = true;
 
-   programs.bash = {
+  #bash
+  programs.bash = {
     enable = true;
     shellAliases = {
-      nix-backup = "home/roninn/nix-backup.sh";
+      nix-backup = "/home/roninn/nix-backup.sh";
     };
   };
+
 
 }
