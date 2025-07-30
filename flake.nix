@@ -1,6 +1,6 @@
 {
   description = "System Configuration with Home Manager";
-  
+
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
 
@@ -26,15 +26,13 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.roninn = import ./home-manager/home.nix;
+            home-manager.users.roninn = {
+              imports = [ ./home-manager/home.nix];
+              gnome.enable = config.gnome.enable;
+              hyprland.enable = config.hyprland.enable;
+            };
           }
         ];
       };
-
-      # Home Manager standalone configuration
-      homeConfigurations.roninn = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
-        modules = [ ./home-manager/home.nix ];
-      };
-        };
+    };
 }

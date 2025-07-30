@@ -6,7 +6,12 @@
       ./hardware-configuration.nix
       ./modules/bundle.nix
       ./packages.nix
+      ./modules/env/gnome.nix
+      ./modules/env/hyprland.nix
     ];
+
+  gnome.enable = true;
+  hyprland.enable = false;
 
   networking.hostName = "omen";
 
@@ -30,5 +35,9 @@
   programs.firefox.enable = true;
   programs.appimage.enable = true;
   system.stateVersion = "25.05";
+
+  environment.shellAliases = {
+  nix-backup = "~/nix-backup.sh";
+};
 
 }
