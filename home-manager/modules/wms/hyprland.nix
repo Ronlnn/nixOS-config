@@ -7,7 +7,6 @@
       xwayland.enable = true;
 
       settings = {
-        # Горячая клавиша: SUPER + RETURN запускает alacritty
         bind = [
           "SUPER, RETURN, exec, alacritty"
         ];
