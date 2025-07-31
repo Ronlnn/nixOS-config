@@ -10,6 +10,7 @@ with lib;
 		./nvidia.nix
 		./nix-ld.nix
 		./flatpak.nix
+		./steam.nix
 	];
 
 	options = {
