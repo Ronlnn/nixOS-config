@@ -9,6 +9,7 @@
     restart = "on-failure";
     user = "root";
     capabilityBoundingSet = [ "CAP_NET_ADMIN" "CAP_NET_BIND_SERVICE" ];
-    ambientCapabilities = [ "CAP_NET_ADMIN" "CAP_NET_BIND_SERVICE" ];
+    systemd.services.hiddify-vpn.serviceConfig.AmbientCapabilities = [ "CAP_NET_ADMIN" "CAP_NET_BIND_SERVICE" ];
+
   };
 }
