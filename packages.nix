@@ -22,9 +22,9 @@
     # VPN
     pkgs.hiddify-app
     pkgs.xray
-    pkgs.v2ray
+    #pkgs.v2ray
     pkgs.sing-box
-    pkgs.v2rayn
+    #pkgs.v2rayn
 
     #CLI utils
     ## Системные
