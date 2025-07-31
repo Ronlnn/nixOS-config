@@ -11,9 +11,19 @@ stdenv.mkDerivation {
     sha256 = "sha256-uXwDjb0+ViQvdesG5gefC5zFAiFs/FfDfeI5t7vP+Qc=";
   };
 
+  sourceRoot = "${src.name}/Sekiro";
 
- installPhase = ''
-    mkdir -p $out/themes/sekiro
-    cp -r ./* $out/themes/sekiro/
+  installPhase = ''
+    # 1. Создаём структуру как ожидает GRUB
+    mkdir -p $out/grub/themes/sekiro
+
+    # 2. Копируем все файлы без изменений
+    cp -r ./* $out/grub/themes/sekiro/
+
+    # 3. Проверяем наличие критических файлов
+    echo "Проверка содержимого:"
+    ls -la $out/grub/themes/sekiro/
+    test -f "$out/grub/themes/sekiro/theme.txt" || { echo "ERROR: theme.txt not found!"; exit 1; }
+    test -f "$out/grub/themes/sekiro/sekiro_1920x1080.png" || { echo "ERROR: background image not found!"; exit 1; }
   '';
 }

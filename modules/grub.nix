@@ -9,9 +9,10 @@
       efiSupport = true;
       device = "nodev";
 
-      theme = "${sekiroTheme}/themes/sekiro";
+      theme =  "${sekiroTheme}/grub/themes/sekiro";
       gfxmodeEfi = "1920x1080";
 
+      font = "${sekiroTheme}/grub/themes/sekiro/dersu_uzala_brush_16.pf2";
       #splashImage = "${sekiroTheme}/themes/sekiro/background.png";
 
     };
