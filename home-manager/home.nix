@@ -21,11 +21,5 @@
       nix-backup = "/home/roninn/nix-backup.sh";
     };
   };
-  dconf.settings = {
-    "org/gnome/system/proxy" = {
-      mode = "none";
-    };
-  };
-
 
 }
