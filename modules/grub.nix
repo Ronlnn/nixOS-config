@@ -7,10 +7,13 @@
     boot.loader.grub = {
       enable = true;
       efiSupport = true;
-      device = "nodev";  # для UEFI
-      splashImage = "${sekiroTheme}/themes/sekiro/background.png";
+      device = "nodev";
+
       theme = "${sekiroTheme}/themes/sekiro";
       gfxmodeEfi = "1920x1080";
+
+      splashImage = "${sekiroTheme}/themes/sekiro/background.png";
+
     };
     boot.loader.efi.canTouchEfiVariables = true;
 
