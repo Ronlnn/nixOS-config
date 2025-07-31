@@ -4,7 +4,6 @@
   imports = [
     ./git.nix
     ./htop.nix
-    ./hiddify.nix
     ./alacritty.nix
   ];
   options = {
