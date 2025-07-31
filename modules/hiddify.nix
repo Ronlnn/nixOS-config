@@ -2,13 +2,11 @@
 
 {
 
-    systemd.services.hiddify = {
+  systemd.services.hiddify = {
     enable = true;
     wantedBy = [ "multi-user.target" ];
     serviceConfig = {
-      ExecStart = "${pkgs.hiddify-app}/bin/hiddify";  # ✅ Лучший вариант
-      # ИЛИ, если пакет называется иначе:
-      # ExecStart = "${pkgs.hiddify-manager}/bin/hiddify";
+      ExecStart = "${pkgs.hiddify-app}/bin/hiddify";
       User = "root";  # (или лучше создать отдельного пользователя)
       Restart = "on-failure";
     };
