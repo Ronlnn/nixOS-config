@@ -2,16 +2,20 @@
 
 {
   systemd.services.hiddify-vpn = {
-    description = "Hiddify VPN Mode (TUN)";
+    description = "Hiddify VPN Service";
     wantedBy = [ "multi-user.target" ];
     after = [ "network.target" ];
-    execStart = [ "${pkgs.hiddify-app}/bin/hiddify" "start" "--mode" "tun" ];
-    restart = "on-failure";
-    user = "root";
+
     serviceConfig = {
-        AmbientCapabilities = [ "CAP_NET_ADMIN" "CAP_NET_BIND_SERVICE" ];
-        CapabilityBoundingSet = [ "CAP_NET_ADMIN" "CAP_NET_BIND_SERVICE" ];
+      ExecStart = "${pkgs.hiddify-app}/bin/hiddify --run-vpn";
+      AmbientCapabilities = [ "CAP_NET_ADMIN" "CAP_NET_BIND_SERVICE" ];
+      CapabilityBoundingSet = [ "CAP_NET_ADMIN" "CAP_NET_BIND_SERVICE" ];
+      Restart = "on-failure";
     };
 
+    # Опционально, user и group:
+    # user = "hiddify";
+    # group = "hiddify";
   };
 }
+
