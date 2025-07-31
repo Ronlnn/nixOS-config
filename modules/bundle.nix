@@ -10,7 +10,6 @@ with lib;
 		./nvidia.nix
 		./nix-ld.nix
 		./flatpak.nix
-		./hiddify.nix
 	];
 
 	options = {
