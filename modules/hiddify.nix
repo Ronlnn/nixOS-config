@@ -7,15 +7,14 @@
     after = [ "network.target" ];
 
     serviceConfig = {
-      ExecStart = "${pkgs.hiddify-app}/bin/hiddify --run-vpn";
-      AmbientCapabilities = [ "CAP_NET_ADMIN" "CAP_NET_BIND_SERVICE" ];
-      CapabilityBoundingSet = [ "CAP_NET_ADMIN" "CAP_NET_BIND_SERVICE" ];
+      Type = "simple";
+      ExecStart = "${pkgs.hiddify}/bin/hiddify --vpn-mode"; # Уточните правильную команду для вашего случая
       Restart = "on-failure";
+      User = "root"; # Запуск от root
+      Group = "root";
+      # Дополнительные настройки безопасности, если нужно
+      CapabilityBoundingSet = "CAP_NET_ADMIN CAP_NET_RAW";
+      AmbientCapabilities = "CAP_NET_ADMIN CAP_NET_RAW";
     };
-
-    # Опционально, user и group:
-    # user = "hiddify";
-    # group = "hiddify";
   };
 }
-
