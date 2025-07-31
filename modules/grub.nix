@@ -5,7 +5,7 @@
   efiSupport = true;
   device = "nodev";  # для UEFI
   #splashImage = ../walls/zenitsu.png;
-  theme = catppuccin-grub;
+  theme = pkgs.catppuccin-grub;
   };
   boot.loader.efi.canTouchEfiVariables = true;
 
