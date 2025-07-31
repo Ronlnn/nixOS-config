@@ -118,6 +118,7 @@
     pciutils
     home-manager
     gnome-tweaks
+    catppuccin-grub
   ];
 
 }
