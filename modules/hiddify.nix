@@ -9,7 +9,7 @@
 
     serviceConfig = {
       Type = "simple";
-      ExecStart = "${pkgs.hiddify}/bin/hiddify --vpn-mode"; # Уточните правильную команду для вашего случая
+      ExecStart = "${pkgs.hiddify}/bin/hiddify-app --vpn-mode"; # Уточните правильную команду для вашего случая
       Restart = "on-failure";
       User = "root"; # Запуск от root
       Group = "root";
