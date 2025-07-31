@@ -1,8 +1,5 @@
 { config, pkgs, lib, ... }:
 
-let
-  appDeps = [ pkgs.libpng pkgs.zlib pkgs.fuse3 ];
-in
 {
   networking.networkmanager.enable = true;
  # networking.enableIPv6 = true;
