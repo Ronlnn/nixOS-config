@@ -3,15 +3,13 @@
   #boot.loader.systemd-boot.enable = true;
   #boot.loader.efi.canTouchEfiVariables = true;
   #boot.loader.timeout = 3;
-  boot.loader.limine = {
+ boot.loader.grub = {
   enable = true;
-  style = {
-    enable = true;
-    resolution = "1920x1080";
-    wallpapers = [
-      ../walls/zenitsu.png
-    ];
+  version = 2;
+  efiSupport = true;
+  device = "nodev";  # для UEFI
+  splashImage = ../walls/zenitsu.png;
   };
-};
+  boot.loader.efi.canTouchEfiVariables = true;
 
 }
