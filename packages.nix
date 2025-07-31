@@ -5,73 +5,73 @@
 
    environment.systemPackages = with pkgs; [
     # Desktop apps
-    pkgs.telegram-desktop
-    pkgs.alacritty
-    pkgs.obsidian
+    telegram-desktop
+    alacritty
+    obsidian
     firefox
-    pkgs.spotify
-    pkgs.onlyoffice-desktopeditors
-    pkgs.kdePackages.okular
-    pkgs.anydesk
+    spotify
+    onlyoffice-desktopeditors
+    kdePackages.okular
+    anydesk
 
     # Coding stuff
-    pkgs.vscode
-    pkgs.nodejs
-    pkgs.flatpak
+    vscode
+    nodejs
+    flatpak
 
     # VPN
-    pkgs.hiddify-app
-    pkgs.xray
-    #pkgs.v2ray
-    pkgs.sing-box
-    #pkgs.v2rayn
+    hiddify-app
+    xray
+    v2ray
+    sing-box
+    v2rayn
 
     #CLI utils
     ## Системные
-    pkgs.neofetch
-    pkgs.fastfetch
-    pkgs.tree
-    pkgs.htop
-    pkgs.btop
-    pkgs.nix-index
-    pkgs.unzip
-    pkgs.zip
-    pkgs.openssl
-    pkgs.lazygit
-    pkgs.micro
+    neofetch
+    fastfetch
+    tree
+    htop
+    btop
+    nix-index
+    unzip
+    zip
+    openssl
+    lazygit
+    micro
 
     # appimage-run
-    pkgs.appimage-run
-    pkgs.libepoxy
-    pkgs.libpng
-    pkgs.fuse
-    pkgs.fuse2
-    pkgs.zlib
-    pkgs.glib
+    appimage-run
+    libepoxy
+    libpng
+    fuse
+    fuse2
+    zlib
+    glib
 
     ## Мультимедиа и звук
-    pkgs.ffmpeg
-    pkgs.cava
+    ffmpeg
+    cava
 
     ## Яркость
-    pkgs.light
-    pkgs.lux
-    pkgs.brightnessctl
+    light
+    lux
+    brightnessctl
 
     ## Сетевые и файловые
-    pkgs.wget
-    pkgs.bluez
-    pkgs.bluez-tools
+    wget
+    bluez
+    bluez-tools
 
     ## Файловые менеджеры и оформление
-    pkgs.ranger
+    ranger
     ### обои в среде wayland
     #swww
 
     # GUI utils
-    pkgs.feh
-    pkgs.imv
-    pkgs.dmenu
+    feh
+    imv
+    dmenu
     ### нотивикатор для wayland
     #mako
 
@@ -102,22 +102,22 @@
     #waybar
 
     # Звук
-    pkgs.pipewire
-    pkgs.pulseaudio
-    pkgs.pamixer
+    pipewire
+    pulseaudio
+    pamixer
 
     # Скриншоты
-    pkgs.flameshot
+    flameshot
 
 
     # Другое
     ### тема оформления Qt (Kvantum) для улучшенного внешнего вида приложений Qt
-    pkgs.libsForQt5.qtstyleplugin-kvantum
+    libsForQt5.qtstyleplugin-kvantum
     ### утилита для настройки Qt5 тем и стилей.
-    pkgs.libsForQt5.qt5ct
-    pkgs.pciutils
-    pkgs.home-manager
-    pkgs.gnome-tweaks
+    libsForQt5.qt5ct
+    pciutils
+    home-manager
+    gnome-tweaks
   ];
 
 }
