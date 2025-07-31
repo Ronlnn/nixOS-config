@@ -12,8 +12,12 @@ stdenv.mkDerivation {
   };
 
 
- installPhase = ''
+  installPhase = ''
     mkdir -p $out/themes/sekiro
-    cp -r *.png *.txt $out/themes/sekiro/
+    cp -r Sekiro-GRUB-Theme/* $out/themes/sekiro/
+
+    # Проверка что файлы скопированы
+    echo "Проверка содержимого темы:"
+    ls -la $out/themes/sekiro/
   '';
 }
