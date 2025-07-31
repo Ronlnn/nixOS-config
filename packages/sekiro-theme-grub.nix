@@ -11,8 +11,7 @@ stdenv.mkDerivation {
     sha256 = "sha256-uXwDjb0+ViQvdesG5gefC5zFAiFs/FfDfeI5t7vP+Qc=";
   };
 
-  # Указываем точный путь к файлам
-  sourceRoot = "${src.name}/Sekiro";
+
   installPhase = ''
     # 1. Создаём стандартную структуру темы GRUB
     mkdir -p $out/themes/sekiro
