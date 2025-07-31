@@ -1,6 +1,7 @@
 { config, pkgs, ... }:
 
 {
+  environment.systemPackages = [ pkgs.hiddify ];
   systemd.services.hiddify-vpn = {
     description = "Hiddify VPN Service";
     wantedBy = [ "multi-user.target" ];
