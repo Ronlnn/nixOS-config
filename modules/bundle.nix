@@ -4,7 +4,7 @@ with lib;
 	# Сборщик всех модулей
 	imports = [
 		./user.nix
-		./bootloader.nix
+		./grub.nix
 		./network.nix
 		./sound.nix
 		./nvidia.nix
