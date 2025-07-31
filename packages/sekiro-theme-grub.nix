@@ -14,7 +14,7 @@ stdenv.mkDerivation {
 
   installPhase = ''
     mkdir -p $out/themes/sekiro
-    cp -r Sekiro-GRUB-Theme/* $out/themes/sekiro/
+    cp -r * $out/themes/sekiro/
 
     # Проверка что файлы скопированы
     echo "Проверка содержимого темы:"
