@@ -5,6 +5,7 @@
     ./git.nix
     ./htop.nix
     ./alacritty.nix
+    
   ];
   options = {
     gnome.enable = lib.mkEnableOption "Enable GNOME-related user configuration";
