@@ -12,7 +12,7 @@ stdenv.mkDerivation {
   };
 
   installPhase = ''
-    mkdir -p $out
-    cp -r * $out/
-  '';
+  mkdir -p $out/themes/sekiro
+  cp -r * $out/themes/sekiro/
+'';
 }

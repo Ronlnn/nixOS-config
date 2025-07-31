@@ -1,9 +1,7 @@
 {pkgs, ...}:
 
   let
-    sekiroTheme = import ../packages/sekiro-theme-grub.nix{
-      inherit (pkgs) stdenv fetchFromGitHub;
-    };
+    sekiroTheme = pkgs.callPackage ../packages/sekiro-theme-grub.nix {};
   in
 {
   boot.loader.grub = {
@@ -11,7 +9,7 @@
   efiSupport = true;
   device = "nodev";  # для UEFI
   #splashImage = ../walls/zenitsu.png;
-  theme = "${sekiroTheme}/theme.txt";
+  theme = "${sekiroTheme}/themes/sekiro";
   };
   boot.loader.efi.canTouchEfiVariables = true;
 
