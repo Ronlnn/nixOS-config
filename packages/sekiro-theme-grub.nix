@@ -13,6 +13,6 @@ stdenv.mkDerivation {
 
   installPhase = ''
   mkdir -p $out/themes/sekiro
-  cp -r * $out/themes/sekiro/
+  cp -r Sekiro-GRUB-Theme/* $out/themes/sekiro/
 '';
 }

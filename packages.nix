@@ -119,6 +119,7 @@
     home-manager
     gnome-tweaks
     catppuccin-grub
+    grub2
   ];
 
 }
