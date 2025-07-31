@@ -8,8 +8,10 @@
     execStart = [ "${pkgs.hiddify-app}/bin/hiddify" "start" "--mode" "tun" ];
     restart = "on-failure";
     user = "root";
-    AmbientCapabilities = [ "CAP_NET_ADMIN" "CAP_NET_BIND_SERVICE" ];
-    CapabilityBoundingSet = [ "CAP_NET_ADMIN" "CAP_NET_BIND_SERVICE" ];
+    serviceConfig = {
+        AmbientCapabilities = [ "CAP_NET_ADMIN" "CAP_NET_BIND_SERVICE" ];
+        CapabilityBoundingSet = [ "CAP_NET_ADMIN" "CAP_NET_BIND_SERVICE" ];
+    };
 
   };
 }
