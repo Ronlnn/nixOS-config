@@ -12,7 +12,7 @@
       theme = "${sekiroTheme}/themes/sekiro";
       gfxmodeEfi = "1920x1080";
 
-      splashImage = "${sekiroTheme}/themes/sekiro/background.png";
+      #splashImage = "${sekiroTheme}/themes/sekiro/background.png";
 
     };
     boot.loader.efi.canTouchEfiVariables = true;
