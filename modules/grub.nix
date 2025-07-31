@@ -12,7 +12,9 @@
       theme =  "${sekiroTheme}/grub/themes/sekiro";
       gfxmodeEfi = "1920x1080";
 
-      font = "${sekiroTheme}/grub/themes/sekiro/dersu_uzala_brush_16.pf2";
+      font = if builtins.pathExists "${sekiroTheme}/grub/themes/sekiro/dersu_uzala_brush_16.pf2"
+           then "${sekiroTheme}/grub/themes/sekiro/dersu_uzala_brush_16.pf2"
+           else null;
       #splashImage = "${sekiroTheme}/themes/sekiro/background.png";
 
     };
