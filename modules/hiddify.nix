@@ -1,6 +1,7 @@
 { config, pkgs, ... }:
 
 {
+    environment.systemPackages = [ pkgs.hiddify-app ];
     systemd.services.hiddify = {
     enable = true;
     wantedBy = [ "multi-user.target" ];
