@@ -8,7 +8,7 @@
       enable = true;
       efiSupport = true;
       device = "nodev";  # для UEFI
-      splashImage = "${sekiroTheme}/themes/sekiro/sekiro_1920x1080.png";
+      splashImage = "${sekiroTheme}/themes/sekiro/background.png";
       theme = "${sekiroTheme}/themes/sekiro";
       gfxmodeEfi = "1920x1080";
     };
