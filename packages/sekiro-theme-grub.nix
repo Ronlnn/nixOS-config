@@ -11,8 +11,10 @@ stdenv.mkDerivation {
     sha256 = "sha256-uXwDjb0+ViQvdesG5gefC5zFAiFs/FfDfeI5t7vP+Qc=";
   };
 
+  sourceRoot = "source/Sekiro-GRUB-Theme";
+
   installPhase = ''
   mkdir -p $out/themes/sekiro
-  cp -r Sekiro-GRUB-Theme/* $out/themes/sekiro/
-'';
+  cp -r * $out/themes/sekiro/
+  '';
 }
