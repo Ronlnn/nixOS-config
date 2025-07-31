@@ -1,21 +1,24 @@
 { config, pkgs, ... }:
 
 {
-  environment.systemPackages = [ pkgs.hiddify-app ];
+  environment.systemPackages = [ pkgs.hiddify-app ];  # Правильное имя пакета
+
   systemd.services.hiddify-vpn = {
+    enable = true;
     description = "Hiddify VPN Service";
     wantedBy = [ "multi-user.target" ];
     after = [ "network.target" ];
 
     serviceConfig = {
       Type = "simple";
-      ExecStart = "${pkgs.hiddify}/bin/hiddify-app --vpn-mode"; # Уточните правильную команду для вашего случая
+      ExecStart = "${pkgs.hiddify-app}/bin/hiddify-app --vpn-mode";  # Исправленный путь
       Restart = "on-failure";
-      User = "root"; # Запуск от root
+      User = "root";
       Group = "root";
-      # Дополнительные настройки безопасности, если нужно
-      CapabilityBoundingSet = "CAP_NET_ADMIN CAP_NET_RAW";
-      AmbientCapabilities = "CAP_NET_ADMIN CAP_NET_RAW";
+      CapabilityBoundingSet = [ "CAP_NET_ADMIN" "CAP_NET_RAW" ];
+      AmbientCapabilities = [ "CAP_NET_ADMIN" "CAP_NET_RAW" ];
+      PrivateTmp = true;
+      ProtectSystem = "strict";
     };
   };
 }
