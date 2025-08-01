@@ -1,8 +1,6 @@
 { config, lib, pkgs, ... }:
 
 {
-  programs.dconf.enable = true;
-
   home.packages = with pkgs; [
     dracula-theme
     catppuccin-gtk
@@ -13,7 +11,7 @@
     gnomeExtensions.user-themes
   ];
 
-  dconf.settings = {
+  programs.gnome.qsettings = {
     "org/gnome/shell" = {
       enabled-extensions = [ "user-theme@gnome-shell-extensions.gcampax.github.com" ];
     };
