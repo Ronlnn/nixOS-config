@@ -1,7 +1,7 @@
 { config, lib, pkgs, ... }:
 
 let
-  astronautTheme = import ../../packages/astronaut-sddm-theme.nix { inherit pkgs; };
+  astronautTheme = pkgs.callPackage ../../packages/astronaut-sddm-theme.nix {};
 in
 {
   config = lib.mkIf config.hyprland.enable {
