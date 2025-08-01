@@ -51,7 +51,7 @@
             font  = "Noto Sans";
             fontSize = "9";
             background = builtins.path {
-              path = /home/roninn/nixOS-config/walls/purp.jpg;
+              path = ~/nixOS-config/walls/purp.jpg;
               name = "purp.jpg";
             };
             loginBackground = true;
