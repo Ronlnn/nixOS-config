@@ -7,7 +7,7 @@ let
     sha256 = "sha256-Xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx=";
   };
 in {
-  
+
   environment.etc."sddm/themes/astronaut".source = sddmAstronautTheme;
 
   services.displayManager.sddm = lib.mkIf config.hyprland.enable {
