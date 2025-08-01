@@ -7,7 +7,8 @@
     ./modules/bundle.nix
   ];
 
-
+  config.gnome.enable = true;
+  config.hyprland.enable = true;
   home.username = "roninn";
   home.homeDirectory = "/home/roninn";
   home.stateVersion = "25.05";
