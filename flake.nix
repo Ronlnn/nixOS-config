@@ -23,7 +23,7 @@
       };
       homeConfigurations.roninn = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.${system};
-        configuration = ./home-manager/home.nix;
+        modules = [./home.nix];
       };
     };
 }
