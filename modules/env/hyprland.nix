@@ -9,6 +9,12 @@
       enable = true;
       xwayland.enable = true;
     };
+    
+    services.displayManager.sddm = {
+      enable = true;
+      wayland.enable = true;
+      theme = "catppuccin";
+    };
 
     #services.xserver.enable = false;
 
@@ -43,6 +49,7 @@
       mako
       swaylock
       swayidle
+      catppuccin-sddm
     ];
   };
 }
