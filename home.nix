@@ -2,9 +2,9 @@
 
 {
   imports = [
-    ./modules/wms/hyprland.nix
-    #./modules/wms/gnome.nix
-    ./modules/bundle.nix
+    ./home-manager/modules/wms/hyprland.nix
+    #./home-manager/modules/wms/gnome.nix
+    ./home-manager/modules/bundle.nix
   ];
 
  home = {
