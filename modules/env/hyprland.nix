@@ -6,11 +6,11 @@
       enable = true;
       xwayland.enable = true;
     };
-    
+
     services.displayManager.sddm = {
       enable = true;
       wayland.enable = true;
-      theme = "${pkgs.catppuccin-sddm}";
+      theme = "catppuccin-mocha-mauve";
     };
 
     #services.xserver.enable = false;
