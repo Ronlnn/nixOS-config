@@ -1,6 +1,7 @@
 {config, lib, pkgs, ...}:
 {
   config = lib.mkIf config.gnome.enable {
+    programs.dconf.enable = true;
     home.packages = with pkgs; [
       dracula-theme
       catppuccin-gtk
