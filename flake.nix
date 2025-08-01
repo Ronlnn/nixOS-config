@@ -9,26 +9,19 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
-
-  outputs = { self, nixpkgs, home-manager, ... }:
+  outputs = {nixpkgs, home-manager, ... }:
     let
       system = "x86_64-linux";
-      pkgs = import nixpkgs { inherit system; };
     in {
-      # NixOS system configuration
       nixosConfigurations.omen = nixpkgs.lib.nixosSystem {
         inherit system;
         modules = [
           ./configuration.nix
         ];
       };
-
-      # Standalone Home Manager
-      homeConfigurations = {
-        roninn = home-manager.lib.homeManagerConfiguration {
-          inherit pkgs;
-          modules = [ ./home-manager/home.nix ];
-        };
+      homeConfigurations.roninn = home.manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages.${system};
+        modules = [./home-manager/home.nix];
       };
     };
 }
