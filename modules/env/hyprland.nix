@@ -97,7 +97,7 @@ imports = [
       # Демон управления устройствами ввода
       seatd
       # Файловый менеджер
-      thunar
+      xfce.thunar
 
       hyprland
 
