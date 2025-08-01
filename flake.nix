@@ -1,5 +1,5 @@
 {
-  description = "System Configuration with standalone Home Manager";
+  description = "Standalone Home Manager + NixOS flake";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
@@ -15,24 +15,19 @@
       system = "x86_64-linux";
       pkgs = import nixpkgs { inherit system; };
     in {
-      # NixOS system config without home-manager module
+      # NixOS system configuration
       nixosConfigurations.omen = nixpkgs.lib.nixosSystem {
         inherit system;
-
         modules = [
           ./configuration.nix
-          # НЕ добавляем home-manager.nixosModules.home-manager
-          # home-manager интеграция выключена
         ];
       };
 
-      # Отдельный standalone home-manager конфиг
-       homeConfigurations = {
+      # Standalone Home Manager
+      homeConfigurations = {
         roninn = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
           modules = [ ./home-manager/home.nix ];
-          name = "roninn";
-          homeDirectory = "/home/roninn";
         };
       };
     };
