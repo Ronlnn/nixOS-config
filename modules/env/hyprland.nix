@@ -50,7 +50,10 @@
             flavor = "mocha";
             font  = "Noto Sans";
             fontSize = "9";
-            background = "${../../../../walls/purp.jpg}";
+            background = builtins.path {
+              path = /home/roninn/nixOS-config/walls/purp.jpg;
+              name = "purp.jpg";
+            };
             loginBackground = true;
           })
     ];
