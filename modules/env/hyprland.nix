@@ -10,7 +10,7 @@
       xwayland.enable = true;
     };
 
- bind = "SUPER+Return exec alacritty";
+
 
     #services.xserver.enable = false;
 
