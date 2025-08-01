@@ -27,14 +27,13 @@
       };
 
       # Отдельный standalone home-manager конфиг
-      homeConfigurations.roninn = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
-
-        # Импорт твоего home.nix конфига
-        configuration = import ./home-manager/home.nix;
-
-        # Опционально укажи имя пользователя
-        username = "roninn";
+       homeConfigurations = {
+        roninn = home-manager.lib.homeManagerConfiguration {
+          inherit pkgs;
+          modules = [ ./home-manager/home.nix ];
+          username = "roninn";
+          homeDirectory = "/home/roninn";
+        };
       };
     };
 }
