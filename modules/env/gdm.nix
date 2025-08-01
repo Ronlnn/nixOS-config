@@ -18,7 +18,8 @@
       papirus-icon-theme
     ];
 
-  environment.etc."gdm/greeter.dconf-defaults".text = ''
+  environment.etc."gdm/greeter.dconf-defaults" = lib.mkForce {
+  text = ''
     [org/gnome/desktop/interface]
     gtk-theme='Catppuccin-Mocha-Standard-Blue-Dark'
     icon-theme='Papirus-Dark'
@@ -28,6 +29,8 @@
     [org/gnome/desktop/background]
     picture-uri='file:///home/roninn/Pictures/Walls/rei.jpg'
   '';
+};
+
 
 
     # Если нужен авто-логин (по желанию)
