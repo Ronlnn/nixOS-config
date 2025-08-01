@@ -15,6 +15,9 @@ stdenv.mkDerivation rec {
   installPhase = ''
     mkdir -p $out/share/sddm/themes/astronaut
     cp -r * $out/share/sddm/themes/astronaut
-    cp japanese_aesthetic.conf $out/share/sddm/themes/astronaut/theme.conf
+
+    # Копируем один из конфигов по умолчанию — например, японскую эстетику
+    cp $out/share/sddm/themes/astronaut/Themes/japanese_aesthetic.conf \
+       $out/share/sddm/themes/astronaut/theme.conf
   '';
 }
