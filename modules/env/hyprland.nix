@@ -7,12 +7,7 @@
       xwayland.enable = true;
     };
 
-    services.displayManager.sddm = {
-      enable = true;
-      wayland.enable = true;
-      theme = "catppuccin-mocha";
-      package = pkgs.kdePackages.sddm;
-    };
+
 
     #services.xserver.enable = false;
 
@@ -47,7 +42,7 @@
       mako
       swaylock
       swayidle
-      catppuccin-sddm
+      
     ];
   };
 }
