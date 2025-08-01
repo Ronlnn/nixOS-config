@@ -16,6 +16,6 @@
     };
 
     # Выключаем дефолтные программы
-    services.gnome.core-apps.enable = false;
+    services.gnome.core-apps.enable = true;
   };
 }
