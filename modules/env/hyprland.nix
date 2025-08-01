@@ -1,12 +1,12 @@
 {config, lib, pkgs,...}:
 {
-
-  config = lib.mkIf config.hyprland.enable {
-	imports = [
-		./sddm.nix	
-	];
+imports = [
+	./sddm.nix	
+];
 	
 
+  config = lib.mkIf config.hyprland.enable {
+	
     programs.hyprland = {
       enable = true;
       xwayland.enable = true;
