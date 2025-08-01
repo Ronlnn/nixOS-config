@@ -1,5 +1,5 @@
 {
-  description = "System Configuration with Home Manager";
+  description = "System Configuration with standalone Home Manager";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
@@ -13,23 +13,29 @@
   outputs = { self, nixpkgs, home-manager, ... }:
     let
       system = "x86_64-linux";
-      pkgs = import nixpkgs {inherit system;};
-
+      pkgs = import nixpkgs { inherit system; };
     in {
-      # NixOS system configuration
+      # NixOS system config without home-manager module
       nixosConfigurations.omen = nixpkgs.lib.nixosSystem {
         inherit system;
 
         modules = [
           ./configuration.nix
-          home-manager.nixosModules.home-manager
-          {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.users.roninn = import ./home-manager/home.nix;
-            home-manager.backupFileExtension = "backup";
-          }
+          # НЕ добавляем home-manager.nixosModules.home-manager
+          # home-manager интеграция выключена
         ];
+      };
+
+      # Отдельный standalone home-manager конфиг
+      homeConfigurations.roninn = home-manager.lib.homeManagerConfiguration {
+        inherit pkgs;
+
+        # Импорт твоего home.nix конфига
+        configuration = import ./home-manager/home.nix;
+
+        # Опционально укажи имя пользователя
+        username = "roninn";
+        system = "x86_64-linux";
       };
     };
 }
