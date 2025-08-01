@@ -1,4 +1,5 @@
-{ config, lib, pkgs, ... }:
+{ pkgs, ... }:
+
 let
   sddmAstronautTheme = pkgs.fetchFromGitHub {
     owner = "sylv1on";
@@ -7,14 +8,10 @@ let
     sha256 = "sha256-Xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx=";
   };
 in {
-  
   environment.etc."sddm/themes/astronaut".source = sddmAstronautTheme;
 
-  services.displayManager.sddm = lib.mkIf config.hyprland.enable {
+  services.xserver.displayManager.sddm = {
     enable = true;
-    wayland.enable = true;
     theme = "astronaut";
   };
 }
-
-
