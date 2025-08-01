@@ -7,7 +7,6 @@
     sharp = false;
     ignore_window = true;
     color = "0x#DB355E";
-    color_inactive = unset;
     scale = 1.0;
   };
 }

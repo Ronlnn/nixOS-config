@@ -83,7 +83,7 @@ imports = [
       brightnessctl
       # Звук, микрофон, видео
       pamixer
-      pipewire
+      pkgs.pipewire
       pipewire-pulse
       # GUI для сетей
       network-manager-applet
