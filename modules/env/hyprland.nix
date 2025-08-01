@@ -50,7 +50,7 @@
             flavor = "mocha";
             font  = "Noto Sans";
             fontSize = "9";
-            background = "${../../Walls/purp.jpg}";
+            background = "${./wallpaper.png}";
             loginBackground = true;
           })
     ];
