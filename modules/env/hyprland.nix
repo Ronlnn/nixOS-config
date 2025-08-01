@@ -84,7 +84,7 @@ imports = [
       # Звук, микрофон, видео
       pamixer
       pkgs.pipewire
-      pipewire-pulse
+      pkgs.pipewire-pulse
       # GUI для сетей
       network-manager-applet
       # Буферв обмена
