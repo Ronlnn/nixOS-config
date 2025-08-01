@@ -1,7 +1,7 @@
 { config, lib, pkgs, ... }:
 let
   sddmAstronautTheme = pkgs.fetchFromGitHub {
-    owner = "sylv1on";
+    owner = "Keyitdev";
     repo = "sddm-astronaut-theme";
     rev = "3ef9f511fd072ff3dbb6eb3c1c499a71f338967e";
     sha256 = "sha256-Xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx=";
