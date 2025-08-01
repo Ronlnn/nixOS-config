@@ -1,6 +1,6 @@
 { config, lib, pkgs, ... }:
 
-lib.mkIf config.gnome.enable {
+{
   programs.dconf.enable = true;
 
   home.packages = with pkgs; [
