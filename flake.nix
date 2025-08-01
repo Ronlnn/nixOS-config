@@ -9,10 +9,12 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
-  outputs = {nixpkgs, home-manager, ... }:
+  outputs = {self, nixpkgs, home-manager, ... }:
+
     let
       system = "x86_64-linux";
     in {
+
       nixosConfigurations.omen = nixpkgs.lib.nixosSystem {
         inherit system;
         modules = [
@@ -21,7 +23,7 @@
       };
       homeConfigurations.roninn = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.${system};
-        modules = [./home-manager/home.nix];
+        configuration = ./home-manager/home.nix;
       };
     };
 }

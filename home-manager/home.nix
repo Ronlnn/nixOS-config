@@ -7,9 +7,11 @@
     ./modules/bundle.nix
   ];
 
-  home.username = "roninn";
-  home.homeDirectory = "/home/roninn";
-  home.stateVersion = "25.05";
+ home = {
+  username = "roninn";
+  homeDirectory = "/home/roninn";
+  stateVersion = "25.05";
+ };
 
   systemd.user.startServices = true;
 
