@@ -10,6 +10,10 @@
       xwayland.enable = true;
     };
 
+    extraConfig = ''
+    bind = SUPER, Return, exec, alacritty
+  '';
+
     #services.xserver.enable = false;
 
     environment.sessionVariables = {
