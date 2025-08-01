@@ -10,8 +10,6 @@
       xwayland.enable = true;
     };
 
-
-
     #services.xserver.enable = false;
 
     environment.sessionVariables = {
