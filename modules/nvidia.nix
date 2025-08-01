@@ -6,6 +6,12 @@
   # Тачпад
   services.libinput.enable = true;
 
+  hardware.opengl = {
+    enable = true;
+    driSupport = true;
+    driSupport32Bit = true;
+  };
+
   hardware.graphics.enable = true;
   hardware.nvidia = {
     modesetting.enable = true;
