@@ -1,14 +1,13 @@
 { config, lib, pkgs, ... }:
 
 {
-  config = lib.mkIf config.hyprland.enable {
-    environment.systemPackages = with pkgs; [
-    pkgs.sddm-astronaut
-  ];
-    services.displayManager.sddm = {
-      enable = true;
-      wayland.enable = true;
-      theme = "astronaut"; # <-- это имя папки темы
-    };
+  environment.systemPackages = lib.mkIf config.hyprland.enable (with pkgs; [
+    sddm-astronaut
+  ]);
+
+  services.displayManager.sddm = lib.mkIf config.hyprland.enable {
+    enable = true;
+    wayland.enable = true;
+    theme = "astronaut";
   };
 }
