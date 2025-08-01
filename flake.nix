@@ -27,6 +27,7 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.roninn = import ./home-manager/home.nix;
+            home-manager.backupFileExtension = "backup";
           }
         ];
       };
