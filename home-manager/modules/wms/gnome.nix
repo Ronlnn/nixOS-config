@@ -11,11 +11,7 @@
     gnomeExtensions.user-themes
   ];
 
-  programs.gnome.qsettings = {
-    "org/gnome/shell" = {
-      enabled-extensions = [ "user-theme@gnome-shell-extensions.gcampax.github.com" ];
-    };
-
+  programs.gnome.gsettings = {
     "org/gnome/shell/extensions/user-theme" = {
       name = "Catppuccin-Mocha-Standard-Blue-Dark";
     };
@@ -25,6 +21,10 @@
       icon-theme = "Papirus-Dark";
       cursor-theme = "Bibata-Modern-Classic";
       font-name = "Inter 10";
+    };
+
+    "org/gnome/shell" = {
+      enabled-extensions = [ "user-theme@gnome-shell-extensions.gcampax.github.com" ];
     };
   };
 }
