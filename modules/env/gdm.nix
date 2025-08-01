@@ -18,18 +18,22 @@
       papirus-icon-theme
     ];
 
-  environment.etc."gdm/greeter.dconf-defaults" = lib.mkForce {
-  text = ''
-    [org/gnome/desktop/interface]
-    gtk-theme='Catppuccin-Mocha-Standard-Blue-Dark'
-    icon-theme='Papirus-Dark'
-    cursor-theme='catppuccin-mocha-lavender-cursors'
-    color-scheme='prefer-dark'
+    environment.etc = lib.mkForce [
+      {
+        name = "gdm/greeter.dconf-defaults";
+        text = ''
+          [org/gnome/desktop/interface]
+          gtk-theme='Catppuccin-Mocha-Standard-Blue-Dark'
+          icon-theme='Papirus-Dark'
+          cursor-theme='catppuccin-mocha-lavender-cursors'
+          color-scheme='prefer-dark'
 
-    [org/gnome/desktop/background]
-    picture-uri='file:///home/roninn/Pictures/Walls/rei.jpg'
-  '';
-};
+          [org/gnome/desktop/background]
+          picture-uri='file:///home/roninn/Pictures/Walls/rei.jpg'
+        '';
+      }
+    ];
+
 
 
 
