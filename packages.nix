@@ -62,7 +62,6 @@
     wget
     bluez
     bluez-tools
-    blueaman
 
     ## Файловые менеджеры и оформление
     ranger
