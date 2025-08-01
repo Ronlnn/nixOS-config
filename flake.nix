@@ -31,7 +31,7 @@
         roninn = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
           modules = [ ./home-manager/home.nix ];
-          username = "roninn";
+          name = "roninn";
           homeDirectory = "/home/roninn";
         };
       };
