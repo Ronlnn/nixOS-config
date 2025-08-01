@@ -4,7 +4,7 @@
     services.displayManager.sddm = {
       enable = true;
       wayland.enable = true;
-      theme = "astronaut";
+      theme = "catppuccin-mocha";
       package = pkgs.kdePackages.sddm;
     };
     environment.systemPackages = with pkgs; [
