@@ -5,7 +5,7 @@
     ./git.nix
     ./htop.nix
     ./alacritty.nix
-    ./wms/gtk.nix
+    ./gtk.nix
 
   ];
 }
