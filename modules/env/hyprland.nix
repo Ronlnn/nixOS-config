@@ -46,7 +46,13 @@
       mako
       swaylock
       swayidle
-      catppuccin-sddm
+      (catppuccin-sddm.override {
+            flavor = "mocha";
+            font  = "Noto Sans";
+            fontSize = "9";
+            background = "${../../../../walls/purp.jpg}";
+            loginBackground = true;
+          })
     ];
   };
 }

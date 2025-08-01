@@ -10,8 +10,8 @@
       ./modules/env/hyprland.nix
     ];
 
-  gnome.enable = true;
-  hyprland.enable = false;
+  gnome.enable = false;
+  hyprland.enable = true;
 
 
   networking.hostName = "omen";
