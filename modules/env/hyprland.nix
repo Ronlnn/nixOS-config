@@ -11,6 +11,7 @@
       enable = true;
       wayland.enable = true;
       theme = "catppuccin-mocha";
+      package = pkgs.kdePackages.sddm;
     };
 
     #services.xserver.enable = false;
@@ -46,11 +47,7 @@
       mako
       swaylock
       swayidle
-      (catppuccin-sddm.override {
-            flavor = "mocha";
-            font  = "Noto Sans";
-            fontSize = "9";
-          })
+      catppuccin-sddm
     ];
   };
 }
