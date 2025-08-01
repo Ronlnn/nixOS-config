@@ -1,7 +1,7 @@
 { stdenv, fetchFromGitHub }:
 
 stdenv.mkDerivation rec {
-  pname = "sekiro-grub-theme";
+  name = "sekiro-grub-theme";
   version = "1.0";
 
   src = fetchFromGitHub {
