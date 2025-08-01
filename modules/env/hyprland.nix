@@ -10,7 +10,7 @@
     services.displayManager.sddm = {
       enable = true;
       wayland.enable = true;
-      theme = "catppuccin-mocha-mauve";
+      theme = "catppuccin-mocha";
     };
 
     #services.xserver.enable = false;
