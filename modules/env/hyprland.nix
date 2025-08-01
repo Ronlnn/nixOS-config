@@ -84,7 +84,7 @@ imports = [
       # Звук, микрофон, видео
       pamixer
       # GUI для сетей
-      network-manager-applet
+      networkmanagerapplet
       # Буферв обмена
       clipmenu
       wl-clipboard
