@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ./home-manager/modules/wms/hyprland.nix
+    ./home-manager/modules/wms/hyprland/hyprland.nix
     #./home-manager/modules/wms/gnome.nix
     ./home-manager/modules/bundle.nix
   ];

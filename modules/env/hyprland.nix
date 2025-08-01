@@ -1,20 +1,31 @@
 {config, lib, pkgs,...}:
 {
 imports = [
-	./sddm.nix	
+	./sddm.nix
+  ../interface/waybar.nix
 ];
-	
 
   config = lib.mkIf config.hyprland.enable {
-	
+
     programs.hyprland = {
       enable = true;
       xwayland.enable = true;
     };
 
-
-
-    #services.xserver.enable = false;
+    services = {
+      pipewire = {
+        enable = true;
+      };
+      clipmenu = {
+        enable = true;
+      };
+      seatd = {
+        enable = true;
+      };
+      upower = {
+        enable = true;
+      };
+    };
 
     environment.sessionVariables = {
       WLR_NO_HARDWARE_CURSORS = "1";
@@ -36,18 +47,65 @@ imports = [
       SDL_VIDEODRIVER = "wayland";
       CLUTTER_BACKEND = "wayland";
     };
-
+    # Нужно
     xdg.portal.enable = true;
     xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
 
     environment.systemPackages = with pkgs; [
+      # Wayland терминал
+      foot
+      # Виджеты
+      eww
+      # Панель бар
+      waybar
+      # Аналог rofi
+      wofi
+      # Скриншоты
+      grimblast
       grim
+      # Выделение области экрана для grim
       slurp
-      wl-clipboard
+      # Демон уведомлений
       mako
+      # Экран-лок
       swaylock
+      # Демон бездействия
       swayidle
-      
+      # Позволяет запускать +-приложения под wayland
+      xwayland
+      # Меню выхода
+      wlogout
+      # зависимости
+      wlroots
+      # Портал, совместимый с wlroots — полезно для приложений, которым нужен доступ к скриншотам
+      xdg-desktop-portal-wlr
+      # Яркость экрана
+      brightnessctl
+      # Звук, микрофон, видео
+      pamixer
+      pipewire
+      pipewire-pulse
+      # GUI для сетей
+      network-manager-applet
+      # Буферв обмена
+      clipmenu
+      wl-clipboard
+      # Менеджер истории буфера обмена
+      cliphist
+       # Мост для интеграции Wayland-приложений с Hyprland, например для screencast и screenshot.
+      xdg-desktop-portal-hyprland
+      # Обои в среде wayland
+      swww
+      # Демон управления устройствами ввода
+      seatd
+      # Файловый менеджер
+      thunar
+
+      hyprland
+
+      # Fonts
+      jetbrains-mono
+      fira-code
     ];
   };
 }

@@ -62,18 +62,16 @@
     wget
     bluez
     bluez-tools
+    blueaman
 
     ## Файловые менеджеры и оформление
     ranger
-    ### обои в среде wayland
-    #swww
+
 
     # GUI utils
     feh
     imv
-    dmenu
-    ### нотивикатор для wayland
-    #mako
+    #dmenu
 
     # Xorg stuff
     # терминал для Х11
@@ -82,24 +80,6 @@
     #xclip
     # яркость
     #xorg.xbacklight
-
-    # Wayland stuff
-    # Позволяет запускать +-приложения под wayland
-    #xwayland
-    # Буферв обмена
-    #wl-clipboard
-    # Менеджер истории буфера обмена
-    #cliphist
-
-
-    # WMs
-    #hyprland
-    # Демон управления устройствами ввода
-    #seatd
-    # мост для интеграции Wayland-приложений с Hyprland, например для screencast и screenshot.
-    #xdg-desktop-portal-hyprland
-    #polybar
-    #waybar
 
     # Звук
     pipewire
