@@ -2,6 +2,11 @@
 {
 
   config = lib.mkIf config.hyprland.enable {
+	imports = [
+		./sddm.nix	
+	];
+	
+
     programs.hyprland = {
       enable = true;
       xwayland.enable = true;
