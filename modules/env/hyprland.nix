@@ -1,8 +1,5 @@
 {config, lib, pkgs,...}:
 {
-  imports = [
-    ./sddm.nix
-  ];
 
   config = lib.mkIf config.hyprland.enable {
     programs.hyprland = {
