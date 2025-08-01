@@ -8,16 +8,12 @@ stdenv.mkDerivation rec {
     rev = "3ef9f511fd072ff3dbb6eb3c1c499a71f338967e";
     sha256 = "0pjghj2w0gdiksb6zi04yc5r217jckknw0ijayfdimfaidkv6w6z";
   };
-    # Указываем правильный путь к файлам темы
-  preConfigure = ''
-    cd Themes
-  '';
+
   installPhase = ''
     mkdir -p $out/share/sddm/themes/astronaut
     cp -r * $out/share/sddm/themes/astronaut
 
     # Копируем один из конфигов по умолчанию — например, японскую эстетику
-    cp $out/share/sddm/themes/astronaut/Themes/japanese_aesthetic.conf \
-       $out/share/sddm/themes/astronaut/theme.conf
+      cp Themes/japanese_aesthetic.conf $out/share/sddm/themes/astronaut/theme.conf
   '';
 }
