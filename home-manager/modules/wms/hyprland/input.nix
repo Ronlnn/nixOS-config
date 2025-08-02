@@ -1,9 +1,9 @@
 {config, lib, pkgs, ...}:
 {
   wayland.windowManager.hyprland.settings.input = {
-   kb_layout = "us,ru";
-   kb_options = "grp:alt_shift_toggle";
-   kb_variant = "qwerty";
+   #kb_layout = "us,ru";
+   #kb_options = "grp:alt_shift_toggle";
+  # kb_variant = "qwerty";
    resolve_binds_by_sym = true;
    force_no_accel = true;
    follow_mouse = 1;
