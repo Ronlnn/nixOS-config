@@ -1,7 +1,5 @@
 {config, lib, pkgs, ...}:
 {
-  
-
   wayland.windowManager.hyprland.settings.misc = {
   disabel_hyprland_logo = true;
   disable_splash_rendering = true;
@@ -13,7 +11,5 @@
   mouse_move_enables_dpms = true;
   always_follow_on_dnd = true;
   layers_hog_keyboard_focus = true;
-
-
   };
 }

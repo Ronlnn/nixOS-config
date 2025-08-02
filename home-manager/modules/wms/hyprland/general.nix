@@ -6,10 +6,10 @@
           gaps_out = 20;
           float_gaps = 0;
           gaps_workspaces = 0;
-          col.inactive_border = "0xA19D9CFF";
-          col.active_border = "0xA61EB3FF";
-          col.nongroup_border = "0x163817FF";
-          col.nongroup_border_active = "0x22BD27FF";
+          col.inactive_border = "0xA19D9C";
+          col.active_border = "0xA61EB3";
+          col.nongroup_border = "0x163817";
+          col.nongroup_border_active = "0x22BD27";
           no_focus_fallback = false;
           resize_on_border = true;
           extend_border_grab_area = 15;
