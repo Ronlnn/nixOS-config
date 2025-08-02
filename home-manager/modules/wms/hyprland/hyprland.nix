@@ -191,8 +191,6 @@
 			           }
 			         ];
 		   	   
-		    
-		
         "$mod" = "SUPER";
         bind = [
           "$mod, RETURN, exec, alacritty"
