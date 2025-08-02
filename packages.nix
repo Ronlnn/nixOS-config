@@ -5,6 +5,13 @@
 
    environment.systemPackages = with pkgs; [
     # Desktop apps
+
+     libimobiledevice
+      usbmuxd
+      idevicerestore
+
+
+
     telegram-desktop
     alacritty
     obsidian

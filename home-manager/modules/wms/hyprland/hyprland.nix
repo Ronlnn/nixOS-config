@@ -5,6 +5,12 @@
       ./general.nix
       ./decoration.nix
       ./monitors.nix
+      ./animations.nix
+      ./binds.nix
+      ./gestures.nix
+      ./group.nix
+      ./input.nix
+      ./misc.nix
     ];
 
     wayland.windowManager.hyprland = {
