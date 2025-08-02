@@ -11,8 +11,8 @@
     dim_around = 0.2;
     screen_shader = "";
     border_part_of_window = true;
-  };
-  blur = {
+
+    blur = {
     enable = true;
     size = 8;
     passes = 1;
@@ -35,5 +35,6 @@
     ignore_window = true;
     color = "0xDB355E";
     scale = 1.0;
+  };
   };
 }
