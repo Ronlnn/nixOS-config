@@ -19,8 +19,8 @@
       enabled = true;
       font_family = "Fira-code";
       font-size = 16;
-      font_weight_active = normal;
-      font_weight_inactive = normal;
+      font_weight_active = "normal";
+      font_weight_inactive = "normal";
       gradients = false;
       height = 14;
       indicator_gap = 1;
@@ -33,7 +33,7 @@
       text_color = "0xBA0202";
       col.active = "0x5EFF8D";
       col.inactive = "0x376B46";
-      
+
     };
   };
 }
