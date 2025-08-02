@@ -4,14 +4,14 @@
           {
             name = "eDP-1";
             primary = true;
-            scale = 1.5;
+            scale = 1;
             transform = "normal";
             position = {x = 0; y = 0;};
           }
           {
             name = "HDMI-2";
             primary = false;
-            scale = 1.5;
+            scale = 1;
             transform = "normal";
             position = {x = 0; y = 0;};
           }

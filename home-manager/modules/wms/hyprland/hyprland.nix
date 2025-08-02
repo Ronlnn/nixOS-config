@@ -5,8 +5,6 @@
       ./general.nix
       ./decoration.nix
       ./monitors.nix
-      ./blur.nix
-      ./shadow.nix
     ];
 
     wayland.windowManager.hyprland = {

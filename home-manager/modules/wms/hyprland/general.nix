@@ -7,9 +7,9 @@
           float_gaps = 0;
           gaps_workspaces = 0;
           col.inactive_border = "0xA19D9CFF";
-          col.active_border = "0x#A61EB3FF";
+          col.active_border = "0xA61EB3FF";
           col.nongroup_border = "0x163817FF";
-          col.nongroup_border_active = "0x#22BD27FF";
+          col.nongroup_border_active = "0x22BD27FF";
           no_focus_fallback = false;
           resize_on_border = true;
           extend_border_grab_area = 15;
