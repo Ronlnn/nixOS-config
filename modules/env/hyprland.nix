@@ -90,6 +90,7 @@ imports = [
       xdg-desktop-portal-hyprland
       # Портал, совместимый с wlroots — полезно для приложений, которым нужен доступ к скриншотам
       xdg-desktop-portal-wlr
+        inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprutils
     ];
   };
 }
