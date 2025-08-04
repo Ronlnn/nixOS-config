@@ -8,25 +8,7 @@
 
 
   wayland.windowManager.hyprland = {
-  groupbar = {
-    enabled = true
-    font_family = "Fira-code"
-    font-size = 16;
-    font_weight_active = "normal";
-    font_weight_inactive = "normal";
-    gradients = false;
-    height = 14;
-    indicator_gap = 1;
-    indicator_height = 3;
-    stacked = true;
-    render_titles = true;
-    priority = 3;
-    scrolling = true;
-    rounding = 1;
-    text_color = "rgba(BA0202FF)";
-    "col.active" = "rgba(5EFF8DFF)";
-    "col.inactive" = "rgba(376B46FF)";
-  };
+
             enable = true;
             xwayland.enable = true;
         
@@ -46,7 +28,8 @@
               ];
         	
            };
-              extraConfig = ''
+
+       extraConfig = ''
               
               general = {
                 border_size = 2
@@ -175,7 +158,7 @@
           
           groupbar = {
             enabled = true
-            font_family = "Fira-code"
+            font_family = Fira-code
             font-size = 16
             font_weight_active = normal
             font_weight_inactive = normal
@@ -191,7 +174,7 @@
             text_color = rgba(BA0202FF)
             col.active = rgba(5EFF8DFF)
             col.inactive = rgba(376B46FF)
-          };
+          }
         }
 
 
@@ -206,7 +189,7 @@
         mouse_move_enables_dpms = true
         always_follow_on_dnd = true
         layers_hog_keyboard_focus = true
-      };
+      }
 
       binds = {
         pass_mouse_when_bound = false
