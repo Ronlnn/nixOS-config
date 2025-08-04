@@ -78,7 +78,6 @@ imports = [
       seatd                 # Демон управления устройствами ввода
       xfce.thunar           # Файловый менеджер
       nwg-displays          # Display util
-      #hyprland             # Старая версия из пакетов nix. А я использую из flake. Так что не нужно пока
 	    kitty                 # terminal
 
       # Fonts
