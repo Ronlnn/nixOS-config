@@ -1,4 +1,4 @@
-{ config, pkgs,  ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   imports =
@@ -13,7 +13,14 @@
   gnome.enable = false;
   hyprland.enable = true;
 
+  config = lib.mkIf config.hyprland.enable {
 
+    programs.hyprland = {
+      enable = true;
+      xwayland.enable = true;
+      package = inputs.hyprland.package."${pkgs.system}".hyprland;
+    };
+  };
   networking.hostName = "omen";
 
   nix.settings.experimental-features = ["nix-command" "flakes"];

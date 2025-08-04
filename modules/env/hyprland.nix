@@ -1,4 +1,4 @@
-{config, lib, pkgs, inputs, ...}:
+{config, lib, pkgs,  ...}:
 {
 imports = [
 	./sddm.nix
@@ -7,11 +7,11 @@ imports = [
 
   config = lib.mkIf config.hyprland.enable {
 
-    programs.hyprland = {
-      enable = true;
-      xwayland.enable = true;
-      package = inputs.hyprland.package."${pkgs.system}".hyprland;
-    };
+    # programs.hyprland = {
+    #   enable = true;
+    #   xwayland.enable = true;
+    #   package = inputs.hyprland.package."${pkgs.system}".hyprland;
+    # };
 
     services = {
       pipewire = {
