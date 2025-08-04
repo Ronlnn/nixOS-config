@@ -65,7 +65,7 @@
         inactive_opacity = 1.0
         fullscreen_opacity = 1.0
         dim_inactive = true
-        dim_strength = 0.2
+        dim_strength = 0.1
         dim_special = 0.2
         dim_around = 0.2
         border_part_of_window = true
