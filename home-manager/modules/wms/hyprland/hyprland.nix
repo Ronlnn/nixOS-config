@@ -179,13 +179,15 @@
           scale = 1;
           transform = "normal";
           position = { x = 0; y = 0; };
+          refreshRate = 60;
         }
         {
           name = "HDMI-2";
           primary = false;
-          scale = 1.5;
+          scale = 1;
           transform = "normal";
-          position = { x = 0; y = 0; };
+          position = { x = 0; y = 1080; };
+          refreshRate = 75;
         }
       ];
 

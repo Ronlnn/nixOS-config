@@ -1,4 +1,4 @@
-{config, lib, pkgs,  ...}:
+{config, lib, pkgs, inputs, ...}:
 {
 imports = [
 	./sddm.nix
@@ -10,7 +10,7 @@ imports = [
      programs.hyprland = {
        enable = true;
        xwayland.enable = true;
-    #   package = inputs.hyprland.package."${pkgs.system}".hyprland;
+       package = inputs.hyprland.package.${pkgs.system}.hyprland;
      };
 
     services = {
