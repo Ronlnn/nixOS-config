@@ -1,14 +1,5 @@
 {config, lib, pkgs, inputs, ...}:
-let
-pkgs-unstable = inputs.hyprland.inputs.nixpkgs.legacyPackages.${pkgs.stdenv.hostPlatform.system};
-in
 {
-  hardware.graphics = {
-    package = pkgs-unstable.mesa;
-    enable32 = true;
-    package32 = pkgs-unstable.pkgsi686Linux.mesa;
-  };
-
 
 imports = [
 	./sddm.nix
@@ -96,8 +87,6 @@ imports = [
       jetbrains-mono
       fira-code
 
-      # Мост для интеграции Wayland-приложений с Hyprland, например для screencast и screenshot.
-      xdg-desktop-portal-hyprland
       # Портал, совместимый с wlroots — полезно для приложений, которым нужен доступ к скриншотам
       xdg-desktop-portal-wlr
     ];
