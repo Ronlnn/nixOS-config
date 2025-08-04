@@ -97,13 +97,10 @@
       }
       
 
-        
-	
-
-      animations = ''
-        enabled = true;
-        first-launch-animation = true;
-        workspace_wraparound = false;
+      animations = {
+        enabled = true
+        first-launch-animation = true
+        workspace_wraparound = false
         bezier = myBezier, 0.24, 0.97, 0.31, 0.97
         animation = windows, 1, 3, myBezier
         animation = windowsOut, 1, 3, myBezier, popin 80%
@@ -112,7 +109,7 @@
         animation = workspaces, 1, 5, myBezier, slide left
         animation = layers, 1, 5, myBezier, fade
         animation = zoomFactor, 1, 3, easeOut
-      '';
+      }
 
       input = {
         resolve_binds_by_sym = true
