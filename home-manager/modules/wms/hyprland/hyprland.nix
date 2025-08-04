@@ -191,7 +191,7 @@
       "$mod" = "SUPER";
       bind = [
         "$mod, RETURN, exec, foot"
-				"$mod, D, exec, alacritty"
+		"$mod, D, exec, kitty"
         "$mod, F, exec, firefox"
       ];
     };

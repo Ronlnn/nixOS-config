@@ -100,7 +100,7 @@ imports = [
       xfce.thunar
 
       hyprland
-
+	  kitty
       # Fonts
       jetbrains-mono
       fira-code
