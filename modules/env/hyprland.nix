@@ -86,9 +86,9 @@ imports = [
       fira-code
 
       # Мост для интеграции Wayland-приложений с Hyprland, например для screencast и screenshot.
-      #xdg-desktop-portal-hyprland
+      xdg-desktop-portal-hyprland
       # Портал, совместимый с wlroots — полезно для приложений, которым нужен доступ к скриншотам
-      #xdg-desktop-portal-wlr
+      xdg-desktop-portal-wlr
     ];
   };
 }
