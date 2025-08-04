@@ -39,13 +39,13 @@
 
       decoration = {
         rounding = 0;
-        active_opacity = 1.0;
-        inactive_opacity = 1.0;
-        fullscreen_opacity = 1.0;
+        active_opacity = "1.0";
+        inactive_opacity = "1.0";
+        fullscreen_opacity = "1.0";
         dim_inactive = true;
-        dim_strength = 0.2;
-        dim_special = 0.2;
-        dim_around = 0.2;
+        dim_strength = "0.2";
+        dim_special = "0.2";
+        dim_around = "0.2";
         screen_shader = "";
         border_part_of_window = true;
 
@@ -56,10 +56,10 @@
           ignore_opacity = true;
           new_optimizations = true;
           xray = true;
-          noise = 0.0117;
-          contrast = 0.8916;
-          brightness = 0.8172;
-          vibrancy_darkness = 0.0;
+          noise = "0.011"7;
+          contrast = "0.8916";
+          brightness = "0.8172";
+          vibrancy_darkness = "0.0";
           special = false;
           popups = false;
           input_methods = false;
@@ -72,7 +72,7 @@
           sharp = false;
           ignore_window = true;
           color = "rgba(DB355EFF)";
-          scale = 1.0;
+          scale = "1.0";
         };
       };
 
@@ -194,7 +194,7 @@
       "$mod" = "SUPER";
       bind = [
         "$mod, RETURN, exec, alacritty"
-		    "$mod, D, exec, kitty"
+		"$mod, D, exec, kitty"
         "$mod, F, exec, firefox"
       ];
     };
