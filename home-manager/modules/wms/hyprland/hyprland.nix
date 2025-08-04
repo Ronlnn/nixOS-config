@@ -197,10 +197,8 @@
         focus_preferred_method = 0
         window_direction_monitor_fallback = true
         disable_keybind_grabbing = false
-      };
+      }
 
-''
-     
-    };
+	''; 
   };
 }
