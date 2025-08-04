@@ -1,7 +1,5 @@
 {config, lib, pkgs, inputs, ...}:
-let
-pkgs-unstable = inputs.hyprland.inputs.nixpkgs.legacyPackages.${pkgs.stdenv.hostPlatform.system};
-in
+
 {
 
 
@@ -12,11 +10,7 @@ imports = [
 ];
 
   config = lib.mkIf config.hyprland.enable {
-      hardware.graphics = {
-    package = pkgs-unstable.mesa;
-    enable32 = true;
-    package32 = pkgs-unstable.pkgsi686Linux.mesa;
-  };
+
      programs.hyprland = {
        enable = true;
        xwayland.enable = true;
