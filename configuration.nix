@@ -13,9 +13,6 @@
   gnome.enable = false;
   hyprland.enable = true;
 
-  programs.hyprland = {
-    package = inputs.hyprland.package."${pkgs.system}".hyprland;
-  };
 
   networking.hostName = "omen";
 

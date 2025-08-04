@@ -8,9 +8,8 @@
       url = "github:nix-community/home-manager/release-25.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    hyprland.url = "github:hyprwm/Hyprland";
   };
-  outputs = {self, nixpkgs, home-manager, hyprland, ... }:
+  outputs = {self, nixpkgs, home-manager, ... }:
 
     let
       system = "x86_64-linux";
@@ -24,7 +23,6 @@
         modules = [
           ./configuration.nix
         ];
-        specialArgs = {inputs = {inherit hyprland;};};
       };
       homeConfigurations.roninn = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
