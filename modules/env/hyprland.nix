@@ -7,11 +7,11 @@ imports = [
 
   config = lib.mkIf config.hyprland.enable {
 
-    # programs.hyprland = {
-    #   enable = true;
-    #   xwayland.enable = true;
+     programs.hyprland = {
+       enable = true;
+       xwayland.enable = true;
     #   package = inputs.hyprland.package."${pkgs.system}".hyprland;
-    # };
+     };
 
     services = {
       pipewire = {
