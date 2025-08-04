@@ -12,6 +12,7 @@
     xwayland.enable = true;
 
     settings = {
+    
      "$mod" = "SUPER";
       bind = [
         "$mod, RETURN, exec, alacritty"
@@ -199,6 +200,7 @@
         disable_keybind_grabbing = false
       }
 
-	''; 
+		''; 
+ 	 };
   };
 }
