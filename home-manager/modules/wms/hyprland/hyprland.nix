@@ -20,8 +20,8 @@
       ];
 
       monitor = [
-        "eDP-1,preferred,0x0,1"
-        "HDMI-2,preferred,0x1080,1"
+        "eDP-1,1920x1080@59.98,0x0,1"
+        "HDMI-A-2,1920x1080@74.97,0x1080,1"
       ];
     };
 
@@ -168,9 +168,9 @@
         background_color = rgba(571978FF)
         font_family = JetBrainsMono Nerd Font
         vfr = true
-        vrr = 3
+        vrr = 1
         render_unfocused_fps = 15
-        mouse_move_enables_dpms = true
+        mouse_move_enables_dpms = false
         always_follow_on_dnd = true
         layers_hog_keyboard_focus = true
       }
