@@ -8,31 +8,50 @@
 
 
   wayland.windowManager.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-
-    settings = {
-    
-     "$mod" = "SUPER";
-      bind = [
-        "$mod, RETURN, exec, alacritty"
-		"$mod, D, exec, kitty"
-        "$mod, F, exec, firefox"
-      ];
-
-
-      monitor = [
-       "eDP-1,preferred,0x0,1"
-       "HDMI-2,preferred,0x1080,1"
-      ];
-	
-      
-      extraConfig = ''
-      
-      general = {
-        border_size = 2
-        gaps_in = 5
-        gaps_out = 20
+  groupbar = {
+    enabled = true
+    font_family = "Fira-code"
+    font-size = 16;
+    font_weight_active = "normal";
+    font_weight_inactive = "normal";
+    gradients = false;
+    height = 14;
+    indicator_gap = 1;
+    indicator_height = 3;
+    stacked = true;
+    render_titles = true;
+    priority = 3;
+    scrolling = true;
+    rounding = 1;
+    text_color = "rgba(BA0202FF)";
+    "col.active" = "rgba(5EFF8DFF)";
+    "col.inactive" = "rgba(376B46FF)";
+  };
+            enable = true;
+            xwayland.enable = true;
+        
+            settings = {
+            
+             "$mod" = "SUPER";
+              bind = [
+                "$mod, RETURN, exec, alacritty"
+        		"$mod, D, exec, kitty"
+                "$mod, F, exec, firefox"
+              ];
+        
+        
+              monitor = [
+               "eDP-1,preferred,0x0,1"
+               "HDMI-2,preferred,0x1080,1"
+              ];
+        	
+           };
+              extraConfig = ''
+              
+              general = {
+                border_size = 2
+                gaps_in = 5
+                gaps_out = 20
         float_gaps = 0
         gaps_workspaces = 0
         col.inactive_border = rgba(914E94FF)
@@ -201,6 +220,5 @@
       }
 
 		''; 
- 	 };
   };
 }
