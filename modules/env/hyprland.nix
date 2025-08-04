@@ -1,8 +1,6 @@
-{config, lib, pkgs, inputs, ...}:
+{config, lib, pkgs, ...}:
 
 {
-
-
 
 imports = [
 	./sddm.nix
@@ -14,8 +12,6 @@ imports = [
      programs.hyprland = {
        enable = true;
        xwayland.enable = true;
-       package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
-  
      };
 
     services = {
