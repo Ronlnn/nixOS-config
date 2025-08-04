@@ -16,6 +16,7 @@
   systemd.user.startServices = true;
 
 
+
   programs.bash = {
     enable = true;
     shellAliases = {
