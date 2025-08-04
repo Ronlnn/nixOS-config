@@ -8,9 +8,9 @@ imports = [
   config = lib.mkIf config.hyprland.enable {
 
     programs.hyprland = {
-      enable = true;
+     # enable = true;
       xwayland.enable = true;
-      package = pkgs.hyprland;
+      #package = pkgs.hyprland;
     };
 
     services = {

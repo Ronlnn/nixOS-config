@@ -8,9 +8,10 @@
   
 
   wayland.windowManager.hyprland = {
-    #enable = true;
+    enable = true;
     xwayland.enable = true;
-
+	package = inputs.hyprland.packages.${pkgs.system}.default;
+	
     settings = {
       general = {
         border_size = 2;
