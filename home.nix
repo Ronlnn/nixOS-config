@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, hyprland,  ... }:
 
 {
   imports = [
@@ -21,6 +21,11 @@
     shellAliases = {
       nix-backup = "/home/roninn/nix-backup.sh";
     };
+  };
+
+  programs.hyprland = {
+  	enable = true;
+  	package = hyprland.package.${pkgs.system}.hyprland;
   };
 
 }
