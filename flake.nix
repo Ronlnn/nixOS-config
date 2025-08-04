@@ -10,7 +10,7 @@
     };
     hyprland.url = "github:hyprwm/Hyprland";
   };
-  outputs = { self, nixpkgs, home-manager, hyprland, ... } @ inputs:
+  outputs = { self, nixpkgs, home-manager, ... } @ inputs:
 
     let
       system = "x86_64-linux";
@@ -21,10 +21,11 @@
 
       nixosConfigurations.omen = nixpkgs.lib.nixosSystem {
         inherit system;
+        specialArgs = { inherit inputs; };
         modules = [
           ./configuration.nix
         ];
-        specialArgs = { inherit inputs; };
+
       };
       homeConfigurations.roninn = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
