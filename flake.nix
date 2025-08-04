@@ -11,7 +11,7 @@
     hyprland.url = "github:hyprwm/Hyprland";
 
 };
-  outputs = { self, nixpkgs, home-manager, hyprland, ... } @ inputs:
+  outputs = { self, nixpkgs, home-manager, hyprland, ... }:
 
     let
       system = "x86_64-linux";
@@ -29,7 +29,12 @@
       };
       homeConfigurations.roninn = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-        specialArgs = {inherit inputs;};
+        wayland.windowManager.hyprland = {
+          enable = true;
+          xwayland.enable = true;
+          package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
+          portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
+        };
         modules = [./home.nix];
       };
     };
