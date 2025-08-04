@@ -26,31 +26,34 @@
     };
 
     extraConfig = ''
-      general {
-        border_size = 2
-        gaps_in = 5
-        gaps_out = 20
-        float_gaps = 0
-        gaps_workspaces = 0
-        col.inactive_border = rgba(914E94FF)
-        col.active_border = rgba(DE3AC7FF)
-        col.nongroup_border = rgba(163817FF)
-        col.nongroup_border_active = rgba(22BD27FF)
-        no_focus_fallback = false
-        resize_on_border = true
-        extend_border_grab_area = 15
-        hover_icon_on_border = true
-        allow_tearing = false
-        resize_corner = 1
+        general {
+          border_size = 2
+          no_border_on_floating = false
+          gaps_in = 5
+          gaps_out = 20
+          float_gaps = 10
+          gaps_workspaces = 0
+          layout = dwindle
+          no_focus_fallback = false
+          resize_on_border = true
+          extend_border_grab_area = 15
+          hover_icon_on_border = true
+          allow_tearing = false
+          resize_corner = 1
 
-        snap {
-          enable = true
-          window_gap = 10
-          monitor_gap = 10
-          border_overlap = true
-          respect_gaps = true
+          col.active_border = rgba(DE3AC7FF)
+          col.inactive_border = rgba(914E94FF)
+          col.nogroup_border = rgba(ffffaaFF)
+          col.nogroup_border_active = rgba(ffff00FF)
+
+          snap {
+            enabled = true
+            window_gap = 10
+            monitor_gap = 10
+            border_overlap = true
+            respect_gaps = true
+          }
         }
-      }
 
       decoration {
         rounding = 0
@@ -105,6 +108,9 @@
       }
 
       input {
+        kb_layout = us,ru
+        kb_variant = ,
+        kb_options = grp:alt_shit_toggle
         resolve_binds_by_sym = true
         force_no_accel = false
         follow_mouse = 1
