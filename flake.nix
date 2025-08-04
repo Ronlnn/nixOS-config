@@ -8,9 +8,9 @@
       url = "github:nix-community/home-manager/release-25.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    hyprland.url = "github:hyprwm/Hyprland?ref=v0.50.1";
+    hyprland.url = "github:hyprwm/Hyprland";
   };
-  outputs = { self, nixpkgs, home-manager, hyprland, ... }@inputs:
+  outputs = inputs@{ self, nixpkgs, home-manager, ... }:
 
     let
       system = "x86_64-linux";
