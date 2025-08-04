@@ -10,7 +10,7 @@
     };
     hyprland.url = "github:hyprwm/Hyprland";
   };
-  outputs = inputs@{ self, nixpkgs, home-manager, ... }:
+  outputs = { self, nixpkgs, home-manager,  ... } @ inputs:
 
     let
       system = "x86_64-linux";
