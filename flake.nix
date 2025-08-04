@@ -8,14 +8,13 @@
       url = "github:nix-community/home-manager/release-25.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    hyprland = {
-    url = "github:hyprwm/Hyprland";
-    inputs.nixpkgs.follows = "nixpkgs";
-    # lock to a tag that works with nixpkgs' hyprutils
-    ref = "refs/tags/v0.50.1"; # пример — ты можешь взять актуальный тег
-};
+  hyprland = {
 
+   url = "github:hyprwm/Hyprland/v0.50.1";
+  inputs.nixpkgs.follows = "nixpkgs";
   };
+
+};
   outputs = { self, nixpkgs, home-manager, ... } @ inputs:
 
     let
