@@ -1,4 +1,4 @@
-{ inputs, config, lib, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
   home.packages = with pkgs; [
@@ -7,10 +7,9 @@
   ];
 
   wayland.windowManager.hyprland = {
-    # enable = true;
-    # xwayland.enable = true;
-    # package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
-    # portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
+    enable = true;
+    xwayland.enable = true;
+
 
     settings = {
       "$mod" = "SUPER";
