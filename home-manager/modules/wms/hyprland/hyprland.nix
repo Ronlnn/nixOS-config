@@ -26,6 +26,9 @@
     };
 
     extraConfig = ''
+        cursor {
+          no_hardware_cursors = true
+        }
         general {
           border_size = 2
           no_border_on_floating = false
@@ -110,7 +113,7 @@
       input {
         kb_layout = us,ru
         kb_variant = ,
-        kb_options = grp:alt_shit_toggle
+        kb_options = grp:alt_shift_toggle
         resolve_binds_by_sym = true
         force_no_accel = false
         follow_mouse = 1

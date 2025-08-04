@@ -54,58 +54,41 @@ imports = [
     xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
 
     environment.systemPackages = with pkgs; [
-      # Wayland терминал
-      foot
-      # Виджеты
-      eww
-      # Панель бар
-      waybar
-      # Аналог rofi
-      wofi
-      # Скриншоты
-      grimblast
-      grim
-      # Выделение области экрана для grim
-      slurp
-      # Демон уведомлений
-      mako
-      # Экран-лок
-      swaylock
-      # Демон бездействия
-      swayidle
-      # Позволяет запускать +-приложения под wayland
-      xwayland
-      # Меню выхода
-      wlogout
-      # зависимости
-      wlroots
-      # Портал, совместимый с wlroots — полезно для приложений, которым нужен доступ к скриншотам
-      xdg-desktop-portal-wlr
-      # Яркость экрана
-      brightnessctl
-      # Звук, микрофон, видео
-      pamixer
-      # GUI для сетей
-      networkmanagerapplet
-      # Буферв обмена
-      clipmenu
-      wl-clipboard
-      # Менеджер истории буфера обмена
-      cliphist
-       # Мост для интеграции Wayland-приложений с Hyprland, например для screencast и screenshot.
-      xdg-desktop-portal-hyprland
-      # Обои в среде wayland
-      swww
-      # Демон управления устройствами ввода
-      seatd
-      # Файловый менеджер
-      xfce.thunar
 
-      hyprland
-	    kitty
+      foot                  # Wayland терминал
+      eww                   # Виджеты
+      waybar                # Панель бар
+      wofi                  # Аналог rofi
+      grimblast             # Скриншоты
+      grim                  # Скриншоты
+      slurp                 # Выделение области экрана для grim
+      mako                  # Демон уведомлений
+      swaylock              # Экран-лок
+      swayidle              # Демон бездействия
+      xwayland              # Позволяет запускать +-приложения под wayland
+      wlogout               # Меню выхода
+      wlroots               # зависимости
+      brightnessctl         # Яркость экрана
+      pamixer               # Звук, микрофон, видео
+      networkmanagerapplet  # GUI для сетей
+      clipmenu              # Буферв обмена
+      wl-clipboard          # buffer
+      cliphist              # Менеджер истории буфера обмена
+      swww                  # Обои в среде wayland
+      seatd                 # Демон управления устройствами ввода
+      xfce.thunar           # Файловый менеджер
+      nwg-displays          # Display util
+      hyprland              # Hyprland
+	    kitty                 # terminal
+
       # Fonts
       jetbrains-mono
       fira-code
+
+      # Мост для интеграции Wayland-приложений с Hyprland, например для screencast и screenshot.
+      xdg-desktop-portal-hyprland
+      # Портал, совместимый с wlroots — полезно для приложений, которым нужен доступ к скриншотам
+      xdg-desktop-portal-wlr
     ];
   };
 }
