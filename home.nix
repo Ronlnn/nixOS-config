@@ -1,4 +1,4 @@
-{ config, lib, pkgs, hyprland,  ... }:
+{ config, lib, pkgs,  ... }:
 
 {
   imports = [
@@ -25,7 +25,7 @@
 
   programs.hyprland = {
   	enable = true;
-  	package = hyprland.package.${pkgs.system}.hyprland;
+  	package = pkgs.hyprland;
   };
 
 }

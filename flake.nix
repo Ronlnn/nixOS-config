@@ -17,6 +17,11 @@
 
     let
       system = "x86_64-linux";
+      overlays = [ hyprland.overlays.default ];
+      pkgs = import nixpkgs {
+      	inherit system;
+      	overlays = overlays;
+      };
     in {
 
       nixosConfigurations.omen = nixpkgs.lib.nixosSystem {
@@ -26,11 +31,8 @@
         ];
       };
       homeConfigurations.roninn = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.${system};
-
-        extraSpecialArgs = {
-         inherit hyprland;	
-        };
+        inherit pkgs;
+        
         modules = [./home.nix];
       };
     };
