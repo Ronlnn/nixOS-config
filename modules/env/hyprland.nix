@@ -1,4 +1,4 @@
-{config, lib, pkgs,...}:
+{config, lib, pkgs, inputs, ...}:
 {
 imports = [
 	./sddm.nix
@@ -8,9 +8,9 @@ imports = [
   config = lib.mkIf config.hyprland.enable {
 
     programs.hyprland = {
-     # enable = true;
+      enable = true;
       xwayland.enable = true;
-      #package = pkgs.hyprland;
+      package = inputs.hyprland.package."${pkgs.system}".hyprland;
     };
 
     services = {
@@ -101,7 +101,7 @@ imports = [
       xfce.thunar
 
       hyprland
-	  kitty
+	    kitty
       # Fonts
       jetbrains-mono
       fira-code

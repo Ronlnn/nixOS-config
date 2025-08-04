@@ -5,12 +5,11 @@
   fira-code
 	];
 
-  
 
   wayland.windowManager.hyprland = {
     enable = true;
     xwayland.enable = true;
-	
+
     settings = {
       general = {
         border_size = 2;
@@ -18,10 +17,10 @@
         gaps_out = 20;
         float_gaps = 0;
         gaps_workspaces = 0;
-        col.inactive_border = "rgba(914E94FF)";
-        col.active_border = "rgba(DE3AC7FF)";
-        col.nongroup_border = "rgba(163817FF)";
-        col.nongroup_border_active = "rgba(22BD27FF)";
+        "col.inactive_border" = "rgba(914E94FF)";
+        "col.active_border" = "rgba(DE3AC7FF)";
+        "col.nongroup_border" = "rgba(163817FF)";
+        "col.nongroup_border_active" = "rgba(22BD27FF)";
         no_focus_fallback = false;
         resize_on_border = true;
         extend_border_grab_area = 15;
@@ -72,7 +71,7 @@
           render_power = 3;
           sharp = false;
           ignore_window = true;
-          color = "0xDB355E";
+          color = "rgba(DB355EFF)";
           scale = 1.0;
         };
       };
@@ -123,10 +122,10 @@
         merge_floated_into_tiled_on_groupbar = true;
         group_on_movetoworkspace = true;
 
-        col.border_active = "rgba(F5F227FF)";
-        col.border_inactive = "rgba(A1751AFF)";
-        col.border_locked_active = "rgba(A11A74FF)";
-        col.border_locked_inactive = "rgba(4D0635FF)";
+        "col.border_active" = "rgba(F5F227FF)";
+        "col.border_inactive" = "rgba(A1751AFF)";
+        "col.border_locked_active" = "rgba(A11A74FF)";
+        "col.border_locked_inactive" = "rgba(4D0635FF)";
 
         groupbar = {
           enabled = true;
@@ -144,8 +143,8 @@
           scrolling = true;
           rounding = 1;
           text_color = "rgba(BA0202FF)";
-          col.active = "rgba(5EFF8DFF)";
-          col.inactive = "rgba(376B46FF)";
+          "col.active" = "rgba(5EFF8DFF)";
+          "col.inactive" = "rgba(376B46FF)";
         };
       };
 
@@ -184,7 +183,7 @@
         {
           name = "HDMI-2";
           primary = false;
-          scale = 1;
+          scale = 1.5;
           transform = "normal";
           position = { x = 0; y = 0; };
         }
@@ -192,8 +191,8 @@
 
       "$mod" = "SUPER";
       bind = [
-        "$mod, RETURN, exec, foot"
-		"$mod, D, exec, kitty"
+        "$mod, RETURN, exec, alacritty"
+		    "$mod, D, exec, kitty"
         "$mod, F, exec, firefox"
       ];
     };
