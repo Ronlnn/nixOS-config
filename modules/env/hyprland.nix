@@ -1,5 +1,15 @@
 {config, lib, pkgs, inputs, ...}:
+let
+pkgs-unstable = inputs.hyprland.inputs.nixpkgs.legacyPackages.${pkgs.stdenv.hostPlatform.system};
+in
 {
+  hardware.graphics = {
+    package = pkgs-unstable.mesa;
+    enable32 = true;
+    package32 = pkgs-unstable.pkgsi686Linux.mesa;
+  };
+
+
 imports = [
 	./sddm.nix
   ../interface/waybar.nix
@@ -90,7 +100,6 @@ imports = [
       xdg-desktop-portal-hyprland
       # Портал, совместимый с wlroots — полезно для приложений, которым нужен доступ к скриншотам
       xdg-desktop-portal-wlr
-        inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprutils
     ];
   };
 }
