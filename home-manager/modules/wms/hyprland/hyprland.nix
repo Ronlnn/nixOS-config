@@ -104,7 +104,7 @@
         animation = windows, 1, 3, myBezier
         animation = windowsOut, 1, 3, myBezier, popin 80%
         animation = fade, 1, 4, myBezier
-        animation = workspaces, 1, 5, myBezier, slide left
+        animation = workspaces, 1, 5, myBezier, slide
         animation = layers, 1, 5, myBezier, fade
       }
 
