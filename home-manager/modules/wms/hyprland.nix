@@ -67,12 +67,12 @@
         "eDP-1,1920x1080@59.98,0x1080,1"
       ];
       workspace = [
-        "1, monitor:HDMI-A-2, default:true"
+        "1, monitor:HDMI-A-2"
         "2, monitor:HDMI-A-2"
         "3, monitor:HDMI-A-2"
         "4, monitor:HDMI-A-2"
         "5, monitor:HDMI-A-2"
-        "6, monitor:eDP-1, default:true"
+        "6, monitor:eDP-1"
         "7, monitor:eDP-1"
         "8, monitor:eDP-1"
         "9, monitor:eDP-1"
@@ -80,10 +80,6 @@
     };
 
     extraConfig = ''
-
-        exec-once = hyprctl dispatch workspace 1
-        exec-once = hyprctl dispatch workspace 6
-        exec-once = hyprctl dispatch workspace 1
 
         cursor {
           no_hardware_cursors = true
