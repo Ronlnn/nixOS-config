@@ -38,8 +38,8 @@
         "$mod, up, focusmonitor, HDMI-A-2"
         "$mod, down, focusmonitor, eDP-1"
         # Move workspace
-        "$mod, left, workspace, e-1"
-        "$mod, right, workspace, e+1"
+        "$mod, left, exec, hyprctl dispatch workspace -1"
+        "$mod, right, exec, hyprctl dispatch workspace +1"
         # Worspaces
         "$mod, 1, workspace, 1"
         "$mod, 2, workspace, 2"
@@ -103,8 +103,7 @@
     };
     extraConfig = ''
 
-        workspace_auto_cleanup = false
-        
+
         cursor {
           no_hardware_cursors = true
         }
