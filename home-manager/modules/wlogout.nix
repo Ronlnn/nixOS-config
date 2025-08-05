@@ -3,22 +3,16 @@
 
   programs.wlogout.layout = [
     {
-      label = {
-        font = "JetBrainsMono Nerd Font 12";
-        color = "#C6A0F6";  # lavender
-      };
-    }
-    {
-      style = {
-        background = "#1E1E2E";  # mocha background
-        border = "#6E6C7E";      # overlay2 border
-        borderWidth = "2";
-        radius = "8";
-        buttonColor = "#FAB387";       # peach
-        buttonHoverColor = "#F2CDCD";  # lighter peach
-        labelColor = "#C6A0F6";        # lavender
-        shadow = "0 0 15px #00000088";
-      };
+      label = "Logout";
+      style = ''
+        background: #1E1E2E;
+        border: 2px solid #6E6C7E;
+        border-radius: 8px;
+        font-family: "JetBrainsMono Nerd Font";
+        font-size: 12px;
+        color: #C6A0F6;
+        box-shadow: 0 0 15px #00000088;
+      '';
     }
   ];
 }
