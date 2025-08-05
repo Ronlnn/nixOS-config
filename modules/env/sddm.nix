@@ -5,7 +5,7 @@
     services.displayManager.sddm = {
       enable = true;
       wayland.enable = true;
-      theme = "sddm-astronaut";
+      theme = "astronaut-cyberpunk";
       #package = pkgs.libsForQt5.sddm;
 
     };
