@@ -151,8 +151,8 @@
           new_optimizations = true
           xray = true
           noise = 0.00001
-          contrast = 2.1
-          brightness = 1.1
+          contrast = 0.6
+          brightness = 0.6
           vibrancy_darkness = 0.5
           special = true
           popups = true
