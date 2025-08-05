@@ -46,7 +46,7 @@
           resize_corner = 1
 
           col.active_border = rgba(2798F5FF)
-          col.inactive_border = rgba(264E5EFF)
+          col.inactive_border = rgba(111D85FF)
           col.nogroup_border = rgba(ffffaaFF)
           col.nogroup_border_active = rgba(ffff00FF)
 
