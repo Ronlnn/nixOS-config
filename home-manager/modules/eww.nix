@@ -1,5 +1,8 @@
 {config, pkgs, ...}:
 {
+   home.packages = [
+    pkgs.eww
+  ];
   systemd.user.services.eww = {
     Unit = {
       Description = "Eww Daemon";
