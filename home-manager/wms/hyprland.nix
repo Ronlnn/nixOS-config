@@ -96,15 +96,15 @@
         "swww init"
         "swww img -o HDMI-A-2 ~/Pictures/Walls/purp.jpg"
         "swww img -o eDP-1 ~/Pictures/Walls/purp.jpg"
-
+        "hyprctl dispatch moveworkspacetomonitor 1 HDMI-A-2"
       ];
 
 
     };
     extraConfig = ''
-        exec-once = hyprctl dispatch moveworkspacetomonitor 1 HDMI-A-2
 
-
+        workspace_auto_cleanup = false
+        
         cursor {
           no_hardware_cursors = true
         }
