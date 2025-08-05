@@ -22,7 +22,7 @@
         "$mod, D, exec, kitty"
         "$mod, F, exec, firefox"
 
-        "$mod, Esc, exec, wlogout"
+         "$mod, Escape, exec, env XDG_CURRENT_DESKTOP=hyprland wlogout --protocol layer-shell"
 
         # Worksoaces
         "$mod, up, workspace, e+1"
