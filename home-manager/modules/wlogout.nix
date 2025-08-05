@@ -1,10 +1,10 @@
 { config, pkgs, ... }:
 
 {
-  home.packages = with pkgs; [
-    wlogout
-    swaylock  # для блокировки экрана (если используете)
-  ];
+  # home.packages = with pkgs; [
+  #   wlogout
+  #   swaylock  # для блокировки экрана (если используете)
+  # ];
 
   xdg.configFile = {
     # Layout с кнопками (Lock, Logout, Reboot, Shutdown, Suspend)
