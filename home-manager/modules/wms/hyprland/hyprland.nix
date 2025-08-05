@@ -32,7 +32,7 @@
           no_hardware_cursors = true
         }
         general {
-          border_size = 2
+          border_size = 4
           no_border_on_floating = false
           gaps_in = 5
           gaps_out = 15
@@ -171,7 +171,7 @@
       misc {
         disable_hyprland_logo = true
         disable_splash_rendering = true
-        background_color = rgba(571978FF)
+        background_color = rgba(524D4FFF)
         font_family = JetBrainsMono Nerd Font
         vfr = true
         vrr = 1
