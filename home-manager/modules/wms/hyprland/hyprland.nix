@@ -80,9 +80,9 @@
           contrast = 0.8916
           brightness = 0.8172
           vibrancy_darkness = 0.0
-          special = false
-          popups = false
-          input_methods = false
+          special = true
+          popups = true
+          input_methods = true
         }
       }
 
