@@ -33,7 +33,7 @@
         "$mod, right, workspace, e+1"
 
         # Worspaces
-        "$mod, 1, workspace, 1, silent"
+        "$mod, 1, workspace, 1"
         "$mod, 2, workspace, 2"
         "$mod, 3, workspace, 3"
         "$mod, 4, workspace, 4"
@@ -44,7 +44,7 @@
         "$mod, 9, workspace, 9"
         "$mod, 0, workspace, 10"
         # Moving to Workspace
-        "$mod SHIFT, 1, movetoworkspace, 1, silent"
+        "$mod SHIFT, 1, movetoworkspace, 1"
         "$mod SHIFT, 2, movetoworkspace, 2"
         "$mod SHIFT, 3, movetoworkspace, 3"
         "$mod SHIFT, 4, movetoworkspace, 4"
@@ -82,12 +82,12 @@
         "9, monitor:eDP-1"
         "10, monitor:eDP-1"
       ];
-      exec-once = hyprctl dispatch moveworkspacetomonitor 1 HDMI-A-2;
+
 
 
     };
     extraConfig = ''
-
+        exec-once = hyprctl dispatch moveworkspacetomonitor 1 HDMI-A-2
         cursor {
           no_hardware_cursors = true
         }
