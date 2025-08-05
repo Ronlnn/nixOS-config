@@ -88,16 +88,18 @@
         "9, monitor:eDP-1"
         "10, monitor:eDP-1"
       ];
-
+      exec-once = [
+         # Обои
+        "swww init"
+        "swww img -o HDMI-A-2 ~/Pictures/Walls/purp.jpg"
+        "swww img -o eDP-1 ~/Pictures/Walls/purp.jpg"
+      ];
 
 
     };
     extraConfig = ''
         exec-once = hyprctl dispatch moveworkspacetomonitor 1 HDMI-A-2
-        # Обои
-        exec-once = swww init
-        exec-once = swww img -o HDMI-A-2 ~/Pictures/Walls/purp.jpg
-        exec-once = swww img -o eDP-1 ~/Pictures/Walls/purp.jpg
+
 
         cursor {
           no_hardware_cursors = true
