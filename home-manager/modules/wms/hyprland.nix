@@ -63,8 +63,8 @@
 
 
       monitor = [
-        "eDP-1,1920x1080@59.98,0x1080,1"
         "HDMI-A-2,1920x1080@74.97,0x0,1"
+        "eDP-1,1920x1080@59.98,0x1080,1"
       ];
       workspace = [
         "1, monitor:HDMI-A-2, default:true"
