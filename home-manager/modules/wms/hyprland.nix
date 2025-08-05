@@ -96,7 +96,7 @@
         exec-once = hyprctl dispatch moveworkspacetomonitor 1 HDMI-A-2
         # Обои
         exec-once = swww init
-        exec-once = swww img -o HDMI-A-1 ~/Pictures/Walls/purp.jpg
+        exec-once = swww img -o HDMI-A-2 ~/Pictures/Walls/purp.jpg
         exec-once = swww img -o eDP-1 ~/Pictures/Walls/purp.jpg
 
         cursor {
@@ -233,7 +233,7 @@
       misc {
         disable_hyprland_logo = true
         disable_splash_rendering = true
-        background_color = rgba(12181FFF)
+        #background_color = rgba(12181FFF)
         font_family = JetBrainsMono Nerd Font
         vfr = true
         vrr = 1
