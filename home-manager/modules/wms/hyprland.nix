@@ -33,7 +33,7 @@
         "$mod, right, workspace, e+1"
 
         # Worspaces
-        "$mod, 1, workspace, 1, monitor:HDMI-A-2"
+        "$mod, 1, workspace, 1, silent"
         "$mod, 2, workspace, 2"
         "$mod, 3, workspace, 3"
         "$mod, 4, workspace, 4"
@@ -44,7 +44,7 @@
         "$mod, 9, workspace, 9"
         "$mod, 0, workspace, 10"
         # Moving to Workspace
-        "$mod SHIFT, 1, movetoworkspace, 1, monitor:HDMI-A-2"
+        "$mod SHIFT, 1, movetoworkspace, 1, silent"
         "$mod SHIFT, 2, movetoworkspace, 2"
         "$mod SHIFT, 3, movetoworkspace, 3"
         "$mod SHIFT, 4, movetoworkspace, 4"
