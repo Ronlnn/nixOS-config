@@ -93,7 +93,8 @@
     extraConfig = ''
         exec-once = hyprctl dispatch moveworkspacetomonitor 1 HDMI-A-2
         # Обои
-        exec-once = swww init && swww img ~/Pictures/Walls/purp.jpg --transition-type=grow --transition-pos=top-right
+        exec-once = swww-daemon
+
         cursor {
           no_hardware_cursors = true
         }
