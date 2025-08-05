@@ -9,7 +9,7 @@
     jetbrains-mono
   ];
 
-  #services.swww.enable = true;
+  services.swww.enable = true;
 
   wayland.windowManager.hyprland = {
     enable = true;
