@@ -28,9 +28,12 @@
         "$mod, 2, workspace, 2"
         "$mod, 3, workspace, 3"
 
-        "$mod, mouse:272, movewindow"
-        "$mod, mouse:273, resizewindow"
       ];
+      bindm = [
+	      "SUPER, mouse:272, movewindow"
+	      "SUPER, mouse:273, resizewindow"
+	    ];
+
 
       monitor = [
         "eDP-1,1920x1080@59.98,0x1080,1"
