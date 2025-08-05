@@ -145,13 +145,13 @@
 
         blur {
           enabled = true
-          size = 8
+          size = 16
           passes = 1
           ignore_opacity = true
           new_optimizations = true
           xray = true
           noise = 0.00001
-          contrast = 1.1
+          contrast = 2.1
           brightness = 1.1
           vibrancy_darkness = 0.5
           special = true
