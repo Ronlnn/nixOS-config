@@ -18,6 +18,9 @@
         "$mod, RETURN, exec, alacritty"
         "$mod, D, exec, kitty"
         "$mod, F, exec, firefox"
+
+        "$mod, Esc, exec, swaylock"
+
         # Worksoaces
         "$mod, up, workspace, e+1"
         "$mod, down, workspace, e-1"
