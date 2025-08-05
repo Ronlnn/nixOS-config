@@ -54,24 +54,21 @@
         "HDMI-A-2,1920x1080@74.97,0x0,1"
       ];
 
-    workspace = [
-      "1,monitor:HDMI-A-2,default:true"
-      "2,monitor:HDMI-A-2 "
-      "3,monitor:HDMI-A-2 "
-      "4,monitor:HDMI-A-2 "
-      "5,monitor:HDMI-A-2 "
 
-      "6,monitor:eDP-1,default:true"
-      "7,monitor:eDP-1"
-      "8,monitor:eDP-1"
-      "9,monitor:eDP-1"
-      "10,monitor:eDP-1"
-    ];
     };
 
     extraConfig = ''
-        # Запускаем скрипт при старте Hyprland
-        exec-once = $HOME/Scripts/workspaces.sh
+
+        workspace = 1, monitor:HDMI-A-2, default:true
+        workspace = 2, monitor:HDMI-A-2
+        workspace = 3, monitor:HDMI-A-2
+        workspace = 4, monitor:HDMI-A-2
+        workspace = 5, monitor:HDMI-A-2
+        workspace = 6, monitor:eDP-1, default:true
+        workspace = 7, monitor:eDP-1
+        workspace = 8, monitor:eDP-1
+        workspace = 9, monitor:eDP-1
+        workspace = 10, monitor:eDP-1
 
 
         cursor {
