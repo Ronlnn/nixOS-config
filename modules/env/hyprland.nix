@@ -60,9 +60,9 @@ imports = [
       eww                   # Виджеты
       waybar                # Панель бар
       wofi                  # Аналог rofi
-      #grimblast             # Скриншоты
-      #grim                  # Скриншоты
-      #slurp                 # Выделение области экрана для grim
+      grimblast             # Скриншоты
+      grim                  # Скриншоты
+      slurp                 # Выделение области экрана для grim
       mako                  # Демон уведомлений
       swaylock              # Экран-лок
       swayidle              # Демон бездействия
