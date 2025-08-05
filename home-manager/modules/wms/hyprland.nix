@@ -22,7 +22,8 @@
         "$mod, D, exec, kitty"
         "$mod, F, exec, firefox"
 
-         "$mod, Escape, exec, env XDG_CURRENT_DESKTOP=hyprland wlogout --protocol layer-shell"
+        # Wlogout
+        "$mod, Escape, exec, env XDG_CURRENT_DESKTOP=hyprland wlogout --protocol layer-shell"
 
         # Worksoaces
         "$mod, up, workspace, e+1"
@@ -196,7 +197,7 @@
       misc {
         disable_hyprland_logo = true
         disable_splash_rendering = true
-        background_color = rgba(524D4FFF)
+        background_color = rgba(12181FFF)
         font_family = JetBrainsMono Nerd Font
         vfr = true
         vrr = 1
