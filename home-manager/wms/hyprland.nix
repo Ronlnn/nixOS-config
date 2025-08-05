@@ -38,8 +38,8 @@
         "$mod, up, focusmonitor, HDMI-A-2"
         "$mod, down, focusmonitor, eDP-1"
         # Move workspace
-        "$mod, left, exec, ~/Scripts/switch-workspaces.sh -1"
-        "$mod, right, exec, ~/Scripts/switch-workspaces.sh  +1"
+        "$mod, left, exec, /home/roninn/Scripts/hypr-switch-workspace.sh -1"
+        "$mod, right, exec, /home/roninn/Scripts/hypr-switch-workspace.sh +1"
         # Worspaces
         "$mod, 1, workspace, 1"
         "$mod, 2, workspace, 2"
