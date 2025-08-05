@@ -76,10 +76,10 @@
           ignore_opacity = true
           new_optimizations = true
           xray = true
-          noise = 0.0117
-          contrast = 0.8916
-          brightness = 0.8172
-          vibrancy_darkness = 0.0
+          noise = 0.5
+          contrast = 1.1
+          brightness = 1.1
+          vibrancy_darkness = 0.5
           special = true
           popups = true
           input_methods = true
