@@ -1,12 +1,12 @@
-(defwidget my-bar []
-  (box :class "bar"
-    (label :text " {time}")))
-
-(defwindow bar
-  :geometry (geometry :x "0" :y "0" :width "300" :height "30")
-  :anchor "left"
-  :exclusive true
-  :stacking "fg"
-  :focusable false
-  :content [(my-bar)])
-
+(defwindow example
+           :monitor 0
+           :geometry (geometry :x "0%"
+                               :y "20px"
+                               :width "90%"
+                               :height "30px"
+                               :anchor "left top")
+           :stacking "fg"
+           :reserve (struts :distance "40px" :side "top")
+           :windowtype "dock"
+           :wm-ignore false
+  "example content")
