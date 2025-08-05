@@ -82,6 +82,8 @@
         "9, monitor:eDP-1"
         "10, monitor:eDP-1"
       ];
+      exec-once = hyprctl dispatch moveworkspacetomonitor 1 HDMI-A-2;
+
 
     };
     extraConfig = ''
