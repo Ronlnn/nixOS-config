@@ -3,6 +3,7 @@
 
   programs.wlogout.layout = [
     {
+      keybind = "Esc";
       label = "Logout";
       style = ''
         background: #1E1E2E;
