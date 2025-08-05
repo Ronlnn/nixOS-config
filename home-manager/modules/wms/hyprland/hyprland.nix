@@ -1,6 +1,9 @@
 { config, lib, pkgs, ... }:
 
 {
+  imports = [
+    ../../wlogout.nix
+  ];
   home.packages = with pkgs; [
     fira-code
     jetbrains-mono
@@ -19,7 +22,7 @@
         "$mod, D, exec, kitty"
         "$mod, F, exec, firefox"
 
-        "$mod, Esc, exec, swaylock"
+        "$mod, Esc, exec, wlogout"
 
         # Worksoaces
         "$mod, up, workspace, e+1"
