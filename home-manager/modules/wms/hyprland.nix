@@ -3,6 +3,7 @@
 {
   imports = [
     ../wlogout.nix
+    ../eww/eww.nix
   ];
   home.packages = with pkgs; [
     fira-code
@@ -27,7 +28,7 @@
         "$mod, S, exec, spotify"
         "$mod, H, exec, hiddify"
         "$mod, Tab, exec, thunar"
-
+        
 
         # Wlogout
         "$mod, Escape, exec, env XDG_CURRENT_DESKTOP=hyprland wlogout --protocol layer-shell"
@@ -94,6 +95,8 @@
         "swww init"
         "swww img -o HDMI-A-2 ~/Pictures/Walls/purp.jpg"
         "swww img -o eDP-1 ~/Pictures/Walls/purp.jpg"
+
+        "${config.programs.eww.package}/bin/eww daemon"
       ];
 
 
