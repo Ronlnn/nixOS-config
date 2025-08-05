@@ -100,6 +100,7 @@
     gnome-tweaks
     catppuccin-grub
     grub2
+    (nerdfonts.override { fonts = [ "FiraCode" "JetBrainsMono" ]; })
   ];
 
 }
