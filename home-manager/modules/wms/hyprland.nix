@@ -9,6 +9,8 @@
     jetbrains-mono
   ];
 
+  #services.swww.enable = true;
+
   wayland.windowManager.hyprland = {
     enable = true;
     xwayland.enable = true;
@@ -93,7 +95,9 @@
     extraConfig = ''
         exec-once = hyprctl dispatch moveworkspacetomonitor 1 HDMI-A-2
         # Обои
-        exec-once = swww-daemon
+        exec-once = swww init
+        exec-once = swww img -o HDMI-A-1 ~/Pictures/Walls/purp.jpg
+        exec-once = swww img -o eDP-1 ~/Pictures/Walls/purp.jpg
 
         cursor {
           no_hardware_cursors = true
