@@ -46,24 +46,25 @@
         "eDP-1,1920x1080@59.98,0x1080,1"
         "HDMI-A-2,1920x1080@74.97,0x0,1"
       ];
-
+      workspace = [
+        "1, default:true"
+        "2"
+        "3"
+        "4"
+        "5"
+        "6"
+        "7"
+        "8"
+        "9"
+        "10"
+      ];
     };
 
     extraConfig = ''
         # Запускаем скрипт при старте Hyprland
         exec-once = /home/roninn/Scripts/workspaces.sh
 
-        # Базовые настройки workspace (без жесткой привязки)
-        workspace = 1, default:true
-        workspace = 2
-        workspace = 3
-        workspace = 4
-        workspace = 5
-        workspace = 6
-        workspace = 7
-        workspace = 8
-        workspace = 9
-        workspace = 10
+
         cursor {
           no_hardware_cursors = true
         }
