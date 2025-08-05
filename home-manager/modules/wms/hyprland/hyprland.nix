@@ -76,7 +76,7 @@
           ignore_opacity = true
           new_optimizations = true
           xray = true
-          noise = 0.5
+          noise = 0.00001
           contrast = 1.1
           brightness = 1.1
           vibrancy_darkness = 0.5
