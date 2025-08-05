@@ -11,12 +11,7 @@
   ];
 
   services.swww.enable = true;
-  home.pointerCursor = {
-    gtk.enable = true;
-    package = pkgs.bibata-cursors;
-    name = "Bibata-Modern-Ice";
-    size = 18;
-  };
+
   wayland.windowManager.hyprland = {
     enable = true;
     xwayland.enable = true;
@@ -109,6 +104,7 @@
     extraConfig = ''
         cursor {
           no_hardware_cursors = true
+          sync_gsetting_theme = true
         }
         general {
           border_size = 4
