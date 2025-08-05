@@ -21,8 +21,8 @@
         # Worksoaces
         "$mod, up, workspace, e+1"
         "$mod, down, workspace, e-1"
-        "$mod, right, workspace, e+1"
-        "$mod, left, workspace, e-1"
+        "$mod, 1, workspace, 1"
+        "$mod, 2, workspace, 2"
       ];
 
       monitor = [
