@@ -92,7 +92,8 @@
     };
     extraConfig = ''
         exec-once = hyprctl dispatch moveworkspacetomonitor 1 HDMI-A-2
-        swww init && swww img ~/Pictures/Walls/purp.jpg --transition-type=grow --transition-pos=top-right
+        # Обои
+        exec-once = swww init && swww img ~/Pictures/Walls/purp.jpg --transition-type=grow --transition-pos=top-right
         cursor {
           no_hardware_cursors = true
         }
