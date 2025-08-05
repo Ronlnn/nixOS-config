@@ -50,7 +50,7 @@
         "$mod SHIFT, 7, movetoworkspace, 7"
         "$mod SHIFT, 8, movetoworkspace, 8"
         "$mod SHIFT, 9, movetoworkspace, 9"
-        "$mod SHIFT, 0, movetoworkspace, 0"
+
 
         # Скриншоты
         "$mod SHIFT, S, exec, grim -g \"$(slurp)\" - | wl-copy"
@@ -76,7 +76,6 @@
         "7, monitor:eDP-1"
         "8, monitor:eDP-1"
         "9, monitor:eDP-1"
-        "0, monitor:eDP-1"
       ];
     };
 
