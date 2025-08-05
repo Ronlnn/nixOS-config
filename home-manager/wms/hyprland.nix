@@ -104,7 +104,7 @@
     extraConfig = ''
         cursor {
           no_hardware_cursors = true
-          sync_gsetting_theme = true
+          sync_gsettings_theme = true
         }
         general {
           border_size = 4
