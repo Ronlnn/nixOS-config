@@ -108,8 +108,6 @@
           hover_icon_on_border = true
           allow_tearing = false
           resize_corner = 1
-          allow_workspace_cycles = true
-          workspace_back_and_forth = true
 
           col.active_border = rgba(E85858FF)
           col.inactive_border = rgba(F7F7F7FF)
