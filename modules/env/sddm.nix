@@ -5,7 +5,6 @@ let
 
   customTheme = pkgs.catppuccin-sddm.override {
     background = customBackground;
-    blur = true;
   };
 in
 {
