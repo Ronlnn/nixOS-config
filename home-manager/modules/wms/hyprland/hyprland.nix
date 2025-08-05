@@ -18,6 +18,9 @@
         "$mod, RETURN, exec, alacritty"
         "$mod, D, exec, kitty"
         "$mod, F, exec, firefox"
+        # Worksoaces
+        "$mod, right, workspace e+1"
+        "$mod, left, workspace e-1"
       ];
 
       monitor = [
