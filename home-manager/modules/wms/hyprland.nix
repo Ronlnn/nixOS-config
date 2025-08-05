@@ -25,9 +25,12 @@
         # Wlogout
         "$mod, Escape, exec, env XDG_CURRENT_DESKTOP=hyprland wlogout --protocol layer-shell"
 
+        # Переключение между мониторами (вверх/вниз)
+        "$mod, up, focusmonitor, HDMI-A-2"
+        "$mod, down, focusmonitor, eDP-1"
         # Workspaces
-        "$mod, left, workspace, -1"
-        "$mod, right, workspace, +1"
+        "$mod, left, workspace, e-1"
+        "$mod, right, workspace, e+1"
 
         # Worspaces
         "$mod, 1, workspace, 1"
@@ -39,7 +42,7 @@
         "$mod, 7, workspace, 7"
         "$mod, 8, workspace, 8"
         "$mod, 9, workspace, 9"
-        "$mod, 0, workspace, 0"
+        "$mod, 0, workspace, 10"
         # Moving to Workspace
         "$mod SHIFT, 1, movetoworkspace, 1"
         "$mod SHIFT, 2, movetoworkspace, 2"
@@ -50,6 +53,7 @@
         "$mod SHIFT, 7, movetoworkspace, 7"
         "$mod SHIFT, 8, movetoworkspace, 8"
         "$mod SHIFT, 9, movetoworkspace, 9"
+        "$mod SHIFT, 0, movetoworkspace, 10"
 
 
         # Скриншоты
@@ -76,6 +80,7 @@
         "7, monitor:eDP-1"
         "8, monitor:eDP-1"
         "9, monitor:eDP-1"
+        "10, monitor:eDP-1"
       ];
     };
 
