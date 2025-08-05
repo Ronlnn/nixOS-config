@@ -3,7 +3,7 @@
     enable = true;
     theme = "dracula";
     settings = {
-      window.opacity = 1.95;
+      window.opacity = 0.99;
     };
   };
 }
