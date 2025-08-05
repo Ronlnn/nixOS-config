@@ -28,6 +28,7 @@
         "$mod, S, exec, spotify"
         "$mod, H, exec, hiddify"
         "$mod, Tab, exec, thunar"
+        "$mod, O, exec, obsidian"
 
 
         # Wlogout
