@@ -4,7 +4,7 @@
                                :y "20px"
                                :width "90%"
                                :height "30px"
-                               :anchor "top center")
+                               :anchor "top left")
            :stacking "fg"
            :reserve (struts :distance "40px" :side "top")
            :windowtype "dock"
