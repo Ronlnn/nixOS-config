@@ -28,16 +28,16 @@
         # Workspaces
         "$mod, left, workspace, -1"
         "$mod, right, workspace, +1"
-        "$mod, 1, workspace, 1"
-        "$mod, 2, workspace, 2"
-        "$mod, 3, workspace, 3"
-        "$mod, 4, workspace, 4"
-        "$mod, 5, workspace, 5"
-        "$mod, 6, workspace, 6"
-        "$mod, 7, workspace, 7"
-        "$mod, 8, workspace, 8"
-        "$mod, 9, workspace, 9"
-        "$mod, 0, workspace, 0"
+        "$mod, 1, workspace, 11"
+        "$mod, 2, workspace, 12"
+        "$mod, 3, workspace, 13"
+        "$mod, 4, workspace, 14"
+        "$mod, 5, workspace, 15"
+        "$mod, 6, workspace, 16"
+        "$mod, 7, workspace, 17"
+        "$mod, 8, workspace, 18"
+        "$mod, 9, workspace, 19"
+        "$mod, 0, workspace, 20"
 
         # Скриншоты
         "$mod SHIFT, S, exec, grim -g \"$(slurp)\" - | wl-copy"
@@ -59,16 +59,16 @@
 
     extraConfig = ''
 
-        workspace = 1, monitor:HDMI-A-2
-        workspace = 2, monitor:HDMI-A-2
-        workspace = 3, monitor:HDMI-A-2
-        workspace = 4, monitor:HDMI-A-2
-        workspace = 5, monitor:HDMI-A-2
-        workspace = 6, monitor:eDP-1
-        workspace = 7, monitor:eDP-1
-        workspace = 8, monitor:eDP-1
-        workspace = 9, monitor:eDP-1
-        workspace = 10, monitor:eDP-1
+        workspace = 11, monitor:HDMI-A-2, default:true
+        workspace = 12, monitor:HDMI-A-2
+        workspace = 13, monitor:HDMI-A-2
+        workspace = 14, monitor:HDMI-A-2
+        workspace = 15, monitor:HDMI-A-2
+        workspace = 16, monitor:eDP-1, default:true
+        workspace = 17, monitor:eDP-1
+        workspace = 18, monitor:eDP-1
+        workspace = 19, monitor:eDP-1
+        workspace = 20, monitor:eDP-1
 
 
         cursor {
