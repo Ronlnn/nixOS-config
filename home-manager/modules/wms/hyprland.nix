@@ -23,7 +23,7 @@
         "$mod, F, exec, firefox"
         "$mod, C, exec, code"
         "$mod, S, exec, spotify"
-
+        "$mod, H, exec, hiddify"
 
 
         # Wlogout
@@ -32,10 +32,9 @@
         # Переключение между мониторами (вверх/вниз)
         "$mod, up, focusmonitor, HDMI-A-2"
         "$mod, down, focusmonitor, eDP-1"
-        # Workspaces
+        # Move workspace
         "$mod, left, workspace, e-1"
         "$mod, right, workspace, e+1"
-
         # Worspaces
         "$mod, 1, workspace, 1"
         "$mod, 2, workspace, 2"
