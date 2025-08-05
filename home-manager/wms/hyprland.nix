@@ -105,6 +105,8 @@
 
 
         cursor {
+          cursor_theme = Tela-dark
+          cursor_size = 18
           no_hardware_cursors = true
         }
         general {
