@@ -75,7 +75,7 @@
         "eDP-1,1920x1080@59.98,0x1080,1"
       ];
       workspace = [
-        "1, monitor:HDMI-A-2, default: true"
+        "1, monitor:HDMI-A-2, default:true"
         "2, monitor:HDMI-A-2"
         "3, monitor:HDMI-A-2"
         "4, monitor:HDMI-A-2"
