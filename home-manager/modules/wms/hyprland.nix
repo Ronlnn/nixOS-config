@@ -31,6 +31,13 @@
         "$mod, 1, workspace, 1"
         "$mod, 2, workspace, 2"
         "$mod, 3, workspace, 3"
+        "$mod, 4, workspace, 4"
+        "$mod, 5, workspace, 5"
+        "$mod, 6, workspace, 6"
+        "$mod, 7, workspace, 7"
+        "$mod, 8, workspace, 8"
+        "$mod, 9, workspace, 9"
+        "$mod, 0, workspace, 0"
 
         # Скриншоты
         "$mod SHIFT, S, exec, grim -g \"$(slurp)\" - | wl-copy"
@@ -46,18 +53,20 @@
         "eDP-1,1920x1080@59.98,0x1080,1"
         "HDMI-A-2,1920x1080@74.97,0x0,1"
       ];
-      workspace = [
-        "1, default:true"
-        "2"
-        "3"
-        "4"
-        "5"
-        "6"
-        "7"
-        "8"
-        "9"
-        "10"
-      ];
+
+    workspace = [
+      "1,monitor:HDMI-A-2,default:true"
+      "2,monitor:HDMI-A-2 "
+      "3,monitor:HDMI-A-2 "
+      "4,monitor:HDMI-A-2 "
+      "5,monitor:HDMI-A-2 "
+
+      "6,monitor:eDP-1,default:true"
+      "7,monitor:eDP-1"
+      "8,monitor:eDP-1"
+      "9,monitor:eDP-1"
+      "10,monitor:eDP-1"
+    ];
     };
 
     extraConfig = ''
