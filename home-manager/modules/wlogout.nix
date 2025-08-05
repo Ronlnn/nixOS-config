@@ -1,29 +1,21 @@
 {
-  home.file.".config/wlogout/style.css".text = ''
-  window {
-    background-color: #1e1e2e;
-  }
+  programs.wlogout.enable = true;
 
-  button {
-    background-color: #313244;
-    border-radius: 12px;
-    padding: 20px;
-    margin: 10px;
-    color: #cdd6f4;
-  }
+  programs.wlogout.layout = {
+    label = {
+      font = "JetBrainsMono Nerd Font 12"; # можно свой шрифт
+      color = "#C6A0F6"; # цвет текста — возьмём из палитры Catppuccin Mocha (lavender)
+    };
 
-  button:hover {
-    background-color: #45475a;
-    color: #a6e3a1;
-  }
-'';
-
-home.file.".config/wlogout/layout".text = ''
-  logout, , pkill -KILL -u $USER
-  shutdown, , systemctl poweroff
-  reboot, , systemctl reboot
-  lock, , swaylock
-  suspend, , systemctl suspend
-'';
-
+    style = {
+      background = "#1E1E2E";  # Catppuccin Mocha background
+      border = "#6E6C7E";      # border color из палитры (overlay2)
+      borderWidth = "2";
+      radius = "8";            # радиус скругления углов
+      buttonColor = "#FAB387"; # цвет кнопок (peach)
+      buttonHoverColor = "#F2CDCD"; # цвет кнопок при наведении
+      labelColor = "#C6A0F6";  # цвет текста на кнопках
+      shadow = "0 0 15px #00000088"; # небольшой теневой эффект
+    };
+  };
 }
