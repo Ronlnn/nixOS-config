@@ -22,7 +22,7 @@
         "$mod, D, exec, kitty"
         "$mod, F, exec, firefox"
 
-        "$mod, Q, exec, wlogout"
+        "$mod, Esc, exec, wlogout"
 
         # Worksoaces
         "$mod, up, workspace, e+1"
