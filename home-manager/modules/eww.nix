@@ -1,3 +1,4 @@
+{config, pkgs, ...}:
 {
   systemd.user.services.eww = {
     Unit = {
