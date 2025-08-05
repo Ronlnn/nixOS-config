@@ -3,6 +3,14 @@
 
   programs.wlogout.layout = [
     {
+      layout = [
+        {
+          label = "shutdown";
+          action = "systemctl poweroff";
+          text = "Shutdown";
+          keybind = "s";
+        }
+      ];
       label = "Logout";
       style = ''
         background: #1E1E2E;
