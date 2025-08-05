@@ -1,7 +1,7 @@
 {config, lib, pkgs,...}:
 
 let
-  customBackground = /home/roninn/Pictures/Walls/purp.jpg;
+  customBackground = ../../walls/purp.jpg;
 
   customTheme = pkgs.catppuccin-sddm.override {
     background = customBackground;
