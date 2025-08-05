@@ -3,6 +3,12 @@
    home.packages = [
     pkgs.eww
   ];
+
+   programs.eww = {
+    enable = true;
+    configDir = "/home/roninn/.config/eww";
+  };
+
   systemd.user.services.eww = {
     Unit = {
       Description = "Eww Daemon";
