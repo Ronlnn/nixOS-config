@@ -4,18 +4,31 @@
   programs.wlogout.layout = [
     {
       label = "Logout";
+      action = "";
+      text = "Log Out";
+
+    }
+    {
+      label = "Shut Down";
+      action = "systemctl poweroff";
+      text = "Shutdown";
     }
   ];
   programs.wlogout = {
     enable = true;
     style = ''
-        background: #1E1E2E;
-        border: 2px solid #6E6C7E;
-        border-radius: 8px;
-        font-family: "JetBrainsMono Nerd Font";
-        font-size: 12px;
-        color: #C6A0F6;
-        box-shadow: 0 0 15px #00000088;
+      window {
+        background_color = #1E1E2E
+      }
+      button {
+        border-radius = 8
+        border-color = #6E6C7E
+        border-style = solid
+        border-width = 2
+        color = #C6A0F6
+        font-family=  JetBrainsMono Nerd Font
+        font-size = 12
+      }
     '';
   };
 }
