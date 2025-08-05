@@ -25,7 +25,7 @@
         # Wlogout
         "$mod, Escape, exec, env XDG_CURRENT_DESKTOP=hyprland wlogout --protocol layer-shell"
 
-        # Worksoaces
+        # Workspaces
         "$mod, left, workspace, -1"
         "$mod, right, workspace, +1"
         "$mod, 1, workspace, 1"
@@ -62,7 +62,7 @@
 
     extraConfig = ''
         # Запускаем скрипт при старте Hyprland
-        exec-once = /home/roninn/Scripts/workspaces.sh
+        exec-once = $HOME/Scripts/workspaces.sh
 
 
         cursor {
