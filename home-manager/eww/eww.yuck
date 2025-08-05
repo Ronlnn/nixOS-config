@@ -1,0 +1,13 @@
+(defvar time "00:00:00")
+
+(defwidget my-bar []
+  (box :class "bar"
+    (label :text " {time}")))
+
+(defwindow bar
+  :geometry (geometry :x "0" :y "0" :width "300" :height "30")
+  :anchor "left"
+  :exclusive true
+  :stacking "fg"
+  :focusable false
+  :content (my-bar))
