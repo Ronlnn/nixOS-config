@@ -46,7 +46,7 @@
           resize_corner = 1
 
           col.active_border = rgba(2798F5FF)
-          col.inactive_border = rgba(914E94FF)
+          col.inactive_border = rgba(264E5EFF)
           col.nogroup_border = rgba(ffffaaFF)
           col.nogroup_border_active = rgba(ffff00FF)
 
@@ -83,15 +83,6 @@
           special = false
           popups = false
           input_methods = false
-        }
-
-        shadow {
-          range = 4
-          render_power = 3
-          sharp = false
-          ignore_window = true
-          #color = rgba(DB355EFF)
-          scale = 1.0
         }
       }
 
