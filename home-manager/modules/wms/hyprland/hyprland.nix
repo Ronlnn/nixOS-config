@@ -35,10 +35,9 @@
           border_size = 2
           no_border_on_floating = false
           gaps_in = 5
-          gaps_out = 20
-
+          gaps_out = 15
           gaps_workspaces = 0
-          layout = dwindle
+          layout = master
           no_focus_fallback = false
           resize_on_border = true
           extend_border_grab_area = 15
