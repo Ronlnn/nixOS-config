@@ -28,7 +28,7 @@
         "$mod, 2, workspace, 2"
         "$mod, 3, workspace, 3"
 
-        "$mod, S, exec, flameshot"
+        "$mod, S, exec, flameshot gui"
 
       ];
       bindm = [
