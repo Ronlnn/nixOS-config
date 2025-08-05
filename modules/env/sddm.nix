@@ -6,7 +6,7 @@
       enable = true;
       wayland.enable = true;
       theme = "astronaut";
-      #package = pkgs.kdePackages.sddm;
+      package = pkgs.libsForQt5.sddm;
 
     };
     environment.systemPackages = with pkgs; [
