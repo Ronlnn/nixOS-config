@@ -45,7 +45,7 @@
           allow_tearing = false
           resize_corner = 1
 
-          col.active_border = rgba(41E8DEFF)
+          col.active_border = rgba(63D6ADFF)
           col.inactive_border = rgba(2798F5FF)
           col.nogroup_border = rgba(ffffaaFF)
           col.nogroup_border_active = rgba(ffff00FF)
