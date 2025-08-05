@@ -176,7 +176,7 @@
         sensitivity = 1.0
         touchpad {
           disable_while_typing = true
-          natural_scroll = false
+          natural_scroll = true
           tap-to-click = true
           drag_lock = 2
         }
