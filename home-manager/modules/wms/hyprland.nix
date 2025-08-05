@@ -28,7 +28,7 @@
         "$mod, S, exec, spotify"
         "$mod, H, exec, hiddify"
         "$mod, Tab, exec, thunar"
-        
+        "$mod, B, exec, ${config.programs.eww.package}/bin/eww open bar --toggle"
 
         # Wlogout
         "$mod, Escape, exec, env XDG_CURRENT_DESKTOP=hyprland wlogout --protocol layer-shell"
