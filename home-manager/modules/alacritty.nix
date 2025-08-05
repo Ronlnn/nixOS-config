@@ -4,6 +4,7 @@
     theme = "dracula";
     settings = {
       window.opacity = 0.55;
+      blur = true;
     };
   };
 }
