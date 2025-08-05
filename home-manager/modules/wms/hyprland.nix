@@ -76,7 +76,7 @@
         "3, monitor:HDMI-A-2"
         "4, monitor:HDMI-A-2"
         "5, monitor:HDMI-A-2"
-        "6, monitor:eDP-1"
+        "6, monitor:eDP-1, default:true"
         "7, monitor:eDP-1"
         "8, monitor:eDP-1"
         "9, monitor:eDP-1"
