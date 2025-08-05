@@ -90,7 +90,7 @@
           render_power = 3
           sharp = false
           ignore_window = true
-          color = rgba(DB355EFF)
+          #color = rgba(DB355EFF)
           scale = 1.0
         }
       }
