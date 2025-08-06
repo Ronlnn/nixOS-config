@@ -45,7 +45,7 @@
         font-size: 1px;
       }
       #workspaces button {
-        min-height: 10px;
+        min-height: 20px;
         background-color: #F5C2E7;
         color: #F5C2E7;
         border-radius: 50%;
