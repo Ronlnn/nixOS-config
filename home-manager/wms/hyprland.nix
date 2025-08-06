@@ -216,16 +216,14 @@
         auto_group = true
         insert_after_current = true
         focus_removed_window = true
-        drag_into_group = 2
+        drag_into_group = 1
         merge_groups_on_drag = true
         merge_groups_on_groupbar = true
         merge_floated_into_tiled_on_groupbar = true
         group_on_movetoworkspace = true
 
-        col.border_active = rgba(F5F227FF)
-        col.border_inactive = rgba(A1751AFF)
-        col.border_locked_active = rgba(A11A74FF)
-        col.border_locked_inactive = rgba(4D0635FF)
+        col.border_active = rgba(A327F5FF)
+        col.border_inactive = rgba(160821FF)
 
         groupbar {
           enabled = true
@@ -235,16 +233,16 @@
           font_weight_inactive = normal
           gradients = false
           height = 14
-          indicator_gap = 1
-          indicator_height = 3
-          stacked = true
+          indicator_gap = 2
+          indicator_height = 2
+          stacked = false
           render_titles = true
           priority = 3
           scrolling = true
           rounding = 1
-          text_color = rgba(BA0202FF)
-          col.active = rgba(5EFF8DFF)
-          col.inactive = rgba(376B46FF)
+          text_color = rgba(A327F5FF)
+          col.active = rgba(A327F5FF)
+          col.inactive = rgba(160821FF)
         }
       }
 
