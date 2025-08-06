@@ -40,10 +40,10 @@
       }
 
       #workspaces {
-        margin: 5px 0px;
+        margin: 0px 0px;
         background: #46E874;
-        font-size: 12pt;
-        padding: 5px 0px;
+        font-size: 12px;
+        padding: 0px 0px;
         border-top:3px solid #46E874;
         border-top-left-radius: 50px;
         border-top-right-radius: 5px;
