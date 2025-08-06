@@ -17,10 +17,8 @@
           };
           on-click = "activate";
         };
-        "backlight/slider" = {
-          min = 0;
-          max = 100;
-          orientation = "horizontal";
+        "backlight" = {
+          format = "{percent}%";
         };
 
       };
@@ -30,24 +28,12 @@
         background: rgba(17, 17, 27, 0.8);
       }
 
-      #backlight/slider slider {
-        min-height: 0px;
-        min-width: 0px;
-        opacity: 0;
-        background-image: none;
-        border: none;
-        box-shadow: none;
-      }
-      #backlight-slider trough {
-        min-height: 80px;
-        min-width: 10px;
+      /* Стили для модуля яркости */
+      #backlight {
+        padding: 0 10px;
+        color: #CDD6F4;
+        background: #1E1E2E;
         border-radius: 5px;
-        background-color: black;
-      }
-      #backlight-slider highlight {
-        min-width: 10px;
-        border-radius: 5px;
-        background-color: red;
       }
 
       #workspaces {
