@@ -242,7 +242,7 @@
           rounding = 8
           gaps_in = 6
           gaps_out = 6
-          text_color = rgba(65118CFF)
+          text_color = rgba(3A0B52FF)
           col.active = rgba(EB65BFFF)
           col.inactive = rgba(160821FF)
         }
