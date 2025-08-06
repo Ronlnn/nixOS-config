@@ -40,8 +40,8 @@
 
       #workspaces {
         background: #242438;
-        font-size: 12px;
-        margin: 0;
+        font-size: 5px;
+        margin: 0.5em;
         padding: 0.5em;
       }
       #workspaces button {
