@@ -36,7 +36,8 @@
         background: #11111B;
         border: 1px solid #11111B;
         border-radius: 5px;
-        min-height: 50px;
+        min-height: 30px;
+        max-height: 30px;
       }
 
       #workspaces {
