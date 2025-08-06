@@ -32,7 +32,7 @@
     };
     style = ''
       window#waybar {
-        background: rgba(64, 30, 135,1);
+        background: #211499;
         border: 1px solid #E8E546;
         border-radius: 5px;
       }
