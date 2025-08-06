@@ -26,9 +26,9 @@
             "9" = "9";
             "10" = "0";
           };
-          persistent-workspaces = {
-            "*" = 5;
-          };
+          # persistent-workspaces = {
+          #   "*" = 5;
+          # };
         };
 
       };
