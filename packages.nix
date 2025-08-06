@@ -106,5 +106,9 @@
     nerd-fonts.fira-code
     nerd-fonts.jetbrains-mono
   ];
+  fonts.fonts = with pkgs; [
+    font-awesome
+    fira
+];
 
 }
