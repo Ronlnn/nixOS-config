@@ -47,7 +47,7 @@
         background-color: #F5C2E7;
         color: #F5C2E7;
         margin: 0.25em;
-        border-radius: 15px;
+        border-radius: 25px;
       }
     '';
   };
