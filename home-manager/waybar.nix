@@ -41,14 +41,14 @@
       #workspaces {
         background: #242438;
         font-size: 5px;
-        margin: 0.9em;
-        padding: 0.5em;
+        margin: 5px;
+        padding: 5px;
       }
       #workspaces button {
-        padding: 0.5em;
+        padding: 5px;
+        margin: 5px;
         background-color: #F5C2E7;
         color: #F5C2E7;
-        margin: 0.9em;
         border-radius: 50%;
       }
     '';
