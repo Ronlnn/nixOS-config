@@ -10,6 +10,8 @@
         modules-left = ["hyprland/workspaces"];
         "hyprland/workspaces" = {
           active-only = false;
+          hide-active = false;
+          
           on-click = "activate";
           format = "{icon}";
           format-icons = {

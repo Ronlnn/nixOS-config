@@ -41,6 +41,10 @@
         "$mod, O, exec, obsidian"
 
 
+        "$mod, G, togglegroup"
+        # Переключаться по вкладкам в группе
+        "$mod, bracketleft, changegroupactive, b"   # ← влево
+        "$mod, bracketright, changegroupactive, f"  # → вправо
         # Wlogout
         "$mod, Escape, exec, env XDG_CURRENT_DESKTOP=hyprland wlogout --protocol layer-shell"
 
