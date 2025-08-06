@@ -8,7 +8,15 @@
   home.packages = with pkgs; [
     fira-code
     jetbrains-mono
+    bibata-cursors
   ];
+
+  home.pointerCursor = {
+  name = "Bibata-Modern-Ice"; # или другую тему
+  package = pkgs.bibata-cursors;
+  size = 24;
+  gtk.enable = true;
+  };
 
   services.swww.enable = true;
 
