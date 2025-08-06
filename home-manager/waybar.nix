@@ -11,7 +11,7 @@
         "hyprland/workspaces" = {
           active-only = false;
           hide-active = false;
-          
+          all-outputs = true;
           on-click = "activate";
           format = "{icon}";
           format-icons = {
