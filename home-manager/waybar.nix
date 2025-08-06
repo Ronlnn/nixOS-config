@@ -44,9 +44,10 @@
       }
       #workspaces button {
         padding: 0 0.5em;
-        background-color: #F54927;
-        color: #F54927;
+        background-color: #B50976;
+        color: #B50976;
         margin: 0.25em;
+        border-radius: 20px;
       }
     '';
   };
