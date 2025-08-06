@@ -228,7 +228,7 @@
         groupbar {
           enabled = true
           font_family = Fira-code
-          font_size = 16
+          font_size = 18
           font_weight_active = normal
           font_weight_inactive = normal
           gradients = false
@@ -240,7 +240,9 @@
           priority = 3
           scrolling = true
           rounding = 1
-          text_color = rgba(1C0414FF)
+          gaps_in = 2
+          gaps_out = 2
+          text_color = rgba(EB65BFFF)
           col.active = rgba(EB65BFFF)
           col.inactive = rgba(160821FF)
         }
