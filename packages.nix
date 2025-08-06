@@ -89,6 +89,9 @@
     # Скриншоты
     flameshot
 
+    # Fonts
+    font-awesome
+    fira
 
     # Другое
     ### тема оформления Qt (Kvantum) для улучшенного внешнего вида приложений Qt
