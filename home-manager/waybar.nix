@@ -1,4 +1,4 @@
-{config, ...}: {
+{ config, ... }: {
   programs.waybar = {
     enable = true;
     settings = {
@@ -62,21 +62,6 @@
       };
     };
     style = ''
-      @define-color mainbg #${config.colorScheme.palette.base00};
-      @define-color modulesbg #${config.colorScheme.palette.base01};
-      @define-color text #${config.colorScheme.palette.base05};
-      @define-color alttext1 #${config.colorScheme.palette.base0C};
-      @define-color alttext2 #${config.colorScheme.palette.base05};
-      @define-color border #${config.colorScheme.palette.base0E};
-      @define-color empty #${config.colorScheme.palette.base02};
-      @define-color persistent #${config.colorScheme.palette.base04};
-      @define-color hover #${config.colorScheme.palette.base09};
-      @define-color white #${config.colorScheme.palette.base05};
-      @define-color red #${config.colorScheme.palette.base08};
-      @define-color orange #${config.colorScheme.palette.base09};
-      @define-color yellow #${config.colorScheme.palette.base0A};
-      @define-color green #${config.colorScheme.palette.base0B};
-
       * {
         all: initial;
         font-family:'JetBrainsMono Nerd Font';
@@ -85,14 +70,14 @@
       }
 
       window#waybar {
-      	background: @mainbg;
-      	border: 1px solid @border;
-      	border-radius: 5px;
+        background: #1e1e2e;
+        border: 1px solid #f5c2e7;
+        border-radius: 5px;
       }
 
       tooltip {
-        background: #${config.colorScheme.palette.base03};
-        border: 2px solid #${config.colorScheme.palette.base0C};
+        background: #313244;
+        border: 2px solid #94e2d5;
         border-radius: 5px;
         font-size: 12pt;
       }
@@ -103,13 +88,13 @@
 
       #workspaces {
         margin: 10px 0px;
-        background: @modulesbg;
+        background: #181825;
         font-size: 12pt;
         padding: 20px 0px;
-        border-top:3px solid @border;
+        border-top: 3px solid #f5c2e7;
         border-top-left-radius: 50px;
         border-top-right-radius: 5px;
-        border-bottom: 3px solid @border;
+        border-bottom: 3px solid #f5c2e7;
         border-bottom-right-radius: 50px;
         border-bottom-left-radius: 5px;
       }
@@ -122,44 +107,44 @@
       }
 
       #workspaces button.persistent {
-        background-color: @persistent;
+        background-color: #bac2de;
       }
 
       #workspaces button.empty {
-        background-color: @empty;
+        background-color: #45475a;
       }
 
       #workspaces button.visible {
-        background-color: @empty;
+        background-color: #45475a;
       }
 
       #workspaces button.active {
-        background-color: @green;
+        background-color: #a6e3a1;
       }
 
       #workspaces button.urgent {
-        background-color: @red;
+        background-color: #f38ba8;
       }
 
       #workspaces button:hover {
-        background-color: @hover;
+        background-color: #fab387;
       }
 
       #pulseaudio, #clock, #clock.date, #clock.time {
-        background: @modulesbg;
+        background: #181825;
       }
 
       #pulseaudio {
         padding: 1px 5px 1px 5px;
-        color: @text;
+        color: #cdd6f4;
         font-size: 16px;
       }
 
       #clock.date {
         padding: 30px 5px 10px 5px;
         font-size: 14px;
-        color: @alttext2;
-        border-top:3px solid @border;
+        color: #cdd6f4;
+        border-top: 3px solid #f5c2e7;
         border-top-left-radius: 50px;
         border-top-right-radius: 5px;
       }
@@ -167,47 +152,50 @@
       #clock.time {
         padding: 10px 5px 30px 5px;
         font-size: 14px;
-        color: @alttext1;
-        border-bottom: 3px solid @border;
+        color: #94e2d5;
+        border-bottom: 3px solid #f5c2e7;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 50px;
       }
 
       #pulseaudio-slider, #pulseaudio.percentage {
-        background-color: @modulesbg;
+        background-color: #181825;
       }
 
       #pulseaudio-slider {
         padding: 15px 0px 5px 0px;
-        border-top: 3px solid @border;
+        border-top: 3px solid #f5c2e7;
         border-top-left-radius: 50px;
         border-top-right-radius: 5px;
       }
+
       #pulseaudio-slider slider {
-          min-height: 0px;
-          min-width: 1px;
-          opacity: 0;
-          background-image: none;
-          border: none;
-          box-shadow: none;
+        min-height: 0px;
+        min-width: 1px;
+        opacity: 0;
+        background-image: none;
+        border: none;
+        box-shadow: none;
       }
+
       #pulseaudio-slider trough {
-          min-height: 70px;
-          min-width: 0px;
-          border-radius: 5px;
-          background-color: @border;
+        min-height: 70px;
+        min-width: 0px;
+        border-radius: 5px;
+        background-color: #f5c2e7;
       }
+
       #pulseaudio-slider highlight {
-          min-width: 10px;
-          border-radius: 5px;
-          background-color: @white;
+        min-width: 10px;
+        border-radius: 5px;
+        background-color: #ffffff;
       }
 
       #pulseaudio.percentage {
         font-size: 12px;
         margin: 0px 0px;
         padding: 2px 5px;
-        color: @text;
+        color: #cdd6f4;
       }
     '';
   };
