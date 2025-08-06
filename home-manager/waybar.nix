@@ -6,6 +6,8 @@
       mainBar = {
         layer = "top";
         position = "top";
+        height = 15;
+        spacing = 2;
         reload_style_on_change = true;
         modules-left = ["hyprland/workspaces"];
         "hyprland/workspaces" = {
