@@ -48,6 +48,13 @@
         # Wlogout
         "$mod, Escape, exec, env XDG_CURRENT_DESKTOP=hyprland wlogout --protocol layer-shell"
 
+
+        # Перемещение фокуса между окнами
+        "$mod SHIFT, right, movefocus, r"
+        "$mod SHIFT, left, movefocus, l"
+        "$mod SHIFT, up, movefocus, u"
+        "$mod SHIFT, down, movefocus, d"
+
         # Переключение между мониторами (вверх/вниз)
         "$mod, up, focusmonitor, HDMI-A-2"
         "$mod, down, focusmonitor, eDP-1"
@@ -77,17 +84,13 @@
         "$mod SHIFT, 9, movetoworkspace, 9"
         "$mod SHIFT, 0, movetoworkspace, 10"
 
-
         # Скриншоты
         "$mod SHIFT, S, exec, grim -g \"$(slurp)\" - | wl-copy"
-
       ];
       bindm = [
 	      "SUPER, mouse:272, movewindow"
 	      "SUPER, mouse:273, resizewindow"
 	    ];
-
-
       monitor = [
         "HDMI-A-2,1920x1080@74.97,0x0,1"
         "eDP-1,1920x1080@59.98,0x1080,1"
