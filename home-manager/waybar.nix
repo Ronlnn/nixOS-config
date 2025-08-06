@@ -8,6 +8,7 @@
         position = "top";
         height = 24;
         modules-left = ["hyprland/workspaces"];
+        modules-right = ["backlight/slider"];
         "hyprland/workspaces" = {
           format = "{icon}";
           format-icons = {
@@ -16,11 +17,37 @@
           };
           on-click = "activate";
         };
+        "backlight/slider" = {
+          min = 0;
+          max = 100;
+          orientation = "horizontal";
+        };
+
       };
     };
     style = ''
       window#waybar {
         background: rgba(17, 17, 27, 0.8);
+      }
+
+      #backlight/slider slider {
+        min-height: 0px;
+        min-width: 0px;
+        opacity: 0;
+        background-image: none;
+        border: none;
+        box-shadow: none;
+      }
+      #backlight-slider trough {
+        min-height: 80px;
+        min-width: 10px;
+        border-radius: 5px;
+        background-color: black;
+      }
+      #backlight-slider highlight {
+        min-width: 10px;
+        border-radius: 5px;
+        background-color: red;
       }
 
       #workspaces {
