@@ -36,6 +36,8 @@
         background: #11111B;
         border: 1px solid #11111B;
         border-radius: 5px;
+        font-size: 5px;
+        padding: 0.9em;
       }
 
       #workspaces {
@@ -48,7 +50,7 @@
         padding: 0.5em;
         background-color: #F5C2E7;
         color: #F5C2E7;
-        margin: 0.25em;
+        margin: 0.9em;
         border-radius: 50%;
       }
     '';
