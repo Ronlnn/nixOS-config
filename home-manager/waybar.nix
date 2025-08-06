@@ -40,16 +40,8 @@
       }
 
       #workspaces {
-        margin: 0px 0px;
         background: #46E874;
         font-size: 12px;
-        padding: 0px 0px;
-        border-top:3px solid #46E874;
-        border-top-left-radius: 50px;
-        border-top-right-radius: 5px;
-        border-bottom: 3px solid #46E874;
-        border-bottom-right-radius: 50px;
-        border-bottom-left-radius: 5px;
       }
     '';
   };
