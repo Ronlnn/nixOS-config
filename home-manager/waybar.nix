@@ -6,7 +6,7 @@
       mainBar = {
         layer = "top";
         position = "top";
-        height = 10;
+        height = 25;
         spacing = 2;
         reload_style_on_change = true;
         modules-left = ["hyprland/workspaces"];
@@ -38,6 +38,7 @@
         background: #11111B;
         border: 1px solid #11111B;
         border-radius: 5px;
+        min-height: 25px;
       }
 
       #workspaces {
@@ -45,7 +46,7 @@
         font-size: 1px;
       }
       #workspaces button {
-        min-height: 20px;
+
         background-color: #F5C2E7;
         color: #F5C2E7;
         border-radius: 50%;
