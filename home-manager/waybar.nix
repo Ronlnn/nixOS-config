@@ -43,11 +43,13 @@
         font-size: 12px;
       }
       #workspaces button {
+        width: 30px;
+        height: 30px;
         padding: 0 0.5em;
         background-color: #F5C2E7;
         color: #F5C2E7;
         margin: 0.25em;
-        border-radius: 25px;
+        border-radius: 50%;
       }
     '';
   };
