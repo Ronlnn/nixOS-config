@@ -4,6 +4,7 @@
   imports = [
     ../wlogout.nix
     ../eww.nix
+    ../waybar.nix
   ];
   home.packages = with pkgs; [
     fira-code
@@ -11,6 +12,7 @@
     bibata-cursors
   ];
 
+  # Cursor
   home.pointerCursor = {
   name = "Bibata-Modern-Ice"; # или другую тему
   package = pkgs.bibata-cursors;
