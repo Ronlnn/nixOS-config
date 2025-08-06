@@ -216,7 +216,7 @@
         auto_group = true
         insert_after_current = true
         focus_removed_window = true
-        drag_into_group = 1
+        drag_into_group = 2
         merge_groups_on_drag = true
         merge_groups_on_groupbar = true
         merge_floated_into_tiled_on_groupbar = true
@@ -240,8 +240,8 @@
           priority = 3
           scrolling = true
           rounding = 1
-          text_color = rgba(A327F5FF)
-          col.active = rgba(A327F5FF)
+          text_color = rgba(1C0414FF)
+          col.active = rgba(EB65BFFF)
           col.inactive = rgba(160821FF)
         }
       }
