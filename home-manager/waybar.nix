@@ -35,8 +35,7 @@
         background: #211499;
         border: 1px solid #E8E546;
         border-radius: 5px;
-        min-height: 10px;
-        max-height: 10px;
+
 
       }
 
