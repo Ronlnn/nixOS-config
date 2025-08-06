@@ -114,6 +114,10 @@
         "swww img -o HDMI-A-2 ~/Pictures/Walls/purp.jpg"
         "swww img -o eDP-1 ~/Pictures/Walls/purp.jpg"
         "hyprctl dispatch moveworkspacetomonitor 1 HDMI-A-2"
+
+         # Автоматическое создание воркспейсов
+        "bash -c 'for i in 1 2 3 4 5; do hyprctl dispatch moveworkspacetomonitor $i HDMI-A-2; done'"
+        "bash -c 'for i in 6 7 8 9 10; do hyprctl dispatch moveworkspacetomonitor $i eDP-1; done'"
       ];
 
 

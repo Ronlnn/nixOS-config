@@ -11,7 +11,7 @@
         "hyprland/workspaces" = {
           active-only = false;
           hide-active = false;
-          #all-outputs = true;
+          all-outputs = true;
           on-click = "activate";
           format = "{icon}";
           format-icons = {
@@ -26,18 +26,7 @@
             "9" = "9";
             "10" = "0";
           };
-          persistent-workspaces = {
-            "1" = [ HDMI-A-2];
-            "2" = [ HDMI-A-2 ];
-            "3" = [ HDMI-A-2 ];
-            "4" = [ HDMI-A-2 ];
-            "5" = [ HDMI-A-2 ];
-            "6" = [ eDP-1 ];
-            "7" = [ eDP-1 ];
-            "8" = [ eDP-1 ];
-            "9" = [ eDP-1 ];
-            "10" = [ eDP-1 ];
-          };
+
         };
 
       };
