@@ -40,12 +40,12 @@
 
       #workspaces {
         background: #242438;
-        font-size: 5px;
+        font-size: 1px;
       }
       #workspaces button {
         background-color: #F5C2E7;
         color: #F5C2E7;
-        border-radius: 20px;
+        border-radius: 50%;
       }
     '';
   };
