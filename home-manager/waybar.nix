@@ -41,12 +41,8 @@
       #workspaces {
         background: #242438;
         font-size: 5px;
-        margin: 5px;
-        padding: 5px;
       }
       #workspaces button {
-        padding: 5px;
-        margin: 5px;
         background-color: #F5C2E7;
         color: #F5C2E7;
         border-radius: 50%;
