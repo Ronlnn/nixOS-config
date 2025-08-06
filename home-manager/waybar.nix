@@ -9,6 +9,7 @@
         reload_style_on_change = true;
         modules-left = ["hyprland/workspaces"];
         "hyprland/workspaces" = {
+          active-only = false;
           on-click = "activate";
           format = "{icon}";
           format-icons = {
