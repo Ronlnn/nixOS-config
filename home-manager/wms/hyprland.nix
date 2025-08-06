@@ -239,10 +239,10 @@
           render_titles = true
           priority = 3
           scrolling = true
-          rounding = 4
+          rounding = 8
           gaps_in = 6
           gaps_out = 6
-          text_color = rgba(EB65BFFF)
+          text_color = rgba(0C061AFF)
           col.active = rgba(EB65BFFF)
           col.inactive = rgba(160821FF)
         }
