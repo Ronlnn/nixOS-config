@@ -45,7 +45,7 @@
       #workspaces button {
         background-color: #F5C2E7;
         color: #F5C2E7;
-        border-radius: 50%;
+        border-radius: 20px;
       }
     '';
   };
