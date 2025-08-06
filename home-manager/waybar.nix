@@ -6,7 +6,6 @@
       mainBar = {
         layer = "top";
         position = "top";
-        height = 5;
         reload_style_on_change = true;
         modules-left = ["hyprland/workspaces"];
         "hyprland/workspaces" = {
@@ -36,21 +35,22 @@
         background: #211499;
         border: 1px solid #E8E546;
         border-radius: 5px;
-        height: 10px;
+        min-height: 10px;
+        max-height: 10px;
+
       }
 
       #workspaces {
-        margin: 10px 0px;
+        margin: 5px 0px;
         background: #46E874;
         font-size: 12pt;
-        padding: 20px 0px;
+        padding: 5px 0px;
         border-top:3px solid #46E874;
         border-top-left-radius: 50px;
         border-top-right-radius: 5px;
         border-bottom: 3px solid #46E874;
         border-bottom-right-radius: 50px;
         border-bottom-left-radius: 5px;
-        height: 7px;
       }
     '';
   };
