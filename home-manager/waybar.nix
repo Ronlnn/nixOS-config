@@ -43,7 +43,8 @@
         font-size: 12px;
       }
       #workspaces button {
-
+ 
+        height: 30px;
         padding: 0 0.5em;
         background-color: #F5C2E7;
         color: #F5C2E7;
