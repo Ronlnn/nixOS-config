@@ -32,8 +32,8 @@
     };
     style = ''
       window#waybar {
-        background: #211499;
-        border: 1px solid #E8E546;
+        background: #11111B;
+        border: 1px solid #11111B;
         border-radius: 5px;
 
 
