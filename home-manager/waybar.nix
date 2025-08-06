@@ -42,13 +42,13 @@
         background: #242438;
         font-size: 12px;
         margin: 0;
-        padding: 0;
+        padding: 0.5em;
       }
       #workspaces button {
-        padding: 0 0.3em;
+        padding: 0 0.5em;
         background-color: #F5C2E7;
         color: #F5C2E7;
-        margin: 0.1em;
+        margin: 0.25em;
         border-radius: 50%;
       }
     '';
