@@ -8,7 +8,7 @@
         position = "top";
         height = 24;
         modules-left = ["hyprland/workspaces"];
-        modules-right = ["backlight/slider"];
+        modules-right = ["backlight"];
         "hyprland/workspaces" = {
           format = "{icon}";
           format-icons = {
@@ -18,7 +18,9 @@
           on-click = "activate";
         };
         "backlight" = {
-          format = "{percent}%";
+          device = "intel_backlight";
+          format = "{percent}% {icon}";
+          format-icons = ["" ""];
         };
 
       };
