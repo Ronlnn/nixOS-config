@@ -40,14 +40,14 @@
 
       #workspaces {
         background: #242438;
-        margin: 0 4px;
+        margin: 4px;
         padding: 0;
       }
       #workspaces button {
-        min-width: 14px;
-        min-height: 14px;
+        min-width: 10px;
+        min-height: 10px;
         padding: 0;
-        margin: 0 3px;
+        margin: 3px;
         background-color: #F5C2E7;
         color: #F5C2E7;
         border-radius: 50%;
