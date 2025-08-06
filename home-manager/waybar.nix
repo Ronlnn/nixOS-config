@@ -44,6 +44,7 @@
       #workspaces {
         background: #242438;
         font-size: 1px;
+        padding: 10px;
       }
       #workspaces button {
 
