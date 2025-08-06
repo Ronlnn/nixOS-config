@@ -36,6 +36,7 @@
         background: #211499;
         border: 1px solid #E8E546;
         border-radius: 5px;
+        height: 10px;
       }
 
       #workspaces {
@@ -49,6 +50,7 @@
         border-bottom: 3px solid #46E874;
         border-bottom-right-radius: 50px;
         border-bottom-left-radius: 5px;
+        height: 7px;
       }
     '';
   };
