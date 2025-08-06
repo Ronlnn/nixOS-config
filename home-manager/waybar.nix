@@ -36,21 +36,20 @@
         background: #11111B;
         border: 1px solid #11111B;
         border-radius: 5px;
-
       }
 
       #workspaces {
         background: #242438;
         font-size: 12px;
-        margin: 10px 0px;
-        padding: 20px 0px;
+        margin: 0;
+        padding: 0.5em;
       }
       #workspaces button {
-        padding: 2px;
+        padding: 0.5em;
         background-color: #F5C2E7;
         color: #F5C2E7;
-        margin: 5px 6px;
-        border-radius: 10px;
+        margin: 0.25em;
+        border-radius: 50%;
       }
     '';
   };
