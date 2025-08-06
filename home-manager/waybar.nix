@@ -39,7 +39,7 @@
       }
 
       #workspaces {
-        #background: #46E874;
+        background: #242438;
         font-size: 12px;
       }
       #workspaces button {
