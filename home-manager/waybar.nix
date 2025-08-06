@@ -6,55 +6,47 @@
       mainBar = {
         layer = "top";
         position = "top";
-        height = 15;
-        spacing = 2;
-        reload_style_on_change = true;
+        height = 24;
         modules-left = ["hyprland/workspaces"];
         "hyprland/workspaces" = {
-          active-only = false;
-          hide-active = false;
-          all-outputs = true;
-          on-click = "activate";
           format = "{icon}";
           format-icons = {
-            "1" = "";
-            "2" = "";
-            "3" = "";
-            "4" = "";
-            "5" = "";
-            "6" = "";
-            "7" = "";
-            "8" = "";
-            "9" = "";
-            "10" = "";
+            "1" = ""; "2" = ""; "3" = ""; "4" = ""; "5" = "";
+            "6" = ""; "7" = ""; "8" = ""; "9" = ""; "10" = "";
           };
-
+          on-click = "activate";
         };
-
       };
     };
     style = ''
       window#waybar {
-        background: #11111B;
+        background: rgba(17, 17, 27, 0.8);
       }
 
       #workspaces {
-        background: #242438;
-        margin: 4px;
-        padding: 0;
+        background: transparent;
+        margin: 0 4px;
       }
+
       #workspaces button {
         min-width: 16px;
         min-height: 16px;
+        margin: 4px 3px;
         padding: 0;
-        margin: 3px;
-        background-color: #F5C2E7;
-        color: #F5C2E7;
         border-radius: 50%;
+        background: #585B70;
       }
+
       #workspaces button.active {
-        background-color: #36E0E0;
-        color: #36E0E0;
+        background: #F5C2E7;
+      }
+
+      #workspaces button.urgent {
+        background: #F38BA8;
+      }
+
+      #workspaces button:hover {
+        background: #B5B5E6;
       }
     '';
   };
