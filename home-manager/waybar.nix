@@ -6,51 +6,46 @@
       mainBar = {
         layer = "top";
         position = "top";
-        height = 15;
+        height = 24;  # Оптимальная высота для кружков
         spacing = 2;
         reload_style_on_change = true;
         modules-left = ["hyprland/workspaces"];
         "hyprland/workspaces" = {
           active-only = false;
-          hide-active = false;
           all-outputs = true;
+          format = "";  # Пустая строка вместо цифр
           on-click = "activate";
-          format = "{icon}";
-          format-icons = {
-            "1" = "1";
-            "2" = "2";
-            "3" = "3";
-            "4" = "4";
-            "5" = "5";
-            "6" = "6";
-            "7" = "7";
-            "8" = "8";
-            "9" = "9";
-            "10" = "0";
-          };
-
         };
-
       };
     };
     style = ''
       window#waybar {
         background: #11111B;
-        border: 1px solid #11111B;
-        border-radius: 5px;
-        min-height: 25px;
+        border: none;
       }
 
       #workspaces {
-        background: #242438;
-        font-size: 1px;
-        margin: 10px;
+        background: transparent;
+        margin: 0 4px;
+        padding: 0;
       }
-      #workspaces button {
 
-        background-color: #F5C2E7;
-        color: #F5C2E7;
+      #workspaces button {
+        min-width: 12px;
+        min-height: 12px;
+        padding: 0;
+        margin: 0 3px;
         border-radius: 50%;
+        background-color: #585B70;  # Неактивный workspace
+        transition: background-color 0.3s;
+      }
+
+      #workspaces button.active {
+        background-color: #F5C2E7;  # Активный workspace
+      }
+
+      #workspaces button:hover {
+        background-color: #B5B5E6;  # При наведении
       }
     '';
   };
