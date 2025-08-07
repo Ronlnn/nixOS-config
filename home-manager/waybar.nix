@@ -28,7 +28,7 @@
     style = ''
       * {
       font-family: "FiraCode Nerd Font", sans-serif;
-      font-size: 18px;
+      font-size: 16px;
       }
       window#waybar {
         background: rgba(17, 17, 27, 0.5);
