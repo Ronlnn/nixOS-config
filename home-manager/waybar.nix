@@ -36,13 +36,13 @@
             critical = 15;
           };
           format = "{icon} {capacity}% ";
-          format-icons = ["󰁺" "󰁻" "󰁼" "󰁽" "󰂀" "󰂂 " ];
+          format-icons = ["󰁺" "󰁻" "󰁼" "󰁽" "󰂀" "󰂂" ];
           interval = 10;
           max-length = 20;
         };
         "cpu" = {
           interval = 10;
-          format = "{icon}{usage}%";
+          format = "{icon} {usage}%";
           format-icons = [" "];
         };
         "memory" = {
