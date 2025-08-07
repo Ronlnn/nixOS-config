@@ -97,7 +97,7 @@
 
       /* Группа Hardware */
       #group-hardware {
-        min-width: 100px;
+        min-width: 160px;
         padding: 0 12px;
         background: #1E1E2E;
         border-radius: 20px;
@@ -111,7 +111,6 @@
         color: #7BD62B;
         background: #1E1E2E;
         border-radius: 20px;
-        margin: 4px;
       }
 
        /* CPU */
@@ -121,7 +120,6 @@
         color: #ED7026;
         background: #1E1E2E;
         border-radius: 20px;
-        margin: 4px;
        }
 
       /* Memory */
@@ -131,7 +129,6 @@
         color: #16517A;
         background: #1E1E2E;
         border-radius: 20px;
-        margin: 4px;
       }
 
       /* Блютуз */
