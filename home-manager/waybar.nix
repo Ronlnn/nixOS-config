@@ -91,6 +91,15 @@
         padding: 4px;
       }
 
+      /* Группа Hardware */
+      #group-hardware {
+        min-width: 100px;
+        padding: 0 12px;
+        background: #1E1E2E;
+        border-radius: 20px;
+        margin: 4px;
+      }
+
       /* Яркость */
       #backlight {
         min-width: 46px;
