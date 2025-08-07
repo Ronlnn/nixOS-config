@@ -65,7 +65,8 @@
       }
 
       #workspaces button:hover {
-        background: #B5B5E6;
+        border: 1px solid #F38BA8; ;
+        border-radius: 50%;
       }
     '';
   };
