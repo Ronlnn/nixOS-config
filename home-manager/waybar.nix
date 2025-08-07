@@ -48,7 +48,7 @@
         "backlight" = {
           device = "intel_backlight";
           scroll-step = 10.0;
-          format = "<big>{icon}</big>  {percent}%";
+          format = " <big>{icon}</big>  {percent}% ";
           format-icons = ["<big>󱩎</big> " "<big>󱩒</big> " "<big>󱩔</big> " "<big>󱩖</big>"];
         };
         "pulseaudio" = {
