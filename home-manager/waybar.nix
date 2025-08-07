@@ -28,10 +28,10 @@
             warning = 30;
             critical = 15;
           };
-          format = "<span class='battery-icon'>{icon}</span> <span class='battery-text'>{capacity}%</span>";
-          format-charging = "<span class='battery-icon'>{icon}</span> <span class='battery-text'>{capacity}%</span>";
-          format-warning = "<span class='battery-icon'>{icon}</span> <span class='battery-text'>{capacity}%</span>";
-          format-critical = "<span class='battery-icon'>{icon}</span> <span class='battery-text'>{capacity}%</span>";
+          format = "<span background='#7BD62B' foreground='#1E1E2E'> {icon} </span> <span foreground='#7BD62B'>{capacity}%</span>";
+          format-charging = "<span background='#7BD62B' foreground='#1E1E2E'> {icon} </span> <span foreground='#7BD62B'>{capacity}%</span>";
+          format-warning = "<span background='#FFD700' foreground='#1E1E2E'> {icon} </span> <span foreground='#FFD700'>{capacity}%</span>";
+          format-critical = "<span background='#FF5555' foreground='#1E1E2E'> {icon} </span> <span foreground='#FF5555'>{capacity}%</span>";
           format-icons = ["󰁺" "󰁻" "󰁼" "󰁽" "󰂀" "󰂂"];
           interval = 10;
           max-length = 20;
@@ -68,19 +68,6 @@
         margin: 4px;
         min-width: 60px;
         min-height: 24px;
-      }
-
-      /* Иконка батареи */
-      #battery .battery-icon {
-        background-color: #7BD62B;
-        color: #1E1E2E;
-        padding: 2px 8px;
-        border-radius: 12px;
-      }
-
-      /* Текст батареи */
-      #battery .battery-text {
-        color: #7BD62B;
       }
 
       /* Workspaces */
