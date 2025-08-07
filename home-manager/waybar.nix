@@ -28,8 +28,8 @@
             warning = 30;
             critical = 15;
           };
-          format = "<span background='#74E016' color='#1E1E2E' min-width='23px'>{icon}</span> {capacity}%";
-          format-charging = "<span background='#74E016' color='#1E1E2E'>󰂄 </span> {capacity}%";
+          format = "<span>{icon}</span> {capacity}%";
+          format-charging = "<span>󰂄 </span> {capacity}%";
           format-warning = "󰂃 {capacity}%";
           format-critical = "󱧥 {capacity}%";
           format-icons = ["󰁺" "󰁻" "󰁼" "󰁽" "󰂀" "󰂂" ];
@@ -67,6 +67,12 @@
         background: #1E1E2E;
         border-radius: 20px;
         margin: 4px;
+      }
+      #battery span {
+        color: #1E1E2E;
+        background_color: #7BD62B;
+        border-left-top: 20px;
+        border-left-bottom: 20px;
       }
       #battery.charging {
         color: #7BD62B;
