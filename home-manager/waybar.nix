@@ -35,7 +35,7 @@
             warning = 30;
             critical = 15;
           };
-          format = " {icon}{capacity}% ";
+          format = "{icon} {capacity}% ";
           format-icons = ["󰁺" "󰁻" "󰁼" "󰁽" "󰂀" "󰂂" ];
           interval = 10;
           max-length = 20;
@@ -106,7 +106,7 @@
         background: #1E1E2E;
         border-radius: 0 20px 20px 0;
         margin: 4px 0 4px 0;
-        padding: 4px 0 4px 0;
+        padding: 4px 0 4px 2px;
       }
 
        /* CPU */
