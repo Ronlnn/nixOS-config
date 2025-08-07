@@ -39,6 +39,7 @@
       #backlight {
         min-width: 56px;
         min-height: 24px;
+        font-size: 14px;
         padding: 0 12px;
         color: #E0C238;
         background: #1E1E2E;
