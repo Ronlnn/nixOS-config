@@ -46,6 +46,7 @@
       #workspaces {
         background: #242438;
         border-radius: 20px;
+        margin: 4px;
         padding: 2px;
       }
       #workspaces button {
@@ -71,6 +72,7 @@
         color: #F38BA8;
         background: transparent;
         border-bottom: 2px solid #F38BA8;
+        margin: 4px;
       }
     '';
   };
