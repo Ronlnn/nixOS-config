@@ -11,7 +11,7 @@
         bar_width = 2;
         bar_spacing = 1;
         lower_cutoff_freq = 50;
-        higher_cutoff_freq = 10000;
+        higher_cutoff_freq = 100000;
       };
       input = {
         method = "alsa";
