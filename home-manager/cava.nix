@@ -14,7 +14,7 @@
         higher_cutoff_freq = 10000;
       };
       input = {
-        method = "pipewire";
+        method = "pulse";
         source = "auto";
         sample_rate = 44100;
         sample_bits = 16;
