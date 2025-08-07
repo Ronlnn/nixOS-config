@@ -8,7 +8,7 @@
         position = "top";
         height = 30;
         modules-left = ["hyprland/workspaces"];
-        modules-right = ["backlight" "battery" "bluetooth cpu"];
+        modules-right = ["backlight" "battery" "bluetooth" "cpu"];
         "hyprland/workspaces" = {
           format = "{icon}";
           format-icons = {
