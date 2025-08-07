@@ -59,6 +59,26 @@
           format = "<big>{icon}</big>  {percent}%";
           format-icons = ["<big>󱩎</big> " "<big>󱩒</big> " "<big>󱩔</big> " "<big>󱩖</big>"];
         };
+        "pulseaudio" = {
+          format = "{icon}";
+          format-bluetooth = "{icon}";
+          format-muted = "󰖁";
+          format-icons = {
+            headphones = "";
+            default = "󰕾";
+          };
+          scroll-step = 10;
+          on-click = "pavucontrol";
+        };
+        "pulseaudio#percentage" = {
+          on-click = "pactl set-sink-mute @DEFAULT_SINK@ toggle";
+          format = "{volume}%";
+        };
+        "pulseaudio/slider" = {
+          min = 0;
+          max = 100;
+          orientation = "vertical";
+        };
         "cava" = {
           format-icons = ["▁""▂""▃""▄""▅""▆""▇""█"];
           cava_config = "${config.xdg.configHome}/cava/config";
@@ -154,6 +174,15 @@
         padding: 6px 6px;
         color: #FAF839;
         background: #1E1E2E;
+        border-radius: 20px;
+        margin: 4px;
+      }
+
+      /* Volume */
+      #pulseaudio {
+        color: #EBA0AC;
+        background: #1E1E2E;
+        padding: 6px 6px;
         border-radius: 20px;
         margin: 4px;
       }
