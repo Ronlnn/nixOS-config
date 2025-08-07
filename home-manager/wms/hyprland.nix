@@ -59,7 +59,7 @@
         "$mod, up, focusmonitor, HDMI-A-2"
         "$mod, down, focusmonitor, eDP-1"
         # Move workspace
-        "$mod, L, worlspace, r-1"
+        "$mod, L, workspace, r-1"
         "$mod, K, workspace, r+1"
 
         "$mod, left, exec, /home/roninn/nixOS-config/scripts/switch-workspaces.sh -1"
