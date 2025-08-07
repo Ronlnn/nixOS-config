@@ -146,6 +146,16 @@
         margin: 4px;
        }
 
+       /* Clock */
+      #clock {
+        min-width: 36px;
+        padding: 0 12px;
+        color: #F7F7F7;
+        background: #1E1E2E;
+        border-radius: 20px;
+        margin: 4px;
+      }
+
       /* Workspaces */
       #workspaces {
         background: #242438;
