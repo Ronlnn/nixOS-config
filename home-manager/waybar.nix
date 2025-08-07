@@ -57,7 +57,7 @@
       }
 
       #workspaces button.active {
-        border: 1px solid #F38BA8; ;
+        border: 2px solid #F38BA8; ;
         border-radius: 50%;
         background: transparent;
         transition: border-color 0.2s ease;
