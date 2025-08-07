@@ -20,7 +20,7 @@
         "backlight" = {
           device = "intel_backlight";
           format = "{percent}% {icon}";
-          format-icons = ["" ""];
+          format-icons = ["󱩎" "󱩒" "󱩔" "󱩖"];
         };
 
       };
@@ -38,9 +38,9 @@
       /* Яркость */
       #backlight {
         padding: 0 10px;
-        color: #CDD6F4;
+        color: #E0C238;
         background: #1E1E2E;
-        border-radius: 5px;
+        border-radius: 20px;
         margin: 4px;
       }
       /* Workspaces */
