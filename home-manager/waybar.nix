@@ -35,7 +35,7 @@
             warning = 30;
             critical = 15;
           };
-          format = "{icon} {capacity}% ";
+          format = "{icon}{capacity}% ";
           format-icons = ["󰁺" "󰁻" "󰁼" "󰁽" "󰂀" "󰂂" ];
           interval = 10;
           max-length = 20;
