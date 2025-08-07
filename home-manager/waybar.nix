@@ -38,13 +38,7 @@
         };
         "bluetooth" = {
           format = "<big>󰂯</big> {status}";
-          format-connected = "<big>󰂯</big> {device_alias}";
-          format-connected-battery = "<big>󰂯</big> {device_alias} {device_battery_percentage}%";
-          tooltip-format = "{controller_alias}\t{controller_address}\n\n{num_connections} connected";
-          tooltip-format-connected = "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}";
-          tooltip-format-enumerate-connected = "{device_alias}\t{device_address}";
-          tooltip-format-enumerate-connected-battery = "{device_alias}\t{device_address}\t{device_battery_percentage}%";
-
+          on-click = "blueman-manager";
         };
 
       };
@@ -68,6 +62,7 @@
         border-radius: 20px;
         margin: 4px;
       }
+
       /* Батарея */
       #battery {
         min-width: 46px;
@@ -83,6 +78,7 @@
       #battery.warning {
         color: #7BD62B;
       }
+
       /* Батарея */
       #bluetooth {
         min-width: 46px;
