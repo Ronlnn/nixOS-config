@@ -81,7 +81,7 @@
 
       /* Батарея */
       #bluetooth {
-        min-width: 46px;
+        min-width: 36px;
         padding: 0 12px;
         color: #88DAEA;
         background: #1E1E2E;
