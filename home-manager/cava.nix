@@ -23,12 +23,12 @@
         remix = 1;
       };
       output = {
-        method = "raw";
+        method = "noncurses";
         orientation = "bottom";
-        raw_target = "/dev/stdout";
-        data_format = "binary";
-        bit_format = "16bit";
-        ascii_max_range = 1000;
+        #raw_target = "/dev/stdout";
+        #data_format = "binary";
+        #bit_format = "16bit";
+        #ascii_max_range = 1000;
         stereo = true;
         bar_delimiter = 0;
       };
