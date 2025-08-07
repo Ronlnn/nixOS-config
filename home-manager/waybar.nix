@@ -25,6 +25,10 @@
         "group/hardware" = {
           orientation = "horizontal";
           modules = ["cpu" "memory" "battery"];
+            drawer = {
+            transition-duration = 0;
+            hide-empty-modules = false;
+        };
         };
         "battery" = {
           states = {
