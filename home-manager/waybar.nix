@@ -1,24 +1,9 @@
 {config, pkgs, ...}:
 {
-  home.packages = with pkgs; [
-  cava
+  imports = [
+    ./cava.nix
   ];
 
-  home.file.".config/cava/config".text = ''
-    [general]
-    bars = 8
-    framerate = 30
-
-    [input]
-    method = alsa
-    source = auto
-
-    [output]
-    method = raw
-    raw_target = /dev/stdout
-    data_format = ascii
-    ascii_max_range = 100
-  '';
   programs.waybar = {
     enable = true;
     settings = {
@@ -68,7 +53,6 @@
       "cava" = {
         format-icons = ["▁""▂""▃""▄""▅""▆""▇""█"];
         cava_config = "${config.xdg.configHome}/cava/config";
-        interval = 0.01;
         };
       };
     };
