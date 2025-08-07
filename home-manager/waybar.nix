@@ -68,9 +68,6 @@
         margin: 4px;
         min-width: 60px;
         min-height: 24px;
-        display: flex;
-        align-items: center;
-        gap: 6px;
       }
 
       /* Иконка батареи */
