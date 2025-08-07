@@ -28,11 +28,11 @@
             warning = 30;
             critical = 15;
           };
-          format = "<span background='#74E016' color='#1E1E2E'>{icon}</span> <span color='#74E016'>{capacity}% </span>";
-          format-charging = "<span background='#74E016' color='#1E1E2E'>󰂄 </span> <span color='#74E016'>{capacity}% </span>";
+          format = "<span background='#74E016' color='#1E1E2E' min-width='23px'>{icon}</span> {capacity}%";
+          format-charging = "<span background='#74E016' color='#1E1E2E'>󰂄 </span> {capacity}%";
           format-warning = "󰂃 {capacity}%";
           format-critical = "󱧥 {capacity}%";
-          format-icons = ["<span foreground='#1E1E2E'>󰁺" "<span foreground='#1E1E2E'>󰁻 </span>" "<span foreground='#1E1E2E'>󰁼</span>" "<span foreground='#1E1E2E'>󰁽</span>" "<span foreground='#1E1E2E'>󰂀</span>" "<span foreground='#1E1E2E'>󰂂</span>" ];
+          format-icons = ["󰁺" "󰁻" "󰁼" "󰁽" "󰂀" "󰂂" ];
           interval = 10;
           max-length = 20;
         };
@@ -63,20 +63,10 @@
       #battery {
         min-width: 46px;
         padding: 0 12px;
-
+        color: #7BD62B;
+        background: #1E1E2E;
         border-radius: 20px;
         margin: 4px;
-      }
-            /* Иконка (зеленый фон + черная иконка) */
-      #battery span:first-child {
-        background-color: #7BD62B;
-        color: #000000;
-      }
-
-      /* Текст (черный фон + зеленый текст) */
-      #battery span:last-child {
-        background-color: #1E1E2E;
-        color: #7BD62B;
       }
       #battery.charging {
         color: #7BD62B;
