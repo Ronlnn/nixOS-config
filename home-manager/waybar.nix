@@ -26,6 +26,9 @@
       };
     };
     style = ''
+      * {
+      font-family: "FiraCode Nerd Font", sans-serif;
+      }
       window#waybar {
         background: rgba(17, 17, 27, 0.8);
       }
