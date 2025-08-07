@@ -47,7 +47,7 @@
         };
         "memory" = {
           interval = 30;
-          format = "  {used}/{total}";
+          format = "<big> </big> {used}/{total}";
         };
         "bluetooth" = {
           format = "<big>󰂯</big> {status}";
@@ -106,6 +106,7 @@
         background: #1E1E2E;
         border-radius: 0 20px 20px 0;
         margin: 4px 0 4px 0;
+        padding: 0 3px;
       }
 
        /* CPU */
@@ -115,6 +116,7 @@
         background: #1E1E2E;
         border-radius: 20px 0 0 20px;
         margin: 4px 0 4px 0;
+        padding: 0 3px;
        }
 
       /* Memory */
@@ -124,6 +126,7 @@
         background: #1E1E2E;
         border-radius: 0;
         margin: 4px 0 4px 0;
+        padding: 0 3px;
       }
 
       /* Блютуз */
