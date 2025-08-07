@@ -28,7 +28,7 @@
             warning = 30;
             critical = 15;
           };
-          format = "<span background='#74E016'>{icon}</span> {capacity}%";
+          format = "<span background='#74E016' color='#1E1E2E'>{icon}</span> {capacity}%";
           format-charging = "<span background='#74E016'>󰂄 </span> {capacity}%";
           format-warning = "󰂃 {capacity}%";
           format-critical = "󱧥 {capacity}%";
