@@ -92,6 +92,7 @@
             height = 30;
             width = 30;
             avatar = "${config.home.homeDirectory}/Pictures/Walls/zenitsu.png";
+            icon = true;
           };
       };
     };
