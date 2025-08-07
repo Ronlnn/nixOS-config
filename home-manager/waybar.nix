@@ -72,7 +72,7 @@
         color: #1E1E2E;
         background-color: #7BD62B;
         border-radius: 20px 0 0 20px;
-        border-left-bottom: 20px;
+
       }
       #battery.charging {
         color: #7BD62B;
