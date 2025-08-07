@@ -31,7 +31,7 @@
       }
 
       window#waybar {
-        background: rgba(17, 17, 27, 0.6);
+        background: rgba(17, 17, 27, 0.5);
       }
 
       /* Стили для модуля яркости */
