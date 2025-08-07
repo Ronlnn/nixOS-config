@@ -41,6 +41,10 @@
           format = "<big>{icon}</big> {usage}%";
           format-icons = ["<big></big> "];
         };
+        "memory" = {
+          interval = 30;
+          format = "  {used}/{total}";
+        };
         "bluetooth" = {
           format = "<big>󰂯</big> {status}";
           on-click = "blueman-manager";
@@ -100,21 +104,31 @@
         margin: 4px;
       }
 
-      /* Яркость */
-      #backlight {
-        min-width: 46px;
-        padding: 0 12px;
-        color: #FAF839;
-        background: #1E1E2E;
-        border-radius: 20px;
-        margin: 4px;
-      }
-
       /* Батарея */
       #battery {
         min-width: 46px;
         padding: 0 12px;
         color: #7BD62B;
+        background: #1E1E2E;
+        border-radius: 20px;
+        margin: 4px;
+      }
+
+       /* CPU */
+       #cpu {
+        min-width: 46px;
+        padding: 0 12px;
+        color: #ED7026;
+        background: #1E1E2E;
+        border-radius: 20px;
+        margin: 4px;
+       }
+
+      /* Memory */
+      #memory {
+        min-width: 46px;
+        padding: 0 12px;
+        color: #16517A;
         background: #1E1E2E;
         border-radius: 20px;
         margin: 4px;
@@ -130,15 +144,15 @@
         margin: 4px;
       }
 
-       /* CPU */
-       #cpu {
+      /* Яркость */
+      #backlight {
         min-width: 46px;
         padding: 0 12px;
-        color: #ED7026;
+        color: #FAF839;
         background: #1E1E2E;
         border-radius: 20px;
         margin: 4px;
-       }
+      }
 
        /* Cava */
        #cava {
