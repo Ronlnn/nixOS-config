@@ -28,14 +28,15 @@
             warning = 30;
             critical = 15;
           };
-          format = "<big>{icon}</big> {capacity}%";
-          format-charging = "<big>󰂄 </big> {capacity}%";
-          format-warning = "󰂃 {capacity}%";
-          format-critical = "󱧥 {capacity}%";
-          format-icons = ["󰁺" "󰁻" "󰁼" "󰁽" "󰂀" "󰂂" ];
+          format = "<span class='battery-icon'>{icon}</span> <span class='battery-text'>{capacity}%</span>";
+          format-charging = "<span class='battery-icon'>{icon}</span> <span class='battery-text'>{capacity}%</span>";
+          format-warning = "<span class='battery-icon'>{icon}</span> <span class='battery-text'>{capacity}%</span>";
+          format-critical = "<span class='battery-icon'>{icon}</span> <span class='battery-text'>{capacity}%</span>";
+          format-icons = ["󰁺" "󰁻" "󰁼" "󰁽" "󰂀" "󰂂"];
           interval = 10;
           max-length = 20;
         };
+
 
       };
     };
@@ -59,22 +60,32 @@
         border-radius: 20px;
         margin: 4px;
       }
-      /* Батарея */
+      /* Общий стиль блока батареи */
       #battery {
-        min-width: 46px;
         padding: 0 12px;
-        color: #7BD62B;
         background: #1E1E2E;
         border-radius: 20px;
         margin: 4px;
+        min-width: 60px;
+        min-height: 24px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
       }
 
-      #battery.charging {
+      /* Иконка батареи */
+      #battery .battery-icon {
+        background-color: #7BD62B;
+        color: #1E1E2E;
+        padding: 2px 8px;
+        border-radius: 12px;
+      }
+
+      /* Текст батареи */
+      #battery .battery-text {
         color: #7BD62B;
       }
-      #battery.warning {
-        color: #7BD62B;
-      }
+
       /* Workspaces */
       #workspaces {
         background: #242438;
