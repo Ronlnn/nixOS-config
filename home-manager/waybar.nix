@@ -42,16 +42,16 @@
       }
 
       #workspaces {
-        background: transparent;
-        margin: 0 4px;
+        background: #242438;
+        margin: 4px;
       }
 
       #workspaces button {
         min-width: 16px;
         min-height: 16px;
-        margin: 4px 3px;
+        margin: 4px;
         padding: 0;
-        background: #F38BA8;
+        color: #F38BA8;
       }
 
       #workspaces button.active {
