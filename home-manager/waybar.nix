@@ -132,7 +132,7 @@
       /* Блютуз */
       #bluetooth {
         min-width: 36px;
-        padding: 0 12px;
+        padding: 0 6px;
         color: #88DAEA;
         background: #1E1E2E;
         border-radius: 20px;
@@ -142,11 +142,11 @@
       /* Яркость */
       #backlight {
         min-width: 50px;
-        padding: 6px 6px;
         color: #FAF839;
         background: #1E1E2E;
         border-radius: 20px;
         margin: 4px;
+        padding: 0 6px;
       }
 
        /* Cava */
@@ -174,7 +174,7 @@
         background: #242438;
         border-radius: 20px;
         margin: 4px;
-        padding: 2px;
+        padding: 6px;
       }
       #workspaces button {
         min-width: 24px;
