@@ -70,7 +70,7 @@
       }
       #battery span {
         color: #1E1E2E;
-        background_color: #7BD62B;
+        background-color: #7BD62B;
         border-left-top: 20px;
         border-left-bottom: 20px;
       }
