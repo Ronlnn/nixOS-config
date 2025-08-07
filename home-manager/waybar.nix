@@ -91,7 +91,7 @@
             format = "{user} {work_d} days";
             height = 30;
             width = 30;
-            avatar = "${HOME}/Pictures/Walls/zenitsu.png";
+            avatar = "${config.home.homeDirectory}/Pictures/Walls/zenitsu.png";
           };
       };
     };
