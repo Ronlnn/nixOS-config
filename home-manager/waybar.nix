@@ -23,6 +23,10 @@
           format = "{percent}% {icon}";
           format-icons = ["󱩎" "󱩒" "󱩔" "󱩖"];
         };
+        "battery" = {
+          format = "{icon}";
+          format-icons = ["" "" "" "" "" ];
+        };
 
       };
     };
@@ -42,6 +46,15 @@
         min-height: 24px;
         padding: 0 12px;
         color: #F5DE7A;
+        background: #1E1E2E;
+        border-radius: 20px;
+        margin: 4px;
+      }
+      /* Батарея */
+      #battery {
+        min-width: 46px;
+        padding: 0 12px;
+        color: #7BD62B;
         background: #1E1E2E;
         border-radius: 20px;
         margin: 4px;
