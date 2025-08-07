@@ -19,7 +19,7 @@
         };
         "backlight" = {
           device = "intel_backlight";
-          scroll-step = "10.0";
+          scroll-step = 10.0;
           format = "{percent}% {icon}";
           format-icons = ["󱩎" "󱩒" "󱩔" "󱩖"];
         };
