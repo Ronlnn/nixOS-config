@@ -20,7 +20,7 @@
         "backlight" = {
           device = "intel_backlight";
           scroll-step = 10.0;
-          format = "{icon} {percent}%";
+          format = "<big>{icon}</big> {percent}%";
           format-icons = ["󱩎" "󱩒" "󱩔" "󱩖"];
         };
         "battery" = {
