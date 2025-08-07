@@ -46,7 +46,7 @@
         background: #242438;
         margin: 4px;
         padding: 2px;
-        text-align: center;
+        line-height: normal;
       }
 
       #workspaces button {
