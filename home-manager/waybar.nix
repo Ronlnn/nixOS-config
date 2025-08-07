@@ -47,7 +47,7 @@
         };
         "memory" = {
           interval = 30;
-          format = "  {used}/{total}";
+          format = " {used}/{total}";
         };
         "bluetooth" = {
           format = "<big>󰂯</big> {status}";
