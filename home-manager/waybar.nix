@@ -32,6 +32,7 @@
       }
       window#waybar {
         background: rgba(17, 17, 27, 0.5);
+        padding: 4px;
       }
 
       /* Яркость */
@@ -45,7 +46,6 @@
       #workspaces {
         background: #242438;
         border-radius: 20px;
-        margin: 4px;
         padding: 2px;
       }
       #workspaces button {
