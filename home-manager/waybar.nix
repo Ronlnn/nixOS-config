@@ -12,8 +12,8 @@
         "hyprland/workspaces" = {
           format = "{icon}";
           format-icons = {
-            "1" = ""; "2" = ""; "3" = ""; "4" = ""; "5" = "";
-            "6" = ""; "7" = ""; "8" = ""; "9" = ""; "10" = "";
+            "1" = "󰪥"; "2" = "󰪥"; "3" = "󰪥"; "4" = "󰪥"; "5" = "󰪥";
+            "6" = "󰪥"; "7" = "󰪥"; "8" = "󰪥"; "9" = "󰪥"; "10" = "󰪥";
           };
           on-click = "activate";
         };
@@ -48,8 +48,7 @@
         min-height: 16px;
         margin: 4px 3px;
         padding: 0;
-        border-radius: 50%;
-        background: #585B70;
+        background: #F38BA8;
       }
 
       #workspaces button.active {

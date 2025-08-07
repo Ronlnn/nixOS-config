@@ -89,10 +89,6 @@
     # Скриншоты
     flameshot
 
-    # Fonts
-    font-awesome
-    fira
-
     # Другое
     ### тема оформления Qt (Kvantum) для улучшенного внешнего вида приложений Qt
     libsForQt5.qtstyleplugin-kvantum
@@ -106,9 +102,10 @@
     nerd-fonts.fira-code
     nerd-fonts.jetbrains-mono
   ];
-  fonts.fonts = with pkgs; [
+  fonts.packages = with pkgs; [
     font-awesome
     fira
+    
 ];
 
 }
