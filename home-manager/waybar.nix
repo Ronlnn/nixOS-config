@@ -10,7 +10,7 @@
       mainBar = {
         layer = "top";
         position = "top";
-        height = 30;
+        height = 40;
         modules-left = ["hyprland/workspaces"];
         modules-center = ["cava"];
         modules-right = ["backlight" "battery" "bluetooth" "cpu"];

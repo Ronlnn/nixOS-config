@@ -29,6 +29,8 @@
         data_format = "binary";
         bit_format = "16bit";
         ascii_max_range = 1000;
+        stereo = true;
+        bar_delimiter = 0;
       };
     };
   };
