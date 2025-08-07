@@ -106,7 +106,7 @@
         background: #1E1E2E;
         border-radius: 0 20px 20px 0;
         margin: 4px 0 4px 0;
-        padding: 0 3px;
+        padding: 0 4px;
       }
 
        /* CPU */
@@ -116,7 +116,7 @@
         background: #1E1E2E;
         border-radius: 20px 0 0 20px;
         margin: 4px 0 4px 0;
-        padding: 0 3px;
+        padding: 0 4px;
        }
 
       /* Memory */
@@ -126,7 +126,7 @@
         background: #1E1E2E;
         border-radius: 0;
         margin: 4px 0 4px 0;
-        padding: 0 3px;
+        padding: 0 4px;
       }
 
       /* Блютуз */
