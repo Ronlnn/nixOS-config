@@ -13,7 +13,7 @@
         height = 40;
         modules-left = ["hyprland/workspaces"];
         modules-center = ["user" "clock" "cava"];
-        modules-right = ["backlight" "pulseaudio/slider" "pulseaudio" "cpu" "memory" "battery" "bluetooth"];
+        modules-right = ["backlight" "pulseaudio" "cpu" "memory" "battery" "bluetooth"];
         "hyprland/workspaces" = {
           format = "{icon}";
           format-icons = {
@@ -52,7 +52,7 @@
           format-icons = ["<big>󱩎</big> " "<big>󱩒</big> " "<big>󱩔</big> " "<big>󱩖</big>"];
         };
         "pulseaudio" = {
-          format = "{icon}";
+          format = "<big>{icon}</big> {volume}%";
           format-bluetooth = "{icon}<big></big>";
           format-muted = "<big>󰖁</big>";
           format-icons = {
@@ -61,15 +61,6 @@
           };
           scroll-step = 10;
           on-click = "pavucontrol";
-        };
-        "pulseaudio#percentage" = {
-          on-click = "pactl set-sink-mute @DEFAULT_SINK@ toggle";
-          format = "{volume}%";
-        };
-        "pulseaudio/slider" = {
-          min = 0;
-          max = 100;
-          orientation = "vertical";
         };
         "cava" = {
           format-icons = ["▁""▂""▃""▄""▅""▆""▇""█"];
@@ -178,11 +169,6 @@
         border-radius: 20px;
         margin: 4px;
       }
-      #pulseaudio-slider {
-        color: #EBA0AC;
-        background: #1E1E2E;
-      }
-
        /* Cava */
        #cava {
         min-width: 76px;
