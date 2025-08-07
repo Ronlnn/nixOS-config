@@ -42,7 +42,7 @@
         };
         "cpu" = {
           interval = 10;
-          format = "<big>{icon}</big> {usage}%";
+          format = "<span margin='0 5px 0 0'><big>{icon}</big></span> {usage}%";
           format-icons = ["<big></big>"];
         };
 
@@ -94,7 +94,7 @@
         margin: 4px;
       }
 
-       /* Батарея */
+       /* CPU */
        #cpu {
         min-width: 46px;
         padding: 0 12px;
