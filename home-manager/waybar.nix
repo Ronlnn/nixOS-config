@@ -13,7 +13,7 @@
         height = 40;
         modules-left = ["hyprland/workspaces"];
         modules-center = ["user" "clock" "cava"];
-        modules-right = ["backlight" "pulseaudio" "cpu" "memory" "battery" "bluetooth"];
+        modules-right = ["backlight" "pulseaudio/slider" "pulseaudio" "cpu" "memory" "battery" "bluetooth"];
         "hyprland/workspaces" = {
           format = "{icon}";
           format-icons = {
@@ -21,13 +21,6 @@
             "6" = "󰪥"; "7" = "󰪥"; "8" = "󰪥"; "9" = "󰪥"; "10" = "󰪥";
           };
           on-click = "activate";
-        };
-        "group/hardware" = {
-          orientation = "horizontal";
-          modules = [];
-            drawer = {
-            transition-duration = 0;
-            hide-empty-modules = false;
         };
         };
         "battery" = {
@@ -61,11 +54,11 @@
         };
         "pulseaudio" = {
           format = "{icon}";
-          format-bluetooth = "{icon}";
-          format-muted = "󰖁";
+          format-bluetooth = "{icon}<big></big>";
+          format-muted = "<big>󰖁</big>";
           format-icons = {
-            headphones = "";
-            default = "󰕾";
+            headphones = "<big></big>";
+            default = "<big>󰕾</big>";
           };
           scroll-step = 10;
           on-click = "pavucontrol";
@@ -84,7 +77,7 @@
           cava_config = "${config.xdg.configHome}/cava/config";
           bars = 8;
           };
-          "clock" = {
+        "clock" = {
             interval = 60;
             format = "<big>󰥔</big> {:%H:%M %d %B}";
             timezone = "Europe/Moscow";
@@ -185,6 +178,10 @@
         padding: 6px 6px;
         border-radius: 20px;
         margin: 4px;
+      }
+      #pulseaudio-slider {
+        background: #1E1E2E;
+        color: #EBA0AC;
       }
 
        /* Cava */

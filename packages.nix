@@ -90,7 +90,7 @@
     pipewire
     pulseaudio
     pamixer
-
+    pavucontrol
     # Скриншоты
     flameshot
 
