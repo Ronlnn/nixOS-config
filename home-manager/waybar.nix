@@ -47,6 +47,9 @@
           format-icons = ["<big></big> "];
         };
         "cava" = {
+          sample_rate = 44100;
+          higher_cutoff_freq = 10000;
+          lower_cutoff_freq = 50;
           framerate = 30;
           autosens = 1;
           bars = 12;
