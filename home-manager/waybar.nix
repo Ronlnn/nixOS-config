@@ -125,6 +125,7 @@
         padding: 0 12px;
         color: #16517A;
         background: #1E1E2E;
+        border-radius: 0;
         margin: 4px 0 4px 0;
       }
 
