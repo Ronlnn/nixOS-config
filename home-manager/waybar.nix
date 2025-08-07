@@ -67,7 +67,7 @@
         };
       "cava" = {
         format-icons = ["▁""▂""▃""▄""▅""▆""▇""█"];
-        exec = "cava -p ${config.xdg.configHome}/cava/config";
+        cava_config = "$XDG_CONFIG_HOME/cava/cava.conf";
         interval = 0.01;
         };
       };
