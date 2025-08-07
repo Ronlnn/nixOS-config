@@ -8,7 +8,7 @@
         position = "top";
         height = 30;
         modules-left = ["hyprland/workspaces"];
-        modules-right = ["backlight" "battery"];
+        modules-right = ["backlight" "battery" "bluetooth"];
         "hyprland/workspaces" = {
           format = "{icon}";
           format-icons = {
@@ -35,6 +35,16 @@
           format-icons = ["󰁺" "󰁻" "󰁼" "󰁽" "󰂀" "󰂂" ];
           interval = 10;
           max-length = 20;
+        };
+        "bluetooth" = {
+          format = "<big>󰂯</big> {status}";
+          format-connected = "<big>󰂯</big> {device_alias}";
+          format-connected-battery = "<big>󰂯</big> {device_alias} {device_battery_percentage}%";
+          tooltip-format = "{controller_alias}\t{controller_address}\n\n{num_connections} connected";
+          tooltip-format-connected = "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}";
+          tooltip-format-enumerate-connected = "{device_alias}\t{device_address}";
+          tooltip-format-enumerate-connected-battery = "{device_alias}\t{device_address}\t{device_battery_percentage}%";
+
         };
 
       };
@@ -67,12 +77,21 @@
         border-radius: 20px;
         margin: 4px;
       }
-
       #battery.charging {
         color: #7BD62B;
       }
       #battery.warning {
         color: #7BD62B;
+      }
+      /* Батарея */
+      #bluetooth {
+        min-width: 46px;
+        padding: 0 12px;
+        color: #88DAEA;
+        background: #1E1E2E;
+        border-radius: 20px;
+        margin: 4px;
+
       }
       /* Workspaces */
       #workspaces {
