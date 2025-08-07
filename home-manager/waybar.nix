@@ -1,5 +1,8 @@
 {config, pkgs, ...}:
 {
+  home.packages = with pkgs; [
+  cava
+  ];
   programs.waybar = {
     enable = true;
     settings = {
@@ -48,10 +51,13 @@
         };
         "cava" = {
           sample_rate = 44100;
+          sample_bits = 16;
+
           higher_cutoff_freq = 10000;
           lower_cutoff_freq = 50;
           framerate = 30;
           autosens = 1;
+          sensitivity = 100;
           bars = 12;
           method = "alsa";
           input_delay = 2;
