@@ -67,9 +67,12 @@
       #workspaces button.urgent {
         color: #F38BA8;
       }
+      #workspaces button.empty {
+        color: #CDD6F4;
+      }
 
       #workspaces button:hover {
-        border-bottom: 1px solid #F38BA8; ;
+        color: #F38BA8;
         background: transparent;
         border-bottom: 2px solid #F38BA8;
       }
