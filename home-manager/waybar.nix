@@ -55,11 +55,13 @@
       }
 
       #workspaces button.active {
-        background: #F5C2E7;
+        border: 1px solid #F38BA8; ;
+        border-radius: 50%;
+
       }
 
       #workspaces button.urgent {
-        background: #F38BA8;
+        color: #F38BA8;
       }
 
       #workspaces button:hover {
