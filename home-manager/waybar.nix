@@ -36,18 +36,18 @@
             critical = 15;
           };
           format = "{icon}{capacity}% ";
-          format-icons = ["󰁺" "󰁻" "󰁼" "󰁽" "󰂀" "󰂂" ];
+          format-icons = ["󰁺" "󰁻" "󰁼" "󰁽" "󰂀" "<big>󰂂</big>" ];
           interval = 10;
           max-length = 20;
         };
         "cpu" = {
           interval = 10;
           format = "{icon} {usage}%";
-          format-icons = [" "];
+          format-icons = [" <big></big>"];
         };
         "memory" = {
           interval = 30;
-          format = " {used}/{total}";
+          format = "<big> </big>{used}/{total}";
         };
         "bluetooth" = {
           format = "<big>󰂯</big> {status}";
@@ -92,7 +92,7 @@
       * {
       font-family: "FiraCode Nerd Font", sans-serif;
       font-size: 14px;
-      font-weight: normal;
+      font-weight: bold;
       }
       window#waybar {
         background: rgba(17, 17, 27, 0.5);
