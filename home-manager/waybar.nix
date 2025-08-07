@@ -105,7 +105,7 @@
         padding: 0 12px;
         color: #7BD62B;
         background: #1E1E2E;
-        border-radius: 20px;
+        border-radius: 0 20px 0 0;
         margin: 4px 0 4px 0;
       }
 
@@ -115,7 +115,7 @@
         padding: 0 12px;
         color: #ED7026;
         background: #1E1E2E;
-        border-radius: 20px;
+        border-radius: 0 0 0 20px;
         margin: 4px 0 4px 0;
        }
 
@@ -125,7 +125,6 @@
         padding: 0 12px;
         color: #16517A;
         background: #1E1E2E;
-        border-radius: 20px;
         margin: 4px 0 4px 0;
       }
 
