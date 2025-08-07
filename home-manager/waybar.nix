@@ -185,9 +185,10 @@
         margin: 4px;
         padding: 6px;
       }
-      #user.icon {
+      #user img {
         border-radius: 50%;
         margin: 0 4px;
+        object-fit: cover;
       }
 
       /* Workspaces */
