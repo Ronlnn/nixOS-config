@@ -102,29 +102,26 @@
       /* Батарея */
       #battery {
         min-width: 46px;
-        padding: 0 12px;
         color: #7BD62B;
         background: #1E1E2E;
-        border-radius: 0 20px 0 0;
+        border-radius: 0 20px 20px 0;
         margin: 4px 0 4px 0;
       }
 
        /* CPU */
        #cpu {
         min-width: 46px;
-        padding: 0 12px;
         color: #ED7026;
         background: #1E1E2E;
-        border-radius: 0 0 0 20px;
+        border-radius: 20px 0 0 20px;
         margin: 4px 0 4px 0;
        }
 
       /* Memory */
       #memory {
         min-width: 46px;
-        padding: 0 12px;
-        color: #16517A;
-        background: #1E1E2E;
+        color: #63AEFF;
+        background: #1E1E2E;63AEFF
         border-radius: 0;
         margin: 4px 0 4px 0;
       }
