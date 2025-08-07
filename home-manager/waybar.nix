@@ -28,8 +28,8 @@
             warning = 30;
             critical = 15;
           };
-          format = "<span>{icon}</span> {capacity}%";
-          format-charging = "<span>󰂄 </span> {capacity}%";
+          format = "<big>{icon}</big> {capacity}%";
+          format-charging = "<big>󰂄 </big> {capacity}%";
           format-warning = "󰂃 {capacity}%";
           format-critical = "󱧥 {capacity}%";
           format-icons = ["󰁺" "󰁻" "󰁼" "󰁽" "󰂀" "󰂂" ];
@@ -68,12 +68,7 @@
         border-radius: 20px;
         margin: 4px;
       }
-      #battery span {
-        color: #1E1E2E;
-        background-color: #7BD62B;
-        border-radius: 20px 0 0 20px;
 
-      }
       #battery.charging {
         color: #7BD62B;
       }
