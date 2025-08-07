@@ -35,19 +35,19 @@
             warning = 30;
             critical = 15;
           };
-          format = "<big>{icon}</big> {capacity}%";
-          format-icons = ["󰁺" "󰁻" "󰁼" "󰁽" "󰂀" "<big>󰂂</big>" ];
+          format = "{icon}{capacity}%";
+          format-icons = ["󰁺" "󰁻" "󰁼" "󰁽" "󰂀" " 󰂂" ];
           interval = 10;
           max-length = 20;
         };
         "cpu" = {
           interval = 10;
-          format = "<big>{icon}</big> {usage}%";
-          format-icons = ["<big></big> "];
+          format = "{icon} {usage}%";
+          format-icons = ["  "];
         };
         "memory" = {
           interval = 30;
-          format = "<big> </big> {used}/{total}";
+          format = "   {used}/{total}";
         };
         "bluetooth" = {
           format = "<big>󰂯</big> {status}";
