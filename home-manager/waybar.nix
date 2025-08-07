@@ -156,7 +156,7 @@
         min-width: 50px;
         padding: 6px 6px;
         color: #FAF839;
-        background: #1E1E2E;
+        background: (30, 30, 46m 0.9);
         border-radius: 20px;
         margin: 4px;
         opacity: 0.9;
