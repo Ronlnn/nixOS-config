@@ -106,7 +106,7 @@
         background: #1E1E2E;
         border-radius: 0 20px 20px 0;
         margin: 4px 0 4px 0;
-        padding: 4px 0 4px 2px;
+        padding: 6px 0 6px 2px;
       }
 
        /* CPU */
@@ -116,7 +116,7 @@
         background: #1E1E2E;
         border-radius: 20px 0 0 20px;
         margin: 4px 0 4px 0;
-        padding: 0 4px;
+        padding: 0 6px;
        }
 
       /* Memory */
@@ -126,7 +126,7 @@
         background: #1E1E2E;
         border-radius: 0;
         margin: 4px 0 4px 0;
-        padding: 0 4px;
+        padding: 0 6px;
       }
 
       /* Блютуз */
@@ -141,8 +141,8 @@
 
       /* Яркость */
       #backlight {
-        min-width: 46px;
-        padding: 4px 4px;
+        min-width: 50px;
+        padding: 6px 6px;
         color: #FAF839;
         background: #1E1E2E;
         border-radius: 20px;
