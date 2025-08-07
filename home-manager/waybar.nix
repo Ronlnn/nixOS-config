@@ -53,6 +53,7 @@
       "cava" = {
         format-icons = ["▁""▂""▃""▄""▅""▆""▇""█"];
         cava_config = "${config.xdg.configHome}/cava/config";
+        bars = 8;
         };
       };
     };

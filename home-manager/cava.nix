@@ -7,7 +7,7 @@
         mode = "normal";
         framerate = 30;
         autosens = 1;
-        bars = 8;
+        bars = 20;
         bar_width = 3;
         bar_spacing = 1;
         lower_cutoff_freq = 50;
@@ -25,12 +25,11 @@
       output = {
         method = "noncurses";
         orientation = "bottom";
-        #raw_target = "/dev/stdout";
-        #data_format = "binary";
-        #bit_format = "16bit";
-        #ascii_max_range = 1000;
         stereo = true;
         bar_delimiter = 0;
+      };
+      color = {
+        background = "#27F580";
       };
     };
   };
