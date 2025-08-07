@@ -14,9 +14,9 @@
     source = auto
 
     [output]
-    method = raw
+    method = alsa
     raw_target = /dev/stdout
-    data_format = ascii
+    data_format = ▁▂▃▄▅▆▇█
     ascii_max_range = 100
   '';
   programs.waybar = {
