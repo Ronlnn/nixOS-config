@@ -8,7 +8,7 @@
         position = "top";
         height = 30;
         modules-left = ["hyprland/workspaces"];
-        modules-right = ["backlight" "battery" "bluetooth"];
+        modules-right = ["backlight" "battery" "bluetooth cpu"];
         "hyprland/workspaces" = {
           format = "{icon}";
           format-icons = {
@@ -32,13 +32,18 @@
           format-charging = "<big>󰂄 </big> {capacity}%";
           format-warning = "󰂃 {capacity}%";
           format-critical = "󱧥 {capacity}%";
-          format-icons = ["󰁺" "󰁻" "󰁼" "󰁽" "󰂀" "󰂂" ];
+          format-icons = ["󰁺" "󰁻" "󰁼" "󰁽" "󰂀" "<big>󰂂</big>" ];
           interval = 10;
           max-length = 20;
         };
         "bluetooth" = {
           format = "<big>󰂯</big> {status}";
           on-click = "blueman-manager";
+        };
+        "cpu" = {
+          interval = 10;
+          format = "<big>{icon}</big> {usage}%";
+          format-icons = ["<big></big>"];
         };
 
       };
@@ -79,7 +84,7 @@
         color: #7BD62B;
       }
 
-      /* Батарея */
+      /* Блютуз */
       #bluetooth {
         min-width: 36px;
         padding: 0 12px;
@@ -87,8 +92,18 @@
         background: #1E1E2E;
         border-radius: 20px;
         margin: 4px;
-
       }
+
+       /* Батарея */
+       #cpu {
+        min-width: 46px;
+        padding: 0 12px;
+        color: #ED7026;
+        background: #1E1E2E;
+        border-radius: 20px;
+        margin: 4px;
+       }
+
       /* Workspaces */
       #workspaces {
         background: #242438;
