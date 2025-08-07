@@ -88,10 +88,10 @@
           };
           user = {
             interval = 60;
-            format = " {user}";
+            format = "<img src='${config.home.homeDirectory}/Pictures/Walls/zenitsu.png' width='48' height='48' style='border-radius: 24px;'/> {user}";
             height = 30;
             width = 30;
-            avatar = "${config.home.homeDirectory}/Pictures/Walls/zenitsu.png";
+            #avatar = "${config.home.homeDirectory}/Pictures/Walls/zenitsu.png";
             icon = true;
             icon-size = 62;
           };
@@ -184,10 +184,6 @@
         border-radius: 20px;
         margin: 4px;
         padding: 6px;
-      }
-      #user img {
-        border-radius: 50%;
-        margin: 0 4px;
       }
 
       /* Workspaces */
