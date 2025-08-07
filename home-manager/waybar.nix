@@ -20,12 +20,21 @@
         "backlight" = {
           device = "intel_backlight";
           scroll-step = 10.0;
-          format = "{percent}% {icon}";
+          format = "{icon} {percent}%";
           format-icons = ["󱩎" "󱩒" "󱩔" "󱩖"];
         };
         "battery" = {
-          format = "{icon}";
-          format-icons = ["" "" "" "" "" ];
+          states = {
+            warning = 30;
+            critical = 15;
+          };
+          format = "{icon} {capacity}%";
+          format-charging = "󰂄 {capacity}%";
+          format-warning = "󰂃 {capacity}%";
+          format-critical = "󱧥 {capacity}%";
+          format-icons = ["󰁺" "󰁻" "󰁼" "󰁽" "󰂀" "󰂂" ];
+          interval = 10;
+          max-length = 20;
         };
 
       };
@@ -58,6 +67,12 @@
         background: #1E1E2E;
         border-radius: 20px;
         margin: 4px;
+      }
+      #battery.charging {
+        color: #7BD62B;
+      }
+      #battery.warning {
+        color: #7BD62B;
       }
       /* Workspaces */
       #workspaces {
