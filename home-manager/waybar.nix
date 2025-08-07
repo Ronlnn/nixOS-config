@@ -29,6 +29,7 @@
       * {
       font-family: "FiraCode Nerd Font", sans-serif;
       }
+
       window#waybar {
         background: rgba(17, 17, 27, 0.8);
       }
@@ -44,12 +45,13 @@
       #workspaces {
         background: #242438;
         margin: 4px;
+        padding: 2px;
       }
 
       #workspaces button {
-        min-width: 16px;
-        min-height: 16px;
-        margin: 4px;
+        min-width: 18px;
+        min-height: 18px;
+        margin: 0;
         padding: 0;
         color: #F38BA8;
       }
@@ -57,7 +59,8 @@
       #workspaces button.active {
         border: 1px solid #F38BA8; ;
         border-radius: 50%;
-
+        background: transparent;
+        transition: border-color 0.2s ease;
       }
 
       #workspaces button.urgent {
