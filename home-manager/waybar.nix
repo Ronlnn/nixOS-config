@@ -93,7 +93,7 @@
             width = 30;
             avatar = "${config.home.homeDirectory}/Pictures/Walls/zenitsu.png";
             icon = true;
-            icon-size = 32;
+            icon-size = 62;
           };
       };
     };
