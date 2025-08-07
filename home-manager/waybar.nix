@@ -66,7 +66,7 @@
           format-icons = ["<big></big> "];
         };
       "custom/cava" = {
-        format = "{}";
+        format-icons = ["▁""▂""▃""▄""▅""▆""▇""█"];
         exec = "cava -p ${config.xdg.configHome}/cava/config";
         return-type = "raw";
         interval = 0.01;
