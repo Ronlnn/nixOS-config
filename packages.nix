@@ -105,7 +105,8 @@
   fonts.packages = with pkgs; [
     font-awesome
     fira
-    
+    fira-code-nerdfont
+    jetbrains-mono-nerdfont
 ];
 
 }
