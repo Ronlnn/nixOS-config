@@ -57,7 +57,7 @@
           };
           "clock" = {
             interval = 60;
-            format = "󰥔 {:%H:%M}";
+            format = "󰥔 {:%H:%M %d $B}";
             timezone = "Europe/Moscow";
             max-length = 25;
             format-alt =  "{:%A, %B %d, %Y (%R)}  ";
@@ -68,7 +68,7 @@
               on-scroll = 1;
               format = {
                 months =  "<span color='#ffead3'><b>{}</b></span>";
-                days = "<span color='#ecc6d9'><b>{}</b></span>";
+                days = "<span color='#F7F7F7'><b>{}</b></span>";
                 weeksdays = "<span color='#ffcc66'><b>{}</b></span>";
                 today = "<span color='#ff6699'><b><u>{}</u></b></span>";
               };
