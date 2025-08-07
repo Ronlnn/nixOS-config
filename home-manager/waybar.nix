@@ -67,8 +67,7 @@
         };
       "cava" = {
         format-icons = ["▁""▂""▃""▄""▅""▆""▇""█"];
-        cava_config = "${config.xdg.configHome}/cava/config";
-        return-type = "raw";
+        exec = "cava -p ${config.xdg.configHome}/cava/config";
         interval = 0.01;
         };
       };
@@ -131,7 +130,7 @@
        }
 
        /* Cava */
-       #custom-cava {
+       #cava {
         min-width: 100px;
         padding: 0 12px;
         color: #26EDC9;
