@@ -42,8 +42,8 @@
         };
         "cpu" = {
           interval = 10;
-          format = "<span margin='0 5px 0 0'><big>{icon}</big></span> {usage}%";
-          format-icons = ["<big></big>"];
+          format = "<big>{icon}</big>  {usage}%";
+          format-icons = ["<big></big> "];
         };
 
       };
