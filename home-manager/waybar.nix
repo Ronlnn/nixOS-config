@@ -28,27 +28,26 @@
     style = ''
       * {
       font-family: "FiraCode Nerd Font", sans-serif;
+      font-size: 18px;
       }
-
       window#waybar {
         background: rgba(17, 17, 27, 0.5);
       }
 
-      /* Стили для модуля яркости */
+      /* Яркость */
       #backlight {
         padding: 0 10px;
         color: #CDD6F4;
         background: #1E1E2E;
         border-radius: 5px;
       }
-
+      /* Workspaces */
       #workspaces {
         background: #242438;
         border-radius: 20px;
         margin: 4px;
         padding: 2px;
       }
-
       #workspaces button {
         min-width: 24px;
         min-height: 24px;
@@ -56,21 +55,18 @@
         padding: 0;
         color: #F38BA8;
       }
-
       #workspaces button.active {
         border-bottom: 2px solid #F38BA8;
         border-radius: 0 0 10px 10px;
         background: transparent;
         transition: border-color 0.2s ease;
       }
-
       #workspaces button.urgent {
         color: #F38BA8;
       }
       #workspaces button.empty {
         color: #CDD6F4;
       }
-
       #workspaces button:hover {
         color: #F38BA8;
         background: transparent;
