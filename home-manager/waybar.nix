@@ -44,6 +44,7 @@
 
       #workspaces {
         background: #242438;
+        border-radius: 20px;
         margin: 4px;
         padding: 2px;
       }
@@ -57,7 +58,7 @@
       }
 
       #workspaces button.active {
-        border-bottom: 2px solid #F38BA8; ;
+        border-bottom: 2px solid #F38BA8;
         background: transparent;
         transition: border-color 0.2s ease;
       }
@@ -68,7 +69,8 @@
 
       #workspaces button:hover {
         border-bottom: 1px solid #F38BA8; ;
-
+        background: transparent;
+        border-bottom: 2px solid #F38BA8;
       }
     '';
   };
