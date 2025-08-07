@@ -12,7 +12,7 @@
         position = "top";
         height = 40;
         modules-left = ["hyprland/workspaces"];
-        modules-center = ["cava"];
+        modules-center = ["clock" "cava"];
         modules-right = ["backlight" "battery" "bluetooth" "cpu"];
         "hyprland/workspaces" = {
           format = "{icon}";
@@ -50,11 +50,33 @@
           format = "<big>{icon}</big> {usage}%";
           format-icons = ["<big></big> "];
         };
-      "cava" = {
-        format-icons = ["▁""▂""▃""▄""▅""▆""▇""█"];
-        cava_config = "${config.xdg.configHome}/cava/config";
-        bars = 8;
-        };
+        "cava" = {
+          format-icons = ["▁""▂""▃""▄""▅""▆""▇""█"];
+          cava_config = "${config.xdg.configHome}/cava/config";
+          bars = 8;
+          };
+          "clock" = {
+            interval = 60;
+            format = "󰥔 {:%H:%M}";
+            timezone = "Europe/Moscow";
+            max-length = 25;
+            format-alt =  "{:%A, %B %d, %Y (%R)}  ";
+            tooltip-format = "<tt><small>{calendar}</small></tt>";
+            calendar = {
+              mode = "year";
+              mode-mon-col = 3;
+              on-scroll = 1;
+              format = {
+                months =  "<span color='#ffead3'><b>{}</b></span>";
+                days = "<span color='#ecc6d9'><b>{}</b></span>";
+                weeksdays = "<span color='#ffcc66'><b>{}</b></span>";
+                today = "<span color='#ff6699'><b><u>{}</u></b></span>";
+              };
+            };
+            actions = {
+              on-click-right = "mode";
+            };
+          };
       };
     };
     style = ''
