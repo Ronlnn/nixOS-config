@@ -3,7 +3,10 @@
     allowUnfree = true;
   };
   services.blueman.enable = true;
-  
+  hardware.bluetooth.enable = true;
+
+  services.dbus.packages = [ pkgs.bluez ];
+
    environment.systemPackages = with pkgs; [
     # Desktop apps
 
@@ -64,12 +67,11 @@
     wget
     bluez
     bluez-tools
-
+    bluez-alsa
+    blueman
     ## Файловые менеджеры и оформление
     ranger
 
-    # Bluetooth
-    blueman
 
     # GUI utils
     feh
