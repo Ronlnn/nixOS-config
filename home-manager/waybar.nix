@@ -159,6 +159,7 @@
         background: #1E1E2E;
         border-radius: 20px;
         margin: 4px;
+        opacity = 0.9;
       }
 
       /* Volume */
