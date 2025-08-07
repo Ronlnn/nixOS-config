@@ -11,10 +11,10 @@
         bar_width = 2;
         bar_spacing = 1;
         lower_cutoff_freq = 50;
-        higher_cutoff_freq = 100000;
+        higher_cutoff_freq = 10000;
       };
       input = {
-        method = "alsa";
+        method = "pipewire";
         source = "auto";
         sample_rate = 44100;
         sample_bits = 16;
