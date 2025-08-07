@@ -183,9 +183,9 @@
         background: #1E1E2E;
         border-radius: 20px;
         margin: 4px;
-        padding: 6px 6px;
+        padding: 6px;
       }
-      #user > image {
+      #user.icon {
         border-radius: 50%;
         margin: 0 4px;
       }
