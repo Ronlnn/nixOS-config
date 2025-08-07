@@ -37,7 +37,7 @@
 
       /* Яркость */
       #backlight {
-        min-width: 48px;
+        min-width: 56px;
         min-height: 24px;
         padding: 0 12px;
         color: #E0C238;
