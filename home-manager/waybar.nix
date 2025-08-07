@@ -142,7 +142,7 @@
       /* Яркость */
       #backlight {
         min-width: 46px;
-        padding: 0 12px;
+        padding: 4px 4px;
         color: #FAF839;
         background: #1E1E2E;
         border-radius: 20px;
