@@ -54,7 +54,7 @@
         min-width: 56px;
         min-height: 24px;
         padding: 0 12px;
-        color: #F5DE7A;
+        color: #FAF839;
         background: #1E1E2E;
         border-radius: 20px;
         margin: 4px;
