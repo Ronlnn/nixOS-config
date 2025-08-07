@@ -88,7 +88,7 @@
           };
           user = {
             interval = 60;
-            format = " {user}";
+            format = " {user} ";
             height = 30;
             width = 30;
             avatar = "${config.home.homeDirectory}/Pictures/zenitsu-avatar.png";
