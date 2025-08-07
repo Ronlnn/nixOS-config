@@ -46,6 +46,10 @@
         background: #242438;
         margin: 4px;
         padding: 2px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
       }
 
       #workspaces button {
