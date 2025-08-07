@@ -3,6 +3,22 @@
   home.packages = with pkgs; [
   cava
   ];
+
+  home.file.".config/cava/config".text = ''
+    [general]
+    bars = 14
+    framerate = 60
+
+    [input]
+    method = pulse
+    source = auto
+
+    [output]
+    method = raw
+    raw_target = /dev/stdout
+    data_format = ascii
+    ascii_max_range = 100
+  '';
   programs.waybar = {
     enable = true;
     settings = {
@@ -11,7 +27,7 @@
         position = "top";
         height = 30;
         modules-left = ["hyprland/workspaces"];
-        modules-center = ["cava"];
+        modules-center = ["custom/cava"];
         modules-right = ["backlight" "battery" "bluetooth" "cpu"];
         "hyprland/workspaces" = {
           format = "{icon}";
@@ -49,22 +65,12 @@
           format = "<big>{icon}</big> {usage}%";
           format-icons = ["<big></big> "];
         };
-        "cava" = {
-          sample_rate = 44100;
-          sample_bits = 16;
-
-          higher_cutoff_freq = 10000;
-          lower_cutoff_freq = 50;
-          framerate = 30;
-          autosens = 1;
-          sensitivity = 100;
-          bars = 12;
-          method = "alsa";
-          input_delay = 2;
-          format-icons = ["▁""▂""▃""▄""▅""▆""▇""█"];
-          actions = {on-click-right = "mode";};
+      "custom/cava" = {
+        format = "{}";
+        exec = "cava -p ${config.xdg.configHome}/cava/config";
+        return-type = "raw";
+        interval = 0.01;
         };
-
       };
     };
     style = ''
@@ -125,8 +131,8 @@
        }
 
        /* Cava */
-       #cava {
-        min-width: 66px;
+       #custom-cava {
+        min-width: 100px;
         padding: 0 12px;
         color: #26EDC9;
         background: #1E1E2E;
