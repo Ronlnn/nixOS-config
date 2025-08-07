@@ -13,7 +13,7 @@
         height = 40;
         modules-left = ["hyprland/workspaces"];
         modules-center = ["clock" "cava"];
-        modules-right = ["backlight" "group/hardware" "bluetooth"];
+        modules-right = ["backlight" "cpu" "memory" "battery" "bluetooth"];
         "hyprland/workspaces" = {
           format = "{icon}";
           format-icons = {
@@ -24,7 +24,7 @@
         };
         "group/hardware" = {
           orientation = "horizontal";
-          modules = ["cpu" "memory" "battery"];
+          modules = [];
             drawer = {
             transition-duration = 0;
             hide-empty-modules = false;
@@ -99,15 +99,6 @@
         padding: 4px;
       }
 
-      /* Группа Hardware */
-      #group-hardware {
-        min-width: 160px;
-        padding: 0 12px;
-        background: #1E1E2E;
-        border-radius: 20px;
-        margin: 4px;
-      }
-
       /* Батарея */
       #battery {
         min-width: 46px;
@@ -115,6 +106,7 @@
         color: #7BD62B;
         background: #1E1E2E;
         border-radius: 20px;
+        margin: 4px 0 4px 0;
       }
 
        /* CPU */
@@ -124,6 +116,7 @@
         color: #ED7026;
         background: #1E1E2E;
         border-radius: 20px;
+        margin: 4px 0 4px 0;
        }
 
       /* Memory */
@@ -133,6 +126,7 @@
         color: #16517A;
         background: #1E1E2E;
         border-radius: 20px;
+        margin: 4px 0 4px 0;
       }
 
       /* Блютуз */
