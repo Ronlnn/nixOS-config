@@ -13,7 +13,7 @@
         height = 40;
         modules-left = ["hyprland/workspaces"];
         modules-center = ["clock" "cava"];
-        modules-right = ["backlight" "battery" "bluetooth" "cpu"];
+        modules-right = ["backlight" "group/hardware" "bluetooth"];
         "hyprland/workspaces" = {
           format = "{icon}";
           format-icons = {
@@ -22,11 +22,9 @@
           };
           on-click = "activate";
         };
-        "backlight" = {
-          device = "intel_backlight";
-          scroll-step = 10.0;
-          format = "<big>{icon}</big>  {percent}%";
-          format-icons = ["<big>󱩎</big> " "<big>󱩒</big> " "<big>󱩔</big> " "<big>󱩖</big>"];
+        "group/hardware" = {
+          orientation = "horizontal";
+          modules = ["cpu" "memory" "battery"];
         };
         "battery" = {
           states = {
@@ -34,21 +32,24 @@
             critical = 15;
           };
           format = "<big>{icon}</big> {capacity}%";
-          format-charging = "<big>󰂄 </big> {capacity}%";
-          format-warning = "󰂃 {capacity}%";
-          format-critical = "󱧥 {capacity}%";
           format-icons = ["󰁺" "󰁻" "󰁼" "󰁽" "󰂀" "<big>󰂂</big>" ];
           interval = 10;
           max-length = 20;
-        };
-        "bluetooth" = {
-          format = "<big>󰂯</big> {status}";
-          on-click = "blueman-manager";
         };
         "cpu" = {
           interval = 10;
           format = "<big>{icon}</big> {usage}%";
           format-icons = ["<big></big> "];
+        };
+        "bluetooth" = {
+          format = "<big>󰂯</big> {status}";
+          on-click = "blueman-manager";
+        };
+        "backlight" = {
+          device = "intel_backlight";
+          scroll-step = 10.0;
+          format = "<big>{icon}</big>  {percent}%";
+          format-icons = ["<big>󱩎</big> " "<big>󱩒</big> " "<big>󱩔</big> " "<big>󱩖</big>"];
         };
         "cava" = {
           format-icons = ["▁""▂""▃""▄""▅""▆""▇""█"];
@@ -108,12 +109,6 @@
         background: #1E1E2E;
         border-radius: 20px;
         margin: 4px;
-      }
-      #battery.charging {
-        color: #7BD62B;
-      }
-      #battery.warning {
-        color: #7BD62B;
       }
 
       /* Блютуз */
