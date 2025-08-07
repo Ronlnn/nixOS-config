@@ -2,7 +2,8 @@
   nixpkgs.config ={
     allowUnfree = true;
   };
-
+  services.blueman.enable = true;
+  
    environment.systemPackages = with pkgs; [
     # Desktop apps
 
