@@ -88,11 +88,12 @@
           };
           user = {
             interval = 60;
-            format = "{user} {work_d} days";
+            format = " {user}";
             height = 30;
             width = 30;
             avatar = "${config.home.homeDirectory}/Pictures/Walls/zenitsu.png";
             icon = true;
+            icon-size = 32;
           };
       };
     };
@@ -175,6 +176,18 @@
         background: #1E1E2E;
         border-radius: 20px;
         margin: 4px;
+      }
+      /* User */
+      #user {
+        color: #F38BA8;
+        background: #1E1E2E;
+        border-radius: 20px;
+        margin: 4px;
+        padding: 6px 6px;
+      }
+      #user > image {
+        border-radius: 50%;
+        margin: 0 4px;
       }
 
       /* Workspaces */
