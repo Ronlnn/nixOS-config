@@ -12,7 +12,7 @@
         position = "top";
         height = 40;
         modules-left = ["hyprland/workspaces"];
-        modules-center = ["clock" "cava"];
+        modules-center = ["user" "clock" "cava"];
         modules-right = ["backlight" "cpu" "memory" "battery" "bluetooth"];
         "hyprland/workspaces" = {
           format = "{icon}";
@@ -86,6 +86,13 @@
               on-click-right = "mode";
             };
           };
+          user = {
+            interval = 60;
+            format = "{user} {work_d} days";
+            height = 30;
+            width = 30;
+            avatar = "${HOME}/Pictures/Walls/zenitsu.png";
+          };
       };
     };
     style = ''
@@ -132,7 +139,7 @@
       /* Блютуз */
       #bluetooth {
         min-width: 36px;
-        padding: 0 6px;
+        padding: 0 10px;
         color: #88DAEA;
         background: #1E1E2E;
         border-radius: 20px;
@@ -142,11 +149,11 @@
       /* Яркость */
       #backlight {
         min-width: 50px;
+        padding: 6px 6px;
         color: #FAF839;
         background: #1E1E2E;
         border-radius: 20px;
         margin: 4px;
-        padding: 0 6px;
       }
 
        /* Cava */
@@ -174,7 +181,7 @@
         background: #242438;
         border-radius: 20px;
         margin: 4px;
-        padding: 6px;
+        padding: 2px;
       }
       #workspaces button {
         min-width: 24px;
