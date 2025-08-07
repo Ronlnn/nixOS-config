@@ -88,7 +88,7 @@
           };
           user = {
             interval = 60;
-            format = "<img src='${config.home.homeDirectory}/Pictures/Walls/zenitsu.png' width='48' height='48' style='border-radius: 24px;'/> {user}";
+            format = "<img src='${config.home.homeDirectory}/Pictures/Walls/zenitsu.png' style='border-radius: 50%;'/> {user}";
             height = 30;
             width = 30;
             #avatar = "${config.home.homeDirectory}/Pictures/Walls/zenitsu.png";
