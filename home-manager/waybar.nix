@@ -52,8 +52,8 @@
           format-icons = ["<big>󱩎</big> " "<big>󱩒</big> " "<big>󱩔</big> " "<big>󱩖</big>"];
         };
         "pulseaudio" = {
-          format = "<big>{icon}</big> {volume}%";
-          format-bluetooth = "{icon}<big></big>";
+          format = " <big>{icon}</big> {volume}% ";
+          format-bluetooth = "<big>{icon}</big><big></big>";
           format-muted = "<big>󰖁</big>";
           format-icons = {
             headphones = "<big></big>";
@@ -163,12 +163,14 @@
 
       /* Volume */
       #pulseaudio {
+        min-width: 50px;
         color: #EBA0AC;
         background: #1E1E2E;
         padding: 6px 6px;
         border-radius: 20px;
         margin: 4px;
       }
+
        /* Cava */
        #cava {
         min-width: 76px;
@@ -188,6 +190,7 @@
         border-radius: 20px;
         margin: 4px;
       }
+
       /* User */
       #user {
         color: #F38BA8;
@@ -227,7 +230,6 @@
         color: #F38BA8;
         background: transparent;
         border-bottom: 2px solid #F38BA8;
-
       }
     '';
   };
