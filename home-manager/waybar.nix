@@ -6,8 +6,8 @@
 
   home.file.".config/cava/config".text = ''
     [general]
-    bars = 14
-    framerate = 60
+    bars = 8
+    framerate = 30
 
     [input]
     method = alsa
@@ -16,7 +16,7 @@
     [output]
     method = raw
     raw_target = /dev/stdout
-    data_format = ▁▂▃▄▅▆▇█
+    data_format = ascii
     ascii_max_range = 100
   '';
   programs.waybar = {
@@ -27,7 +27,7 @@
         position = "top";
         height = 30;
         modules-left = ["hyprland/workspaces"];
-        modules-center = ["custom/cava"];
+        modules-center = ["cava"];
         modules-right = ["backlight" "battery" "bluetooth" "cpu"];
         "hyprland/workspaces" = {
           format = "{icon}";
@@ -65,9 +65,9 @@
           format = "<big>{icon}</big> {usage}%";
           format-icons = ["<big></big> "];
         };
-      "custom/cava" = {
+      "cava" = {
         format-icons = ["▁""▂""▃""▄""▅""▆""▇""█"];
-        exec = "cava -p ${config.xdg.configHome}/cava/config";
+        cava_config = "${config.xdg.configHome}/cava/config";
         return-type = "raw";
         interval = 0.01;
         };
