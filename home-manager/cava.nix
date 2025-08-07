@@ -28,9 +28,6 @@
         stereo = true;
         bar_delimiter = 0;
       };
-      color = {
-        background = "'#27F580'";
-      };
     };
   };
 }
