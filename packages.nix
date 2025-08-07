@@ -67,6 +67,8 @@
     ## Файловые менеджеры и оформление
     ranger
 
+    # Bluetooth
+    blueman
 
     # GUI utils
     feh
