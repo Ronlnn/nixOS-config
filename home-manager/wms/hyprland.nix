@@ -59,6 +59,9 @@
         "$mod, up, focusmonitor, HDMI-A-2"
         "$mod, down, focusmonitor, eDP-1"
         # Move workspace
+        "$mod, L, worlspace, r-1"
+        "$mod, K, workspace, r+1"
+
         "$mod, left, exec, /home/roninn/nixOS-config/scripts/switch-workspaces.sh -1"
         "$mod, right, exec, /home/roninn/nixOS-config/scripts/switch-workspaces.sh +1"
         # Worspaces
@@ -96,16 +99,16 @@
         "eDP-1,1920x1080@59.98,0x1080,1"
       ];
       workspace = [
-        "1, monitor:HDMI-A-2, default:true"
-        "2, monitor:HDMI-A-2"
-        "3, monitor:HDMI-A-2"
-        "4, monitor:HDMI-A-2"
-        "5, monitor:HDMI-A-2"
-        "6, monitor:eDP-1, default:true"
-        "7, monitor:eDP-1"
-        "8, monitor:eDP-1"
-        "9, monitor:eDP-1"
-        "10, monitor:eDP-1"
+        "1, monitor:HDMI-A-2, persistent:true, default:true"
+        "2, monitor:HDMI-A-2, persistent:true"
+        "3, monitor:HDMI-A-2, persistent:true"
+        "4, monitor:HDMI-A-2, persistent:true"
+        "5, monitor:HDMI-A-2, persistent:true"
+        "6, monitor:eDP-1, persistent:true, default:true"
+        "7, monitor:eDP-1, persistent:true"
+        "8, monitor:eDP-1, persistent:true"
+        "9, monitor:eDP-1, persistent:true"
+        "10, monitor:eDP-1, persistent:true"
       ];
       exec-once = [
          # Обои
@@ -128,6 +131,7 @@
           sync_gsettings_theme = true
         }
         general {
+
           border_size = 4
           no_border_on_floating = false
           gaps_in = 5
