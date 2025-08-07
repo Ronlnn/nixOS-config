@@ -115,7 +115,7 @@
 
        /* Cava */
        #cava {
-        min-width: 100px;
+        min-width: 76px;
         padding: 0 12px;
         color: #26EDC9;
         background: #1E1E2E;

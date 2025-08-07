@@ -8,7 +8,7 @@
         framerate = 30;
         autosens = 1;
         bars = 8;
-        bar_width = 2;
+        bar_width = 3;
         bar_spacing = 1;
         lower_cutoff_freq = 50;
         higher_cutoff_freq = 10000;
