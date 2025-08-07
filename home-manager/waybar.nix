@@ -10,11 +10,11 @@
     framerate = 60
 
     [input]
-    method = pulse
+    method = alsa
     source = auto
 
     [output]
-    method = alsa
+    method = raw
     raw_target = /dev/stdout
     data_format = ▁▂▃▄▅▆▇█
     ascii_max_range = 100
