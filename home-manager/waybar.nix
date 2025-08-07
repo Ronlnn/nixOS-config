@@ -22,7 +22,6 @@
           };
           on-click = "activate";
         };
-        };
         "battery" = {
           states = {
             warning = 30;
@@ -180,8 +179,8 @@
         margin: 4px;
       }
       #pulseaudio-slider {
-        background: #1E1E2E;
         color: #EBA0AC;
+        background: #1E1E2E;
       }
 
        /* Cava */
