@@ -42,7 +42,7 @@
         };
         "cpu" = {
           interval = 10;
-          format = "<big>{icon}</big>  {usage}%";
+          format = "<big>{icon}</big> {usage}%";
           format-icons = ["<big></big> "];
         };
 
@@ -52,6 +52,7 @@
       * {
       font-family: "FiraCode Nerd Font", sans-serif;
       font-size: 14px;
+      font-weight: bold;
       }
       window#waybar {
         background: rgba(17, 17, 27, 0.5);
