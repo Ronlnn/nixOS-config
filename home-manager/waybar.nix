@@ -57,7 +57,7 @@
           };
           "clock" = {
             interval = 60;
-            format = "󰥔 {:%H:%M %d $B}";
+            format = "󰥔 {:%H:%M %d %B}";
             timezone = "Europe/Moscow";
             max-length = 25;
             format-alt =  "{:%A, %B %d, %Y (%R)}  ";
