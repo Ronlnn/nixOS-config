@@ -8,6 +8,7 @@
         position = "top";
         height = 30;
         modules-left = ["hyprland/workspaces"];
+        modules-center = ["cava"];
         modules-right = ["backlight" "battery" "bluetooth" "cpu"];
         "hyprland/workspaces" = {
           format = "{icon}";
@@ -44,6 +45,15 @@
           interval = 10;
           format = "<big>{icon}</big> {usage}%";
           format-icons = ["<big></big> "];
+        };
+        "cava" = {
+          framerate = 30;
+          autosens = 1;
+          bars = 12;
+          method = "alsa";
+          input_delay = 2;
+          format-icons = ["▁""▂""▃""▄""▅""▆""▇""█"];
+          actions = {on-click-right = "mode";};
         };
 
       };
@@ -100,6 +110,16 @@
         min-width: 46px;
         padding: 0 12px;
         color: #ED7026;
+        background: #1E1E2E;
+        border-radius: 20px;
+        margin: 4px;
+       }
+
+       /* Cava */
+       #cava {
+        min-width: 66px;
+        padding: 0 12px;
+        color: #26EDC9;
         background: #1E1E2E;
         border-radius: 20px;
         margin: 4px;
