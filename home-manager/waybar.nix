@@ -41,6 +41,7 @@
         color: #CDD6F4;
         background: #1E1E2E;
         border-radius: 5px;
+        margin: 4px;
       }
       /* Workspaces */
       #workspaces {
@@ -72,7 +73,7 @@
         color: #F38BA8;
         background: transparent;
         border-bottom: 2px solid #F38BA8;
-        margin: 4px;
+
       }
     '';
   };
