@@ -73,7 +73,7 @@
           on-click = "pavucontrol";
         };
         "language" = {
-          format = "{}";
+          format = "󰰍 {short}";
           tooltip = true;
           tooltip-format = "{variant} {short} {long}";
           interval = 1;
@@ -208,7 +208,7 @@
       /* Language */
       #language {
         min-width: 40px;
-        color: #1E1E2E;
+        color: #F2F2F2;
         background: #1E1E2E;
         border-radius: 20px 0 0 20px;
         margin: 4px 0 4px 0;
