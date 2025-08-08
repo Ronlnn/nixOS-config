@@ -1,3 +1,8 @@
 #!/usr/bin/env bash
-LAYOUT=$(hyprctl devices | rg -A 2 'duckychannel-international-co.,-ltd.-ducky-keyboard-1' | grep keymap | awk '{ print $3 }')
-[[ "$LAYOUT" == "English" ]] && echo "us" || echo "lt"
+
+LAYOUT=$(hyprctl devices | grep -A 2 'at-translated-set-2-keyboard' | grep 'active keymap' | awk '{ print $3 }')
+if [[ "$LAYOUT" == "English" ]]; then
+    echo "us"
+else
+    echo "ru"
+fi

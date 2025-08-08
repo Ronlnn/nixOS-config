@@ -22,6 +22,9 @@
           };
           on-click = "activate";
         };
+        "custom/system" = {
+          format = "";
+        };
         "battery" = {
           states = {
             warning = 30;
@@ -267,6 +270,16 @@
       /* User */
       #user {
         color: #F38BA8;
+        background: #1E1E2E;
+        border-radius: 20px;
+        margin: 4px;
+        padding: 6px;
+      }
+
+      /* System */
+      #custom-system {
+        min-width: 50px;
+        color: #62F0AD;
         background: #1E1E2E;
         border-radius: 20px;
         margin: 4px;
