@@ -21,7 +21,7 @@
   };
 
   services.swww.enable = true;
-  services.
+
   wayland.windowManager.hyprland = {
     enable = true;
     xwayland.enable = true;
