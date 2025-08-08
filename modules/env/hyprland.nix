@@ -4,7 +4,6 @@
 
 imports = [
 	./sddm.nix
-  ../interface/waybar.nix
 ];
 
   config = lib.mkIf config.hyprland.enable {
@@ -13,7 +12,8 @@ imports = [
        enable = true;
        xwayland.enable = true;
      };
-
+    programs.waybar.enable = true;
+    
     services = {
       pipewire = {
         enable = true;
