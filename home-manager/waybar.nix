@@ -13,7 +13,7 @@
         height = 40;
         modules-left = ["hyprland/workspaces"];
         modules-center = ["user"  "clock" "mpris" "cava"];
-        modules-right = ["backlight" "pulseaudio" "cpu" "memory" "battery" "bluetooth" "network" "custom/off"];
+        modules-right = ["keyboard-state" "language" "backlight" "pulseaudio" "cpu" "memory" "battery" "bluetooth" "network" "custom/off"];
         "hyprland/workspaces" = {
           format = "{icon}";
           format-icons = {
@@ -71,6 +71,22 @@
           };
           scroll-step = 10;
           on-click = "pavucontrol";
+        };
+        "language" = {
+          format = "{short}";
+          format-alt = "{long}";
+          on-click = "hyprctl switchxkblayout keyboard next";
+          tooltip-format = "{variant} {short} {long}";
+          interval = 1;
+        };
+        "keyboard-state" = {
+          capslock = true;
+          numlock = true;
+          format = "{name} {icon}";
+          format-icons = {
+            capslock = "󰘲";
+            numlock = "󰬕";
+          };
         };
         "cava" = {
           format-icons = ["▁""▂""▃""▄""▅""▆""▇""█"];
@@ -199,14 +215,29 @@
         padding: 6px 0 6px 0;
       }
 
+      /* Keyboard State */
+      #keyboard-state {
+        color = #ff5555;
+        background: #1E1E2E;
+      }
+
+      /* Language */
+      #language {
+        color: #F2F2F2;
+        background: #1E1E2E;
+        border-radius: 20px 0 0 20px;
+        margin: 4px 0 4px 0;
+        padding: 6px 0 6px 6px;
+      }
+
       /* Яркость */
       #backlight {
         min-width: 40px;
-        padding: 6px 6px;
         color: #FAF839;
         background: #1E1E2E;
-        border-radius: 20px;
-        margin: 4px;
+        border-radius: 0;
+        margin: 4px 0 4px 0;
+        padding: 4px 0 4px 0;
       }
 
       /* Volume */
@@ -214,9 +245,9 @@
         min-width: 50px;
         color: #EBA0AC;
         background: #1E1E2E;
-        padding: 6px 6px;
-        border-radius: 20px;
-        margin: 4px;
+        border-radius: 0 20px 20px 0;
+        margin: 4px 4px 4px 0;
+        padding: 6px 0 6px 0;
       }
 
        /* Cava */
