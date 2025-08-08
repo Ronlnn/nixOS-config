@@ -13,7 +13,7 @@
         height = 40;
         modules-left = ["hyprland/workspaces"];
         modules-center = ["user"  "clock" "mpris" "cava"];
-        modules-right = ["language" "backlight" "pulseaudio" "cpu" "memory" "battery" "bluetooth" "network" "custom/off"];
+        modules-right = ["sway/language" "backlight" "pulseaudio" "cpu" "memory" "battery" "bluetooth" "network" "custom/off"];
         "hyprland/workspaces" = {
           format = "{icon}";
           format-icons = {
@@ -72,7 +72,7 @@
           scroll-step = 10;
           on-click = "pavucontrol";
         };
-        "language" = {
+        "sway/language" = {
           format = "{short}";
           format-alt = "{long}";
           on-click = "hyprctl switchxkblayout keyboard next";
@@ -207,7 +207,7 @@
       }
 
       /* Language */
-      #language {
+      #sway-language {
         min-width: 40px;
         color: #F2F2F2;
         background: #1E1E2E;
