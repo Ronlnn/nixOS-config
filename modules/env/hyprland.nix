@@ -85,6 +85,10 @@ imports = [
       playerctl             # for music players & waybar
       libxkbcommon
       wofi-emoji
+      gnused
+      gnugrep
+      libnotify
+      wirelesstools
 
       # Мост для интеграции Wayland-приложений с Hyprland, например для screencast и screenshot.
       xdg-desktop-portal-hyprland
