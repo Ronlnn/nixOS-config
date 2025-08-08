@@ -100,7 +100,6 @@
             };
           };
           "mpris" = {
-            player = "";
             format = "{player_icon} {title}";
             format-paused = "<big> </big>{title}-{artist}";
             format-stopped = "<big> </big>Stopped";
