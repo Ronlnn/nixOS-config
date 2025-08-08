@@ -173,7 +173,7 @@
 
       /* OFF */
       #custom-off {
-        min-width: 40px;
+        min-width: 35px;
         padding: 6px 6px;
         color: #DB4D42;
         background: #1E1E2E;
