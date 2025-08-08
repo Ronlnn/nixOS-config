@@ -23,7 +23,7 @@
           on-click = "activate";
         };
         "custom/system" = {
-          format = "<big></big>";
+          format = "<big> </big>";
         };
         "battery" = {
           states = {
@@ -279,7 +279,6 @@
       /* System */
       #custom-system {
         min-width: 60px;
-        min-height: 60px;
         font-size: 26px;
         color: #62F0AD;
         background: #242438;
