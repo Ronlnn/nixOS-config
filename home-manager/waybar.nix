@@ -175,14 +175,14 @@
         background: #1E1E2E;
         border-radius: 20px 0 0 20px;
         margin: 4px 0 4px 0;
-        padding: 0;
+        padding: 6px 0 6px 0;
       }
 
       /* Network */
       #network {
         min-width: 40px;
         color: #CAA6F7;
-        background: #DB4D42;
+        background: #1E1E2E;
         border-radius: 0;
         margin: 4px 0 4px 0;
         padding: 4px 0 4px 0;
