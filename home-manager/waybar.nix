@@ -182,7 +182,7 @@
       #network {
         min-width: 40px;
         color: #CAA6F7;
-        background: #1E1E2E;
+        background: #DB4D42;
         border-radius: 0;
         margin: 4px 0 4px 0;
         padding: 4px 0 4px 0;
