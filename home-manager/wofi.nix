@@ -27,12 +27,12 @@
         font-size: 16px;
       }
       window {
-        background-color: #1E1E2E;
+        background-color: rgba(30, 30, 46, 0.8);
         border-radius: 15px;
         border: 2px solid #54E1F0;
       }
       #input {
-        background-color: #1E1E2E;
+        background-color: rgba(30, 30, 46, 0.6);
         color: #EBF0EF;
         border-radius: 15px;
         border: 2px solid #54E1F0;
@@ -40,17 +40,17 @@
         padding: 10px;
       }
       #inner-box {
-        background-color: #F2F077;
+        background-color: #54E1F0;
       }
       #outer-box {
-        background-color: #F277A0;
+        background-color: transparent;
         margin: 10px;
       }
       #scroll {
         background-color: #F277DD;
       }
       #entry {
-        background-color: #77F27D;
+        background-color: transparent;
         color: #EBF0EF;
         padding: 8px;
         border-radius: 8px;
