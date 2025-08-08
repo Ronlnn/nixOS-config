@@ -12,7 +12,7 @@
         position = "top";
         height = 40;
         modules-left = ["hyprland/workspaces"];
-        modules-center = ["user" "clock" "cava"];
+        modules-center = ["user" "mpris" "clock" "cava"];
         modules-right = ["backlight" "pulseaudio" "cpu" "memory" "battery" "bluetooth" "network" "custom/off"];
         "hyprland/workspaces" = {
           format = "{icon}";
@@ -99,7 +99,24 @@
               on-click-right = "mode";
             };
           };
-          user = {
+          "mpris" = {
+            player = "spotify";
+            format = "{player_icon} {title}-{artist}";
+            format-paused = " {title}-{artist}";
+            format-stopped = " Stopped";
+            tooltip-format = "{album}\n{title}\nby {artist}";
+            player-icons = {
+              default = "";
+              mvp = "";
+              spotify = "";
+              vlc = "󰕼";
+            };
+            on-click = "playerctl play-pause";
+            on-click-right = "playerctl stop";
+            on-scroll-up = "playerctl next";
+            on-scroll-down = "playerctl previous";
+          };
+          "user" = {
             interval = 60;
             format = " {user} ";
             height = 30;
@@ -217,6 +234,16 @@
         min-width: 36px;
         padding: 0 12px;
         color: #F7F7F7;
+        background: #1E1E2E;
+        border-radius: 20px;
+        margin: 4px;
+      }
+
+      /* MPRIS */
+      #mpris {
+        min-width: 76px;
+        padding: 0 12px;
+        color: #26EDC9;
         background: #1E1E2E;
         border-radius: 20px;
         margin: 4px;

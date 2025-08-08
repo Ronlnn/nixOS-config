@@ -27,6 +27,9 @@ imports = [
       upower = {
         enable = true;
       };
+      playerctld = {
+        enable = true;
+      };
     };
 
     environment.sessionVariables = {
@@ -80,10 +83,9 @@ imports = [
       xfce.thunar           # Файловый менеджер
       nwg-displays          # Display util
 	    kitty                 # terminal
+      playerctl             # for music players & waybar
 
-      # Fonts
-      jetbrains-mono
-      fira-code
+
 
       # Мост для интеграции Wayland-приложений с Hyprland, например для screencast и screenshot.
       xdg-desktop-portal-hyprland
