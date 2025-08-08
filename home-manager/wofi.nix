@@ -36,7 +36,7 @@
         background-color: rgba(30, 30, 46, 0.75);
         color: #EBF0EF;
         border-radius: 15px;
-        border: 2px solid #C8C8CF;
+        border: 2px solid #B6B6B8;
         margin: 10px;
         padding: 10px;
       }

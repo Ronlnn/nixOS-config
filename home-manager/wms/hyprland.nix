@@ -42,8 +42,12 @@
         "$mod, Tab, exec, thunar"
         "$mod, O, exec, obsidian"
 
+        # Wofi
         "$mod, D, exec, wofi --show drun"
         "$mod SHIFT, R, exec, wofi --show run"
+        "$mod SHIFT, E, exec, wofi-emoji --clip"
+
+
         "$mod, G, togglegroup"
         # Переключаться по вкладкам в группе
         "$mod, bracketleft, changegroupactive, b"   # ← влево
