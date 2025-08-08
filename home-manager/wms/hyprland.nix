@@ -10,7 +10,6 @@
     fira-code
     jetbrains-mono
     bibata-cursors
-    swaykbdlayout
   ];
 
   # Cursor

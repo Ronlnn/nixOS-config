@@ -106,8 +106,7 @@
     gnome-tweaks
     catppuccin-grub
     grub2
-    nerd-fonts.fira-code
-    nerd-fonts.jetbrains-mono
+    xkbd
   ];
   fonts.packages = with pkgs; [
     font-awesome
