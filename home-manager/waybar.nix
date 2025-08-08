@@ -164,7 +164,7 @@
         color: #7BD62B;
         background: #1E1E2E;
         border-radius: 0 20px 20px 0;
-        margin: 4px 0 4px 0;
+        margin: 4px 4px 4px 0;
         padding: 6px 0 6px 2px;
       }
 
@@ -194,7 +194,7 @@
         color: #DB4D42;
         background: #1E1E2E;
         border-radius: 0 20px 20px 0;
-        margin: 4px 0 4px 0;
+        margin: 4px 4px 4px 0;
         padding: 6px 0 6px 2px;
       }
 
