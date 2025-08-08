@@ -13,7 +13,7 @@
         height = 40;
         modules-left = ["hyprland/workspaces"];
         modules-center = ["user"  "clock" "mpris" "cava"];
-        modules-right = ["keyboard-state" "language" "backlight" "pulseaudio" "cpu" "memory" "battery" "bluetooth" "network" "custom/off"];
+        modules-right = ["language" "backlight" "pulseaudio" "cpu" "memory" "battery" "bluetooth" "network" "custom/off"];
         "hyprland/workspaces" = {
           format = "{icon}";
           format-icons = {
@@ -78,15 +78,6 @@
           on-click = "hyprctl switchxkblayout keyboard next";
           tooltip-format = "{variant} {short} {long}";
           interval = 1;
-        };
-        "keyboard-state" = {
-          capslock = true;
-          numlock = true;
-          format = "{name} {icon}";
-          format-icons = {
-            capslock = "󰘲";
-            numlock = "󰬕";
-          };
         };
         "cava" = {
           format-icons = ["▁""▂""▃""▄""▅""▆""▇""█"];
@@ -213,12 +204,6 @@
         border-radius: 0 20px 20px 0;
         margin: 4px 4px 4px 0;
         padding: 6px 0 6px 0;
-      }
-
-      /* Keyboard State */
-      #keyboard-state {
-        color: #ff5555;
-        background: #1E1E2E;
       }
 
       /* Language */
