@@ -279,11 +279,12 @@
       /* System */
       #custom-system {
         min-width: 50px;
-        font-size: 16px;
+        font-size: 19px;
         color: #62F0AD;
         background: #1E1E2E;
         border-radius: 20px;
         margin: 4px;
+        padding: 0 4px;
       }
 
       /* Workspaces */
