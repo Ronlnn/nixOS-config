@@ -185,7 +185,7 @@
         background: #1E1E2E;
         border-radius: 0;
         margin: 4px 0 4px 0;
-        padding: 4px 0;
+        padding: 4px 0 4px 0;
       }
 
       /* OFF */
@@ -195,7 +195,7 @@
         background: #1E1E2E;
         border-radius: 0 20px 20px 0;
         margin: 4px 4px 4px 0;
-        padding: 6px 0 6px 2px;
+        padding: 6px 0 6px 0;
       }
 
       /* Яркость */
