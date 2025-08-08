@@ -12,7 +12,7 @@
         position = "top";
         height = 40;
         modules-left = ["hyprland/workspaces"];
-        modules-center = ["user" "mpris" "clock" "cava"];
+        modules-center = ["user"  "clock" "mpris" "cava"];
         modules-right = ["backlight" "pulseaudio" "cpu" "memory" "battery" "bluetooth" "network" "custom/off"];
         "hyprland/workspaces" = {
           format = "{icon}";
@@ -42,7 +42,7 @@
           format = "<big> </big>{used}Gb";
         };
         "bluetooth" = {
-          format = "<big>󰂯</big> {status}";
+          format = "<big></big>";
           on-click = "blueman-manager";
         };
         "network" = {
@@ -58,7 +58,7 @@
         "backlight" = {
           device = "intel_backlight";
           scroll-step = 10.0;
-          format = " <big>{icon}</big>  {percent}% ";
+          format = " <big>{icon}</big>";
           format-icons = ["<big>󱩎</big> " "<big>󱩒</big> " "<big>󱩔</big> " "<big>󱩖</big>"];
         };
         "pulseaudio" = {
