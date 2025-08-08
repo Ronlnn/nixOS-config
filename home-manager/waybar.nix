@@ -163,7 +163,7 @@
 
       /* Network */
       #network {
-        min-width: 50px;
+        min-width: 40px;
         padding: 6px 6px;
         color: #CAA6F7;
         background: #1E1E2E;
@@ -173,7 +173,7 @@
 
       /* OFF */
       #custom-off {
-        min-width: 50px;
+        min-width: 40px;
         padding: 6px 6px;
         color: #DB4D42;
         background: #1E1E2E;
