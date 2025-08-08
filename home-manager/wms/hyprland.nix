@@ -30,11 +30,6 @@
     settings = {
       "$mod" = "SUPER";
 
-      device = {
-        name = "at-translated-set-2-keyboard";
-        kb_layout = "us,ru";
-        kb_options = "grp:alt_shift_toggle";
-      };
 
       bind = [
         "$mod, RETURN, exec, alacritty"
@@ -119,6 +114,8 @@
         "swww init"
         "swww img -o HDMI-A-2 ~/Pictures/Walls/purp.jpg"
         "swww img -o eDP-1 ~/Pictures/Walls/purp.jpg"
+
+        "waybar"
         "hyprctl dispatch moveworkspacetomonitor 1 HDMI-A-2"
 
          # Автоматическое создание воркспейсов
