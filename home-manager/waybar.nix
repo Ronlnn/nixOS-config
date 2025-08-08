@@ -47,7 +47,6 @@
         };
         "network" = {
           interval = 60;
-          format = "{ifname}";
           format-wifi = "<big></big>";
           format-ethernet = "<big>󰈁</big> ";
           max-length = 50;
