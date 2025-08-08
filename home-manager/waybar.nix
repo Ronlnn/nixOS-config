@@ -100,7 +100,7 @@
             };
           };
           "mpris" = {
-            player = "spotify";
+            player = "";
             format = "{player_icon} {title}";
             format-paused = "<big> </big>{title}-{artist}";
             format-stopped = "<big> </big>Stopped";
@@ -111,7 +111,7 @@
               spotify = "<big></big>";
               vlc = "<big>󰕼</big>";
               youtube = "<big>󰗃</big>";
-              firefox = "<big></big>";
+              #firefox = "<big></big>";
             };
             on-click = "playerctl play-pause";
             on-click-right = "playerctl stop";
