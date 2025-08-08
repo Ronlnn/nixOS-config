@@ -29,7 +29,7 @@
 
     settings = {
       "$mod" = "SUPER";
-      
+
       bind = [
         "$mod, RETURN, exec, alacritty"
         "$mod, Q, killactive"
@@ -197,7 +197,7 @@
 
       input {
         kb_layout = us,ru
-        kb_variant = ,
+        kb_variant = 
         kb_options = grp:alt_shift_toggle
         resolve_binds_by_sym = true
         force_no_accel = false
