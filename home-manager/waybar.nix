@@ -13,7 +13,7 @@
         height = 40;
         modules-left = ["hyprland/workspaces"];
         modules-center = ["user" "clock" "cava"];
-        modules-right = ["backlight" "pulseaudio" "cpu" "memory" "battery" "bluetooth" "network"];
+        modules-right = ["backlight" "pulseaudio" "cpu" "memory" "battery" "bluetooth" "network" "tray"];
         "hyprland/workspaces" = {
           format = "{icon}";
           format-icons = {
@@ -51,7 +51,15 @@
           format-wifi = "<big></big>";
           format-ethernet = " <big>󰈁</big> ";
           max-length = 50;
-          on-click = "sh -c 'networkmanager_dmenu | wofi -d'";
+          on-click = "";
+        };
+        "tray" = {
+          icon-size = 21;
+          spacing = 10;
+          icons = {
+            blueman = "bluetooth";
+            telegram = "home/roninn/.local/share/icons/16x16/apps/telegram.png";
+          };
         };
         "backlight" = {
           device = "intel_backlight";
