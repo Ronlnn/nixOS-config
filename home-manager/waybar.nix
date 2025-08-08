@@ -61,7 +61,7 @@
         };
         "pulseaudio" = {
           format = " <big>{icon}</big> {volume}% ";
-          format-bluetooth = "<big>{icon}</big><big></big>";
+          format-bluetooth = "<big>{icon}</big> <big></big>";
           format-muted = "<big>󰖁</big>";
           format-icons = {
             headphones = "<big></big>";
@@ -161,8 +161,8 @@
 
       /* Network */
       #network {
-        min-width: 30px;
-        padding: 0 5px;
+        min-width: 50px;
+        padding: 6px 6px;
         color: #CAA6F7;
         background: #1E1E2E;
         border-radius: 20px;
