@@ -281,6 +281,8 @@
         font-size: 26px;
         color: #62F0AD;
         background-color: #242438;
+        background-size: 26px;
+        border-radius: 20px;
         margin: 4px 10px 4px 6px;
       }
 
