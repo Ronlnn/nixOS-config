@@ -200,13 +200,12 @@
 
       /* Яркость */
       #backlight {
-        min-width: 50px;
+        min-width: 40px;
         padding: 6px 6px;
         color: #FAF839;
         background: #1E1E2E;
         border-radius: 20px;
         margin: 4px;
-        opacity: 0.9;
       }
 
       /* Volume */
