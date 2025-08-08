@@ -280,6 +280,7 @@
       #custom-system {
         font-size: 26px;
         color: #62F0AD;
+        background-color: #242438;
         margin: 4px 10px 4px 6px;
       }
 
