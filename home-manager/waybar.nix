@@ -76,6 +76,7 @@
           format = " {}";
           format-en = "en";
           format-ru = "ru";
+          interval = 1;
         };
         "cava" = {
           format-icons = ["▁""▂""▃""▄""▅""▆""▇""█"];
