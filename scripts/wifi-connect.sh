@@ -16,39 +16,33 @@ if [[ "$1" == "disconnect" ]]; then
 fi
 
 # Если переданы параметры сети
-if [ "$1" = "connect" ] && [ -n "$2" ]; then
+if [ -n "$1" ]; then
     # Извлекаем SSID
-    ssid=$(echo "$2" | awk '{for(i=3;i<NF-1;i++) printf $i" "; print $(NF-1)}' | sed 's/ *$//')
+    ssid=$(echo "$1" | awk '{for(i=3;i<NF-1;i++) printf $i" "; print $(NF-1)}' | sed 's/ *$//')
 
     # Извлекаем тип безопасности
-    security=$(echo "$2" | awk '{print $NF}')
+    security=$(echo "$1" | awk '{print $NF}')
 
-    # Проверяем, защищена ли сеть
+    # Определяем метод аутентификации
+    key_mgmt=""
+    if [[ "$security" == "WPA"* ]]; then
+        key_mgmt="wpa-psk"
+    elif [[ "$security" == "WEP"* ]]; then
+        key_mgmt="wep"
+    fi
+
     if [ "$security" != "--" ]; then
         # Запрашиваем пароль
         password=$(wofi --dmenu -p "Password for $ssid:" --password)
         [ -n "$password" ] || exit
 
-        # Удаляем старый профиль, если существует
-        nmcli connection delete "$ssid" 2>/dev/null
 
-        # Создаем новый профиль подключения
-        if nmcli connection add \
-            type wifi \
-            con-name "$ssid" \
-            ifname wlo1 \
-            ssid "$ssid" \
-            wifi-sec.key-mgmt wpa-psk \
-            wifi-sec.psk "$password"; then
-
-            # Пытаемся подключиться
-            if nmcli connection up "$ssid"; then
+            # Пробуем без явного указания метода
+            if nmcli device wifi connect "$ssid" password "$password"; then
                 notify-send "Wi-Fi" "Connected to $ssid"
             else
                 notify-send "Wi-Fi" "Failed to connect to $ssid" --urgency=critical
             fi
-        else
-            notify-send "Wi-Fi" "Failed to create profile for $ssid" --urgency=critical
         fi
     else
         # Подключаемся к открытой сети
