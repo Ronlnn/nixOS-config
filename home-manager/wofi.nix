@@ -24,15 +24,15 @@
     style = ''
       * {
         font-family: JetBrainsMono Nerd Font, sans-serif;
-        font-size: 14px;
+        font-size: 16px;
       }
       window {
-        background_color: #1E1E2E;
+        background-color: #1E1E2E;
         border-radius: 15px;
         border: 2px solid #54E1F0;
       }
       #input {
-        background_color: #1E1E2E;
+        background-color: #1E1E2E;
         color: #EBF0EF;
         border-radius: 15px;
         border: 2px solid #54E1F0;
@@ -40,23 +40,23 @@
         padding: 10px;
       }
       #inner-box {
-        background_color: #F2F077;
+        background-color: #F2F077;
       }
       #outer-box {
-        background_color: #F277A0;
+        background-color: #F277A0;
         margin: 10px;
       }
       #scroll {
-        background_color: #F277DD;
+        background-color: #F277DD;
       }
       #entry {
-        background_color: #77F27D;
+        background-color: #77F27D;
         color: #EBF0EF;
         padding: 8px;
         border-radius: 8px;
       }
       #entry:selected {
-        background_color: #CBF277;
+        background-color: #CBF277;
         border: 1px solid #CBF277;
       }
       #entry image {
