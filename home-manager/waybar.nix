@@ -278,7 +278,7 @@
 
       /* System */
       #custom-system {
-        font-size: 26px;
+        font-size: 20px;
         color: #62F0AD;
         background: #242438;
         border-radius: 20px;
