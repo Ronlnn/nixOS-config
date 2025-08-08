@@ -54,7 +54,7 @@
           format-wifi = "<big> </big> {essid}";
           format-ethernet = "<big>󰈁</big> ";
           format-disconnected = "<big>󰌙</big> Выкл";
-          on-click = "~/nixOS-config/scripts/wifi-test.sh";
+          on-click = "/home/roninn/nixOS-config/scripts/wifi-test.sh";
           on-click-right = "~/nixOS-config/scripts/wifi-test.sh";
         };
         "custom/off" = {
