@@ -13,7 +13,7 @@
         height = 40;
         modules-left = ["hyprland/workspaces"];
         modules-center = ["user"  "clock" "mpris" "cava"];
-        modules-right = ["hyprland/language" "backlight" "pulseaudio" "cpu" "memory" "battery" "bluetooth" "network" "custom/off"];
+        modules-right = ["custom/language" "backlight" "pulseaudio" "cpu" "memory" "battery" "bluetooth" "network" "custom/off"];
         "hyprland/workspaces" = {
           format = "{icon}";
           format-icons = {
@@ -72,11 +72,10 @@
           scroll-step = 10;
           on-click = "pavucontrol";
         };
-        "hyprland/language" = {
+        "custom/language" = {
           format = " {}";
-          format-en = "en";
-          format-ru = "ru";
-          keyboard-name = "at-translated-set-2-keyboard";
+          exec = "bash ~/nixOS-config/scripts/lang-waybar.sh";
+          interval = 1;
         };
         "cava" = {
           format-icons = ["▁""▂""▃""▄""▅""▆""▇""█"];
@@ -206,7 +205,7 @@
       }
 
       /* Language */
-      #language {
+      #custom-language {
         min-width: 30px;
         color: #F2F2F2;
         background: #1E1E2E;
