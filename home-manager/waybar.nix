@@ -101,15 +101,15 @@
           };
           "mpris" = {
             player = "spotify";
-            format = "{player_icon} {title}-{artist}";
-            format-paused = " {title}-{artist}";
-            format-stopped = " Stopped";
+            format = "{player_icon} {title}";
+            format-paused = "<big> </big>{title}-{artist}";
+            format-stopped = "<big> </big>Stopped";
             tooltip-format = "{album}\n{title}\nby {artist}";
             player-icons = {
-              default = "";
-              mvp = "";
-              spotify = "";
-              vlc = "󰕼";
+              default = "<big></big>";
+              mvp = "<big></big>";
+              spotify = "<big></big>";
+              vlc = "<big>󰕼</big>";
             };
             on-click = "playerctl play-pause";
             on-click-right = "playerctl stop";
