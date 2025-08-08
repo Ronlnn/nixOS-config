@@ -106,7 +106,6 @@
     gnome-tweaks
     catppuccin-grub
     grub2
-    xkbd
   ];
   fonts.packages = with pkgs; [
     font-awesome
