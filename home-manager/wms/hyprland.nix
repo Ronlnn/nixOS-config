@@ -30,6 +30,12 @@
     settings = {
       "$mod" = "SUPER";
 
+      device = {
+        name = "at-translated-set-2-keyboard";
+        kb_layout = "us,ru";
+        kb_options = "grp:alt_shift_toggle";
+      };
+      
       bind = [
         "$mod, RETURN, exec, alacritty"
         "$mod, Q, killactive"
@@ -198,6 +204,7 @@
       input {
         kb_layout = us,ru
         kb_options = grp:alt_shift_toggle
+        kb_model = pc104
         resolve_binds_by_sym = true
         force_no_accel = false
         follow_mouse = 1
