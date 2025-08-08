@@ -110,6 +110,7 @@
               mvp = "<big></big>";
               spotify = "<big></big>";
               vlc = "<big>󰕼</big>";
+              youtube = "<big>󰗃</big>";
             };
             on-click = "playerctl play-pause";
             on-click-right = "playerctl stop";
