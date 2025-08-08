@@ -10,6 +10,7 @@
     fira-code
     jetbrains-mono
     bibata-cursors
+    swaykbdlayout
   ];
 
   # Cursor
@@ -35,7 +36,7 @@
         kb_layout = "us,ru";
         kb_options = "grp:alt_shift_toggle";
       };
-      
+
       bind = [
         "$mod, RETURN, exec, alacritty"
         "$mod, Q, killactive"
