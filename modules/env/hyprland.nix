@@ -12,8 +12,7 @@ imports = [
        enable = true;
        xwayland.enable = true;
      };
-    programs.waybar.enable = true;
-    
+
     services = {
       pipewire = {
         enable = true;
