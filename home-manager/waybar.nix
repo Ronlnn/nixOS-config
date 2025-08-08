@@ -206,7 +206,7 @@
 
       /* Language */
       #language {
-        min-width: 40px;
+        min-width: 30px;
         color: #F2F2F2;
         background: #1E1E2E;
         border-radius: 20px 0 0 20px;
