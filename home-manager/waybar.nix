@@ -73,7 +73,7 @@
           on-click = "pavucontrol";
         };
         "hyprland/language" = {
-          format = "{}";
+          format = " {}";
           format-en = "en";
           format-ru = "ru";
         };
