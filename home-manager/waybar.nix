@@ -59,7 +59,7 @@
           device = "intel_backlight";
           scroll-step = 10.0;
           format = "<big>{icon}</big>";
-          format-icons = ["<big>󱩎</big> " "<big>󱩒</big> " "<big>󱩔</big> " "<big>󱩖</big>"];
+          format-icons = ["<big>󱩎</big> " "<big>󱩒</big> " "<big>󱩔 </big> " "<big>󱩖</big>"];
         };
         "pulseaudio" = {
           format = " <big>{icon}</big> {volume}% ";
@@ -170,8 +170,8 @@
 
       /* Блютуз */
       #bluetooth {
-        min-width: 36px;
-        padding: 0 10px;
+        min-width: 40px;
+        padding: 0 6px;
         color: #88DAEA;
         background: #1E1E2E;
         border-radius: 20px;
