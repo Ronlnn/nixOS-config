@@ -49,17 +49,9 @@
           interval = 60;
           format = "{ifname}";
           format-wifi = "<big></big>";
-          format-ethernet = " <big>󰈁</big> ";
+          format-ethernet = "<big>󰈁</big> ";
           max-length = 50;
           on-click = "";
-        };
-        "tray" = {
-          icon-size = 21;
-          spacing = 10;
-          icons = {
-            blueman = "bluetooth";
-            telegram = "home/roninn/.local/share/icons/16x16/apps/telegram.png";
-          };
         };
         "backlight" = {
           device = "intel_backlight";
@@ -127,15 +119,6 @@
         padding: 4px;
       }
 
-      /* Tray */
-      #tray {
-        min-width: 50px;
-        background: #1E1E2E;
-        border-radius: 0 20px 20px 0;
-        margin: 4px 0 4px 0;
-        padding: 6px 0 6px 2px;
-      }
-
       /* Батарея */
       #battery {
         min-width: 50px;
@@ -178,8 +161,8 @@
 
       /* Network */
       #network {
-        min-width: 50px;
-        padding: 0 10px;
+        min-width: 30px;
+        padding: 0 5px;
         color: #CAA6F7;
         background: #1E1E2E;
         border-radius: 20px;
