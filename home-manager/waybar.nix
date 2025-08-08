@@ -208,7 +208,7 @@
       /* Language */
       #language {
         min-width: 40px;
-        color: #F2F2F2;
+        color: #1E1E2E;
         background: #1E1E2E;
         border-radius: 20px 0 0 20px;
         margin: 4px 0 4px 0;
