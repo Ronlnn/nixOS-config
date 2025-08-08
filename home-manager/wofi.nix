@@ -19,7 +19,7 @@
       image_size = 24;
       exec_search = false;
       hide_scroll = true;
-      columns = 1;
+      columns = 2;
     };
     style = ''
       * {
@@ -33,7 +33,7 @@
       }
       #input {
         background_color: rgba(40, 44, 52, 0.7);
-        color: #EBF0EF;
+        color: rgba(30, 30, 46, 0.9);
         border-radius: 15px;
         border: 2px solid #54E1F0;
         margin: 10px;
