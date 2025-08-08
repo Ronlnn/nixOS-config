@@ -73,8 +73,8 @@
           on-click = "pavucontrol";
         };
         "language" = {
-          format = "{short}";
-          format-alt = "{long}";
+          format = "{}";
+          tooltip = true;
           tooltip-format = "{variant} {short} {long}";
           interval = 1;
         };
