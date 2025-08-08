@@ -69,7 +69,7 @@
     bluez-tools
     bluez-alsa
     blueman
-    networkmanager-dmenu
+
     networkmanager
     ## Файловые менеджеры и оформление
     ranger
