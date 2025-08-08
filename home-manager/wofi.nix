@@ -24,7 +24,8 @@
     style = ''
       * {
         font-family: JetBrainsMono Nerd Font, sans-serif;
-        font-size: 16px;
+        font-size: 18px;
+        font-weight: bold;
       }
       window {
         background-color: rgba(30, 30, 46, 0.75);
@@ -56,7 +57,7 @@
         border-radius: 8px;
       }
       #entry:selected {
-        background-color: #54E1F0;
+        background-color: transparent;
         border: 1px solid #54E1F0;
       }
       #entry image {
