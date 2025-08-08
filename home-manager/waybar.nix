@@ -217,7 +217,7 @@
 
       /* Keyboard State */
       #keyboard-state {
-        color = #ff5555;
+        color: #ff5555;
         background: #1E1E2E;
       }
 
