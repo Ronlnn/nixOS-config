@@ -7,7 +7,6 @@ imports = [
 ];
 
   config = lib.mkIf config.hyprland.enable {
-    networking.wireless.iwd.enable = true;
 
      programs.hyprland = {
        enable = true;
