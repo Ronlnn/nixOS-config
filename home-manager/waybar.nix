@@ -52,7 +52,7 @@
           interval = 60;
           format-wifi = "<big> </big>";
           format-ethernet = "<big>󰈁</big> ";
-          on-click = "";
+          on-click = "~/nixOS-config/scripts/wifi-menu.sh";
         };
         "custom/off" = {
           format = "<big> </big>";
