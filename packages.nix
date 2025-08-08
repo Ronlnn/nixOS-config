@@ -69,7 +69,7 @@
     bluez-tools
     bluez-alsa
     blueman
-
+    pkgs.networkmanagerapplet
     networkmanager
     ## Файловые менеджеры и оформление
     ranger

@@ -51,7 +51,7 @@
           format-wifi = " <big></big> ";
           format-ethernet = " <big>󰈁</big> ";
           max-length = 50;
-          on-click = "networkmanager";
+          on-click = "nm-connection-editor";
         };
         "backlight" = {
           device = "intel_backlight";
