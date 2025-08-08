@@ -127,6 +127,15 @@
         padding: 4px;
       }
 
+      /* Tray */
+      #tray {
+        min-width: 50px;
+        background: #1E1E2E;
+        border-radius: 0 20px 20px 0;
+        margin: 4px 0 4px 0;
+        padding: 6px 0 6px 2px;
+      }
+
       /* Батарея */
       #battery {
         min-width: 50px;
