@@ -13,7 +13,7 @@
         height = 40;
         modules-left = ["hyprland/workspaces"];
         modules-center = ["user"  "clock" "mpris" "cava"];
-        modules-right = ["language" "backlight" "pulseaudio" "cpu" "memory" "battery" "bluetooth" "network" "custom/off"];
+        modules-right = ["hyprland/language" "backlight" "pulseaudio" "cpu" "memory" "battery" "bluetooth" "network" "custom/off"];
         "hyprland/workspaces" = {
           format = "{icon}";
           format-icons = {
@@ -72,11 +72,10 @@
           scroll-step = 10;
           on-click = "pavucontrol";
         };
-        "language" = {
-          format = "󰰍 {short}";
-          tooltip = true;
-          tooltip-format = "{variant} {short} {long}";
-          interval = 1;
+        "hyprland/language" = {
+          format = "Lang: {}";
+          format-en = "en";
+          format-ru = "ru";
         };
         "cava" = {
           format-icons = ["▁""▂""▃""▄""▅""▆""▇""█"];
