@@ -52,7 +52,7 @@
           on-click = "";
         };
         "custom/off" = {
-          format = "<big> </big>";
+          format = "<big></big>";
           on-click = "wlogout";
         };
         "backlight" = {
