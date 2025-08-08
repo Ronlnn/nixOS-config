@@ -284,6 +284,7 @@
         background: #242438;
         border-radius: 20px;
         margin: 4px 10px 4px 6px;
+        padding: 0 0 0 6px;
       }
 
       /* Workspaces */
