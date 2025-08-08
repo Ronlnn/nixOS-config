@@ -280,7 +280,7 @@
       #custom-system {
         font-size: 26px;
         color: #62F0AD;
-        margin: 4px;
+        margin: 4px 10px 4px 6px;
       }
 
       /* Workspaces */
