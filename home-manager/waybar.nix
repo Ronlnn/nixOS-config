@@ -3,9 +3,7 @@
   imports = [
     ./cava.nix
   ];
-home.packages = with pkgs; [
-  network-manager-applet
-];
+
   programs.waybar = {
     enable = true;
     settings = {
@@ -53,7 +51,7 @@ home.packages = with pkgs; [
           format-wifi = " <big></big> ";
           format-ethernet = " <big>󰈁</big> ";
           max-length = 50;
-          on-click = "nm-connection-editor";
+          on-click = "networkmanager_dmenu";
         };
         "backlight" = {
           device = "intel_backlight";
