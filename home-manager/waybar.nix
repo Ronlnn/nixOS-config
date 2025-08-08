@@ -287,7 +287,7 @@
       #workspaces {
         background: #242438;
         border-radius: 20px;
-        margin: 4px;
+        margin: 4px 8px;
         padding: 2px;
       }
       #workspaces button {
