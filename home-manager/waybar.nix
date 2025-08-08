@@ -75,7 +75,6 @@
         "sway/language" = {
           format = "{short}";
           format-alt = "{long}";
-          on-click = "hyprctl switchxkblayout keyboard next";
           tooltip-format = "{variant} {short} {long}";
           interval = 1;
         };
