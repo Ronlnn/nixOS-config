@@ -34,6 +34,7 @@ formatted=$(echo "$networks" | awk -F'  +' '{
     else if (security ~ /WEP/) sec_icon = ""
     else sec_icon = ""
 
+    # Выводим сначала иконки, затем SSID, затем уровень сигнала, и в конце - тип безопасности
     printf "%s %s %s (%-3s%%) %s\n", icon, sec_icon, ssid, signal, security
 }')
 
@@ -43,6 +44,8 @@ if [ -n "$active_ssid" ]; then
 fi
 
 # Показываем меню через Wofi
-chosen=$(echo -e "$formatted" | wofi --dmenu -p "Wi-Fi Networks:")
+chosen=$(echo -e "$formatted" | wofi --dmenu -p "Wi-Fi Networks:" --width 600 --height 400)
 
 [ -n "$chosen" ] || exit
+
+echo "$chosen"

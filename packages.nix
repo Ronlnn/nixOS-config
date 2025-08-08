@@ -106,6 +106,7 @@
     gnome-tweaks
     catppuccin-grub
     grub2
+    wpa_supplicant
   ];
   fonts.packages = with pkgs; [
     font-awesome

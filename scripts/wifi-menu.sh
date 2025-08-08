@@ -13,7 +13,9 @@ chosen=$(~/nixOS-config/scripts/wifi-list.sh)
 
 # Проверяем, выбрано ли отключение
 if [[ "$chosen" == *"DISCONNECT"* ]]; then
+    # Передаем только флаг disconnect
     ~/nixOS-config/scripts/wifi-menu.sh disconnect
 else
+    # Передаем весь выбранный текст
     ~/nixOS-config/scripts/wifi-menu.sh connect "$chosen"
 fi
