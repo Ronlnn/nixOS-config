@@ -3,7 +3,9 @@
   imports = [
     ./cava.nix
   ];
-
+home.packages = with pkgs; [
+  network-manager-applet
+];
   programs.waybar = {
     enable = true;
     settings = {
