@@ -52,6 +52,7 @@
           interval = 60;
           format-wifi = "<big> </big>";
           format-ethernet = "<big>󰈁</big> ";
+          format-disconnected = "<big>󰌙</big> Выкл";
           on-click = "~/nixOS-config/scripts/wifi-menu.sh";
         };
         "custom/off" = {
