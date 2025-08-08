@@ -48,10 +48,10 @@
         "network" = {
           interval = 60;
           format = "{ifname}";
-          format-wifi = " <big></big> ";
+          format-wifi = "<big></big>";
           format-ethernet = " <big>󰈁</big> ";
           max-length = 50;
-          on-click = "networkmanager_dmenu";
+          on-click = "sh -c 'networkmanager_dmenu | wofi -d'";
         };
         "backlight" = {
           device = "intel_backlight";
