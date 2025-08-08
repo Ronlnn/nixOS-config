@@ -53,7 +53,6 @@
           format-wifi = "<big> </big>";
           format-ethernet = "<big>󰈁</big> ";
           on-click = "";
-          on-click-right = "iwgtk";
         };
         "custom/off" = {
           format = "<big> </big>";
