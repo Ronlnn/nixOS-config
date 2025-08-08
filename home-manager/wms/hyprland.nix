@@ -47,6 +47,8 @@
         "$mod SHIFT, R, exec, wofi --show run"
         "$mod SHIFT, E, exec, wofi-emoji --clip"
 
+        # Wifi
+        "$mod SHIFT, W, exec, /home/roninn/nixOS-config/scripts/wifi.sh"
 
         "$mod, G, togglegroup"
         # Переключаться по вкладкам в группе

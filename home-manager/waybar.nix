@@ -50,12 +50,11 @@
         };
         "network" = {
           interval = 60;
-          format = "{ifname}";
-          format-wifi = "<big> </big> {essid}";
+          format-wifi = "<big> </big>";
           format-ethernet = "<big>󰈁</big> ";
-          format-disconnected = "<big>󰌙</big> Выкл";
-          on-click = "~/nixOS-config/scripts/wifi-test.sh";
-          on-click-right = "~/nixOS-config/scripts/wifi-test.sh";
+          format-disconnected = "<big>󰌙</big> Off";
+          format-disabled = "<big>󰤭</big>";
+          on-click = "~/nixOS-config/scripts/wifi.sh";
         };
         "custom/off" = {
           format = "<big> </big>";
