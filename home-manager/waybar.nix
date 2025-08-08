@@ -13,7 +13,7 @@
         height = 40;
         modules-left = ["hyprland/workspaces"];
         modules-center = ["user" "clock" "cava"];
-        modules-right = ["backlight" "pulseaudio" "cpu" "memory" "battery" "bluetooth" "network" "tray"];
+        modules-right = ["backlight" "pulseaudio" "cpu" "memory" "battery" "bluetooth" "network"];
         "hyprland/workspaces" = {
           format = "{icon}";
           format-icons = {
