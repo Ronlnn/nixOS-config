@@ -278,10 +278,8 @@
 
       /* System */
       #custom-system {
-        font-size: 20px;
+        font-size: 26px;
         color: #62F0AD;
-        background: #1E1E2E;
-        border-radius: 20px;
         margin: 4px;
       }
 
