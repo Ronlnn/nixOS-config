@@ -11,7 +11,7 @@
         layer = "top";
         position = "top";
         height = 40;
-        modules-left = ["custom-system" "hyprland/workspaces"];
+        modules-left = ["custom/system" "hyprland/workspaces"];
         modules-center = ["user"  "clock" "mpris" "cava"];
         modules-right = ["custom/language" "backlight" "pulseaudio" "cpu" "memory" "battery" "bluetooth" "network" "custom/off"];
         "hyprland/workspaces" = {
@@ -23,7 +23,7 @@
           on-click = "activate";
         };
         "custom/system" = {
-          format = "";
+          format = " ";
         };
         "battery" = {
           states = {
