@@ -76,7 +76,7 @@
           format = " {}";
           format-en = "en";
           format-ru = "ru";
-          interval = 1;
+          keyboard-name = "at-translated-set-2-keyboard";
         };
         "cava" = {
           format-icons = ["▁""▂""▃""▄""▅""▆""▇""█"];
