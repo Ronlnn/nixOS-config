@@ -23,7 +23,7 @@
           on-click = "activate";
         };
         "custom/system" = {
-          format = " ";
+          format = "<big></big>";
         };
         "battery" = {
           states = {
@@ -283,7 +283,6 @@
         background: #1E1E2E;
         border-radius: 20px;
         margin: 4px;
-        padding: 6px;
       }
 
       /* Workspaces */
