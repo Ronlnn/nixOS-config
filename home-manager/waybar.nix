@@ -111,6 +111,7 @@
               spotify = "<big></big>";
               vlc = "<big>󰕼</big>";
               youtube = "<big>󰗃</big>";
+              firefox = "<big></big>";
             };
             on-click = "playerctl play-pause";
             on-click-right = "playerctl stop";
