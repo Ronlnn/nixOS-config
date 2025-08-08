@@ -170,7 +170,7 @@
 
       /* Блютуз */
       #bluetooth {
-        min-width: 40px;
+        min-width: 30px;
         color: #88DAEA;
         background: #1E1E2E;
         border-radius: 20px 0 0 20px;
