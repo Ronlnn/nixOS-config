@@ -27,13 +27,13 @@
         font-size: 14px;
       }
       window {
-        background_color: rgba(30, 30, 46, 0.9);
+        background_color: #1E1E2E;
         border-radius: 15px;
         border: 2px solid #54E1F0;
       }
       #input {
-        background_color: rgba(40, 44, 52, 0.7);
-        color: rgba(30, 30, 46, 0.9);
+        background_color: #1E1E2E;
+        color: #EBF0EF;
         border-radius: 15px;
         border: 2px solid #54E1F0;
         margin: 10px;
