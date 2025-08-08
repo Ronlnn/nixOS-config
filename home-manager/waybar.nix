@@ -278,7 +278,9 @@
 
       /* System */
       #custom-system {
-        font-size: 20px;
+        min-width: 60px;
+        min-height: 60px;
+        font-size: 26px;
         color: #62F0AD;
         background: #242438;
         border-radius: 20px;
