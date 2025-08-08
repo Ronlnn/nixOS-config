@@ -84,7 +84,7 @@ imports = [
       nwg-displays          # Display util
 	    kitty                 # terminal
       playerctl             # for music players & waybar
-
+      libxkbcommon
 
 
       # Мост для интеграции Wayland-приложений с Hyprland, например для screencast и screenshot.
