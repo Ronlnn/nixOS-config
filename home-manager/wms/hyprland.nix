@@ -41,7 +41,8 @@
         "$mod, Tab, exec, thunar"
         "$mod, O, exec, obsidian"
 
-
+        "$mod, D, exec, wofi --show drun"
+        "$mod SHIFT, R, exec, wofi --show run"
         "$mod, G, togglegroup"
         # Переключаться по вкладкам в группе
         "$mod, bracketleft, changegroupactive, b"   # ← влево

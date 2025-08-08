@@ -84,7 +84,7 @@ imports = [
 	    kitty                 # terminal
       playerctl             # for music players & waybar
       libxkbcommon
-
+      wofi-emoji
 
       # Мост для интеграции Wayland-приложений с Hyprland, например для screencast и screenshot.
       xdg-desktop-portal-hyprland
