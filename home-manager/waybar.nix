@@ -138,16 +138,6 @@
         padding: 4px;
       }
 
-      /* Батарея */
-      #battery {
-        min-width: 50px;
-        color: #7BD62B;
-        background: #1E1E2E;
-        border-radius: 0 20px 20px 0;
-        margin: 4px 0 4px 0;
-        padding: 6px 0 6px 2px;
-      }
-
        /* CPU */
        #cpu {
         min-width: 50px;
@@ -168,34 +158,44 @@
         padding: 0 6px;
       }
 
+      /* Батарея */
+      #battery {
+        min-width: 50px;
+        color: #7BD62B;
+        background: #1E1E2E;
+        border-radius: 0 20px 20px 0;
+        margin: 4px 0 4px 0;
+        padding: 6px 0 6px 2px;
+      }
+
       /* Блютуз */
       #bluetooth {
         min-width: 40px;
-        padding: 0 6px;
         color: #88DAEA;
         background: #1E1E2E;
         border-radius: 20px;
-        margin: 4px;
+        margin: 4px 0 4px 0;
+        padding: 0 6px;
       }
 
       /* Network */
       #network {
         min-width: 40px;
-        padding: 6px 6px;
         color: #CAA6F7;
         background: #1E1E2E;
         border-radius: 20px;
-        margin: 4px;
+        margin: 4px 0 4px 0;
+        padding: 0 6px;
       }
 
       /* OFF */
       #custom-off {
         min-width: 35px;
-        padding: 6px 6px;
         color: #DB4D42;
         background: #1E1E2E;
         border-radius: 20px;
-        margin: 4px;
+        margin: 4px 0 4px 0;
+        padding: 6px 0 6px 2px;
       }
 
       /* Яркость */
