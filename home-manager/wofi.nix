@@ -16,7 +16,7 @@
       content_halign = "fill";
       intensitive = true;
       allow_images = true;
-      image_size = 24;
+      image_size = 28;
       exec_search = false;
       hide_scroll = true;
       columns = 2;
