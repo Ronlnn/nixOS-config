@@ -173,7 +173,7 @@
         min-width: 40px;
         color: #88DAEA;
         background: #1E1E2E;
-        border-radius: 20px;
+        border-radius: 20px 0 0 20px;
         margin: 4px 0 4px 0;
         padding: 0 6px;
       }
@@ -183,7 +183,7 @@
         min-width: 40px;
         color: #CAA6F7;
         background: #1E1E2E;
-        border-radius: 20px;
+        border-radius: 0;
         margin: 4px 0 4px 0;
         padding: 0 6px;
       }
@@ -193,7 +193,7 @@
         min-width: 35px;
         color: #DB4D42;
         background: #1E1E2E;
-        border-radius: 20px;
+        border-radius: 0 20px 20px 0;
         margin: 4px 0 4px 0;
         padding: 6px 0 6px 2px;
       }
