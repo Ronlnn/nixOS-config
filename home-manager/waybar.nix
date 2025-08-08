@@ -13,7 +13,7 @@
         height = 40;
         modules-left = ["hyprland/workspaces"];
         modules-center = ["user" "clock" "cava"];
-        modules-right = ["backlight" "pulseaudio" "cpu" "memory" "battery" "bluetooth" "network"];
+        modules-right = ["backlight" "pulseaudio" "cpu" "memory" "battery" "bluetooth" "network" "custom/off"];
         "hyprland/workspaces" = {
           format = "{icon}";
           format-icons = {
@@ -47,10 +47,13 @@
         };
         "network" = {
           interval = 60;
-          format-wifi = "<big></big>";
+          format-wifi = "<big> </big>";
           format-ethernet = "<big>󰈁</big> ";
-          max-length = 50;
           on-click = "";
+        };
+        "custom/off" = {
+          format = "<big> </big>";
+          on-click = "wlogout";
         };
         "backlight" = {
           device = "intel_backlight";
@@ -163,6 +166,16 @@
         min-width: 50px;
         padding: 6px 6px;
         color: #CAA6F7;
+        background: #1E1E2E;
+        border-radius: 20px;
+        margin: 4px;
+      }
+
+      /* OFF */
+      #custom-off {
+        min-width: 50px;
+        padding: 6px 6px;
+        color: #DB4D42;
         background: #1E1E2E;
         border-radius: 20px;
         margin: 4px;
