@@ -3,7 +3,7 @@
   programs.wofi = {
     enable = true;
     settings = {
-      width = 600;
+      width = 700;
       height = 400;
       location = "center";
       show = "drun";
