@@ -5,6 +5,7 @@
     ../wlogout.nix
     ../eww.nix
     ../waybar.nix
+    ../wofi.nix
   ];
   home.packages = with pkgs; [
     fira-code
