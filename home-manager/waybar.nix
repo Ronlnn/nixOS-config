@@ -50,7 +50,8 @@
         };
         "network" = {
           interval = 60;
-          format-wifi = "<big> </big>";
+          format = "{ifname}";
+          format-wifi = "<big> </big> {essid}";
           format-ethernet = "<big>󰈁</big> ";
           format-disconnected = "<big>󰌙</big> Выкл";
           on-click = "~/nixOS-config/scripts/wifi-menu.sh";
