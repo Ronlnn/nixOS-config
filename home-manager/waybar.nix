@@ -111,7 +111,7 @@
               spotify = "<big></big>";
               vlc = "<big>󰕼</big>";
               youtube = "<big>󰗃</big>";
-              #firefox = "<big></big>";
+              firefox = "<big></big>";
             };
             on-click = "playerctl play-pause";
             on-click-right = "playerctl stop";
@@ -177,7 +177,7 @@
         background: #1E1E2E;
         border-radius: 20px 0 0 20px;
         margin: 4px 0 4px 0;
-        padding: 6px 0 6px 0;
+        padding: 6px 0 6px 6px;
       }
 
       /* Network */
