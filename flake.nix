@@ -34,8 +34,11 @@
       };
       homeConfigurations.roninn = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-        stylix.homeModules.stylix
-        modules = [./home.nix];
+
+        modules = [
+          stylix.homeModules.stylix
+          ./home.nix
+          ];
       };
     };
 }
