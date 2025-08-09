@@ -57,14 +57,5 @@
     GTK_THEME = "Catppuccin-Mocha-Standard-Blue-Dark";
 
   };
-z
 
-  # 6. Настройка для отдельных приложений
-  xdg.configFile."Thunar/gtkrc".text = ''
-    style "thunar-style" {
-      ThunarIconView::label-alpha = 0
-      ThunarStandardView::expander-size = 14
-    }
-    class "Thunar*" style "thunar-style"
-  '';
 }
