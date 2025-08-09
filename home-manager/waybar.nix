@@ -86,6 +86,7 @@
           format-icons = ["▁""▂""▃""▄""▅""▆""▇""█"];
           cava_config = "${config.xdg.configHome}/cava/config";
           bars = 8;
+          max-length =  20;
           };
         "clock" = {
             interval = 60;
