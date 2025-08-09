@@ -13,7 +13,7 @@
   gnome.enable = false;
   hyprland.enable = true;
 
-
+  stylix.enable = true;
   networking.hostName = "omen";
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
