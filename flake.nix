@@ -9,7 +9,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    stylix.url = "guthub:danth/stylix";
+    stylix= {
+      url = "github:danth/stylix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
 };
   outputs = { self, nixpkgs, home-manager, stylix, ... }@inputs:
@@ -26,7 +29,7 @@
         specialArgs = {inherit inputs;};
         modules = [
           ./configuration.nix
-          inputs.stylix.nixosModules.stylix
+          stylix.nixosModules.stylix
         ];
 
       };
