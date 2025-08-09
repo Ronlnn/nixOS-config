@@ -11,7 +11,6 @@ with lib;
 		./nix-ld.nix
 		./flatpak.nix
 		./steam.nix
-		./stylix.nix
 	];
 
 	options = {

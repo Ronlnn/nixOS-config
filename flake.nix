@@ -29,12 +29,12 @@
         specialArgs = {inherit inputs;};
         modules = [
           ./configuration.nix
-          stylix.nixosModules.stylix
         ];
 
       };
       homeConfigurations.roninn = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
+        stylix.homeModules.stylix
         modules = [./home.nix];
       };
     };
