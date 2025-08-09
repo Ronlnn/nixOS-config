@@ -26,7 +26,6 @@
 
       nixosConfigurations.omen = nixpkgs.lib.nixosSystem {
         inherit system;
-        specialArgs = {inherit inputs;};
         modules = [
           ./configuration.nix
         ];
@@ -36,8 +35,8 @@
         inherit pkgs;
 
         modules = [
-          stylix.homeModules.stylix
           ./home.nix
+          stylix.homeManagerModules.stylix
           ];
       };
     };
