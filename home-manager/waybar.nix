@@ -86,7 +86,7 @@
           format-icons = ["▁""▂""▃""▄""▅""▆""▇""█"];
           cava_config = "${config.xdg.configHome}/cava/config";
           bars = 8;
-          max-length =  20;
+
           };
         "clock" = {
             interval = 60;
@@ -123,6 +123,7 @@
               youtube = "<big>󰗃</big>";
               firefox = "<big></big>";
             };
+            max-length = 20;
             on-click = "playerctl play-pause";
             on-click-right = "playerctl stop";
             on-scroll-up = "playerctl next";
