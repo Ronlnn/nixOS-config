@@ -9,6 +9,7 @@
       indicator-radius = 100;
       line-color = "54E8D7";
       show-failed-attempts = true;
+      image = "~/Pictures/Walls/samurai-3.jpg";
     };
   };
 }
