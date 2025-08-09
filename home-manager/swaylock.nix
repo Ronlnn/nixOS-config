@@ -8,7 +8,7 @@
       indicator-idle-visible = true;
       indicator-radius = 100;
       show-failed-attempts = false;
-      image = "~/Pictures/Walls/rei.jpg";
+      image = "~/nixOS-config/walls/rei.jpg";
 
       # Используем правильный формат цветов (RRGGBBAA)
       ring-color = "E8546000";    # Прозрачное кольцо (AA=00)
