@@ -7,6 +7,7 @@
     ../waybar.nix
     ../wofi.nix
     ../swaylock.nix
+    ../mako.nix
   ];
   home.packages = with pkgs; [
     fira-code
