@@ -1,23 +1,17 @@
 { config, pkgs, ... }:
 
 {
-  # 1. Установка необходимых тем и инструментов
   home.packages = with pkgs; [
-    # Тема для GTK/Qt
     catppuccin-gtk
-    # Иконки
     papirus-icon-theme
-    # Курсоры
     bibata-cursors
-    # Инструмент для настройки Qt
     qt6ct
+    libsForQt5.qt5ct  # Для совместимости с Qt5
   ];
 
-  # 2. Настройка GTK (для Thunar, Blueman, Pavucontrol)
+  # Настройка GTK
   gtk = {
     enable = true;
-
-    # Тема Catppuccin Mocha (темная)
     theme = {
       name = "Catppuccin-Mocha-Standard-Blue-Dark";
       package = pkgs.catppuccin-gtk.override {
@@ -26,63 +20,55 @@
         variant = "mocha";
       };
     };
-
-    # Иконки Papirus
     iconTheme = {
-      name = "Tela-dark";
-      package = pkgs.tela-icon-theme;
+      name = "Papirus-Dark";
+      package = pkgs.papirus-icon-theme;
     };
-
-    # Курсоры Bibata Modern
     cursorTheme = {
-      name = "Bibata-Modern-Ice";
+      name = "Bibata-Modern-Classic";
       package = pkgs.bibata-cursors;
       size = 24;
     };
-
-    # Настройки для GTK 3/4
     gtk3.extraConfig = {
       gtk-application-prefer-dark-theme = 1;
     };
-
     gtk4.extraConfig = {
       gtk-application-prefer-dark-theme = 1;
     };
   };
 
-  # 3. Настройка Qt (для Qt-приложений)
+  # Настройка Qt (исправленная)
   qt = {
     enable = true;
-    platformTheme = "qtct";  # Используем qt5ct/qt6ct для настройки
+    platformTheme.name = "qtct";  # Исправленное имя опции
 
-    # Стиль Breeze (интегрируется с GTK)
+    # Для Qt6 используем breeze-qt6 из kdePackages
     style = {
       name = "Breeze";
-      package = pkgs.breeze-qt5;
+      package = pkgs.kdePackages.breeze-qt6;  # Важное исправление!
     };
   };
 
-  # 4. Настройка окружения
   home.sessionVariables = {
-    # Принудительно включаем темную тему
     GTK_THEME = "Catppuccin-Mocha-Standard-Blue-Dark";
     QT_STYLE_OVERRIDE = "Breeze";
-
-    # Для qt5ct/qt6ct
-    QT_QPA_PLATFORMTHEME = "qt5ct";
+    QT_QPA_PLATFORMTHEME = "qtct";
   };
 
-  # 5. Конфигурация для qt5ct
+  # Конфигурация для qt5ct/qt6ct
   xdg.configFile."qt5ct/qt5ct.conf".text = ''
     [Appearance]
-    custom_palette=false
     style=Breeze
-    theme=Catppuccin-Mocha-Standard-Blue-Dark
     icon_theme=Papirus-Dark
-    font='Sans Serif,10,-1,5,50,0,0,0,0,0'
   '';
 
-  # 6. Настройка для отдельных приложений
+  xdg.configFile."qt6ct/qt6ct.conf".text = ''
+    [Appearance]
+    style=Breeze
+    icon_theme=Papirus-Dark
+  '';
+
+  # Настройка Thunar
   xdg.configFile."Thunar/gtkrc".text = ''
     style "thunar-style" {
       ThunarIconView::label-alpha = 0
