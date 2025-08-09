@@ -9,13 +9,9 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    stylix= {
-      url = "github:danth/stylix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
 
 };
-  outputs = { self, nixpkgs, home-manager, stylix, ... }:
+  outputs = { self, nixpkgs, home-manager, ... }:
 
     let
       system = "x86_64-linux";
@@ -28,7 +24,6 @@
         inherit system;
         modules = [
           ./configuration.nix
-          stylix.nixosModules.stylix
         ];
 
       };
