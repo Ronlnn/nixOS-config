@@ -133,7 +133,7 @@
             height = 30;
             width = 30;
             #avatar = "${config.home.homeDirectory}/Pictures/zenitsu-avatar.png";
-            avatar = "~/nixOS-config/walls/zenitsu-avatar.png";
+            avatar = "${config.home.homeDirectory}/nixOS-config/walls/zenitsu-avatar.png";
             icon = true;
             icon-size = 62;
           };
