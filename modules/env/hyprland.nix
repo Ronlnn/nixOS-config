@@ -84,11 +84,11 @@ imports = [
 	    kitty                 # terminal
       playerctl             # for music players & waybar
       libxkbcommon
-      wofi-emoji
-      gnused
-      gnugrep
-      libnotify
-      wirelesstools
+      wofi-emoji            # Пикер эмодзи в wofi
+      gnused                # для вай фая
+      gnugrep               # для вай фая
+      libnotify             # для вай фая
+      wirelesstools         # для вай фая
 
       # Мост для интеграции Wayland-приложений с Hyprland, например для screencast и screenshot.
       xdg-desktop-portal-hyprland
