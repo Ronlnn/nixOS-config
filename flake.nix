@@ -9,9 +9,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    stylix.url = "guthub:danth/stylix";
 
 };
-  outputs = { self, nixpkgs, home-manager, ... }:
+  outputs = { self, nixpkgs, home-manager, stylix, ... }@inputs:
 
     let
       system = "x86_64-linux";
@@ -22,8 +23,10 @@
 
       nixosConfigurations.omen = nixpkgs.lib.nixosSystem {
         inherit system;
+        specialArgs = {inherit inputs;};
         modules = [
           ./configuration.nix
+          inputs.stylix.nixosModules.stylix
         ];
 
       };
