@@ -79,7 +79,7 @@ imports = [
       cliphist              # Менеджер истории буфера обмена
       swww                  # Обои в среде wayland
       seatd                 # Демон управления устройствами ввода
-      xfce.thunar           # Файловый менеджер
+
       nwg-displays          # Display util
 	    kitty                 # terminal
       playerctl             # for music players & waybar

@@ -11,6 +11,7 @@ with lib;
 		./nix-ld.nix
 		./flatpak.nix
 		./steam.nix
+		./thunar.nix
 	];
 
 	options = {
