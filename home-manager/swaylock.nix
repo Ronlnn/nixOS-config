@@ -16,6 +16,7 @@
       line-color = "E85460BF";    # Полупрозрачная линия (BF = 75%)
       separator-color = "00000000"; # Прозрачный разделитель
       line-ver-color = "E85460BF";
+      ring-ver-color = "E85460BF";
 
     };
   };
