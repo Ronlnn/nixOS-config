@@ -107,6 +107,7 @@
     catppuccin-grub
     grub2
     wpa_supplicant
+    base16-schemes
   ];
   fonts.packages = with pkgs; [
     font-awesome
