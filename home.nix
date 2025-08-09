@@ -20,7 +20,7 @@
   programs.bash = {
     enable = true;
     shellAliases = {
-      nix-backup = "/home/roninn/nix-backup.sh";
+      rebuild = "/home/roninn/nix-backup.sh";
     };
   };
 

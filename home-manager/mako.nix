@@ -15,7 +15,7 @@
       width = 300;
       icons = true;
       ignore-timeout = false;
-      default-timeout = 1000;
+      default-timeout = 3000;
       layer = "top";
       margin = 10;
       markup = true;
