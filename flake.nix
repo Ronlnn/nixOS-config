@@ -15,7 +15,7 @@
     };
 
 };
-  outputs = { self, nixpkgs, home-manager, stylix, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, stylix, ... }:
 
     let
       system = "x86_64-linux";
@@ -28,15 +28,14 @@
         inherit system;
         modules = [
           ./configuration.nix
+          stylix.nixosModules.stylix
         ];
 
       };
       homeConfigurations.roninn = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-
         modules = [
           ./home.nix
-          stylix.homeManagerModules.stylix
           ];
       };
     };

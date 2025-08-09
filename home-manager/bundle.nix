@@ -6,7 +6,5 @@
     ./htop.nix
     ./alacritty.nix
     ./gtk.nix
-    ./stylix.nix
-
   ];
 }
