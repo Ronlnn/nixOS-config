@@ -7,8 +7,9 @@
       font-size = 24;
       indicator-idle-visible = true;
       indicator-radius = 100;
-      line-color = "54E8D7";
-      show-failed-attempts = true;
+      line-color = "rgba(84, 232, 215, 0.75)";
+      inside-color = "rgba(84, 232, 215, 0.75)";
+      show-failed-attempts = false;
       image = "~/Pictures/Walls/samurai-3.jpg";
     };
   };
