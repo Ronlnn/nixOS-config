@@ -217,7 +217,7 @@
         follow_mouse = 1
         focus_on_close = 0
         float_switch_override_focus = 0
-        sensitivity = 0.4
+        sensitivity = 0.4`
         touchpad {
           disable_while_typing = true
           natural_scroll = true

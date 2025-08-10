@@ -11,6 +11,7 @@
     bibata-cursors
     # Инструмент для настройки Qt
     qt6ct
+    dracula-theme
   ];
 
   # 2. Настройка GTK (для Thunar, Blueman, Pavucontrol)
@@ -19,12 +20,8 @@
 
     # Тема Catppuccin Mocha (темная)
     theme = {
-      name = "Catppuccin-Mocha-Standard-Blue-Dark";
-      package = pkgs.catppuccin-gtk.override {
-        accents = [ "blue" ];
-        size = "standard";
-        variant = "mocha";
-      };
+      name = "Dracula";
+      package = pkgs.dracula-theme;
     };
 
     # Иконки Papirus
@@ -54,7 +51,7 @@
   # 4. Настройка окружения
   home.sessionVariables = {
     # Принудительно включаем темную тему
-    GTK_THEME = "Catppuccin-Mocha-Standard-Blue-Dark";
+    GTK_THEME = "Dracula";
 
   };
 
