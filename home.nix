@@ -17,12 +17,12 @@
 
 
 
-  programs.bash = {
-    enable = true;
-    shellAliases = {
-      rebuild = "/home/roninn/nix-backup.sh";
-    };
-  };
+  # programs.bash = {
+  #   enable = true;
+  #   shellAliases = {
+  #     rebuild = "/home/roninn/nix-backup.sh";
+  #   };
+  # };
 
 
 }

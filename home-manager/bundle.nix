@@ -7,5 +7,6 @@
     ./alacritty.nix
     ./gtk.nix
     ./qt.nix
+    ./zsh.nix
   ];
 }

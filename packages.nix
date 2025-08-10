@@ -80,13 +80,8 @@
     imv
     #dmenu
 
-    # Xorg stuff
-    # терминал для Х11
-    #xterm
-    # буфер обмена в Х11
-    #xclip
-    # яркость
-    #xorg.xbacklight
+    # ZSH
+    zsh
 
     # Звук
     pipewire
