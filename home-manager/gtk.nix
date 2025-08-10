@@ -37,7 +37,7 @@
       size = 24;
     };
 
-    gtk.gtk2.extraConfig = {
+    gtk2.extraConfig = {
       gtk-theme-name="Dracula";
       gtk-icon-theme-name="Tela-dark";
       gtk-cursor-theme-name="Bibata-Modern-Ice";
