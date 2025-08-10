@@ -19,7 +19,7 @@
       image_size = 28;
       exec_search = false;
       hide_scroll = true;
-      columns = 3;
+      columns = 2;
     };
     style = ''
       * {
@@ -51,6 +51,7 @@
         background-color: transparent;
       }
       #entry {
+        width: 50%;
         background-color: transparent;
         color: #EBF0EF;
         padding: 8px;
