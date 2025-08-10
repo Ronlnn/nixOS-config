@@ -17,11 +17,8 @@
   # 2. Настройка GTK (для Thunar, Blueman, Pavucontrol)
   gtk = {
     enable = true;
+    theme = "Dracula";
 
-    theme = {
-      name = "Dracula";
-      package = pkgs.dracula-theme;
-    };
 
     # Иконки Papirus
     iconTheme = {
