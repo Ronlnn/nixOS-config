@@ -19,7 +19,7 @@
       image_size = 28;
       exec_search = false;
       hide_scroll = true;
-      columns = 2;
+      columns = 3;
     };
     style = ''
       * {
