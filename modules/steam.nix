@@ -6,6 +6,9 @@
 
   environment.systemPackages = with pkgs; [
     protonup
+    protontricks
+    protonplus
+    protonup-qt
   ];
 
   environment.sessionVariables = {
