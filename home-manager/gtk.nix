@@ -18,7 +18,6 @@
   gtk = {
     enable = true;
 
-    # Тема Catppuccin Mocha (темная)
     theme = {
       name = "Dracula";
       package = pkgs.dracula-theme;
@@ -36,30 +35,4 @@
       package = pkgs.bibata-cursors;
       size = 24;
     };
-
-    gtk2.extraConfig = {
-      gtk-theme-name="Dracula";
-      gtk-icon-theme-name="Tela-dark";
-      gtk-cursor-theme-name="Bibata-Modern-Ice";
-      gtk-cursor-theme-size=24;
-    };
-
-    # Настройки для GTK 3/4
-    gtk3.extraConfig = {
-      gtk-application-prefer-dark-theme = 1;
-    };
-
-    gtk4.extraConfig = {
-      gtk-application-prefer-dark-theme = 1;
-    };
-  };
-
-
-  # 4. Настройка окружения
-  home.sessionVariables = {
-    # Принудительно включаем темную тему
-    GTK_THEME = "Dracula";
-
-  };
-
 }
