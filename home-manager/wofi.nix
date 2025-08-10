@@ -3,8 +3,8 @@
   programs.wofi = {
     enable = true;
     settings = {
-      width = 700;
-      height = 400;
+      width = 800;
+      height = 500;
       location = "center";
       show = "drun";
       prompt = "Search...";
