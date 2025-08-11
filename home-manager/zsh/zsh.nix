@@ -1,5 +1,9 @@
 {config, pkgs, ...}:
 {
+  imports = [
+    ../fzf.nix
+  ];
+
   home.file.".p10k.zsh" = {
     source = ./.p10k.zsh;
     executable = true;
@@ -42,7 +46,6 @@
       enable = true;
       plugins = [
         "git"
-        "fzf"
       ];
     };
     shellAliases = {
