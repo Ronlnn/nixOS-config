@@ -19,7 +19,6 @@
       "brackets"
       "cursor"
       "root"
-      "line"
       ];
     };
     autosuggestion = {
