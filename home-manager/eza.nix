@@ -3,8 +3,11 @@
   programs.eza = {
     enable = true;
     enableZshIntegration = true;
+    icons = "always";
+    colors = "never";
     theme = {
       colourful = true;
+
 
       filekinds = {
         normal =  { foreground = "#c0caf5"; };
