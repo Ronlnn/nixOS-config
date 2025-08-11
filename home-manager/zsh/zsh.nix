@@ -1,17 +1,6 @@
 {config, pkgs, ...}:
 {
 
-  programs.fzf = {
-    enable = true;
-    enableZshIntegration = true;
-    package = pkgs.fzf;
-    colors = {
-      bg = "#44877F";
-      "bg+" = "#44877F";
-      fg = "#A0F04F";
-      "fg+" = "#A0F04F";
-    };
-  };
   home.file.".p10k.zsh" = {
     source = ./.p10k.zsh;
     executable = true;
@@ -54,10 +43,12 @@
       enable = true;
       plugins = [
         "git"
+        "fzf"
       ];
     };
     shellAliases = {
       rebuild = "/home/roninn/nix-backup.sh";
+      fman = "compgen -c | fzf | xargs man";
     };
     autocd = true;
     initContent = ''
