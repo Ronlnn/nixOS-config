@@ -48,6 +48,7 @@
     eza
     lsd
     bat
+    tabview
 
     # appimage-run
     appimage-run

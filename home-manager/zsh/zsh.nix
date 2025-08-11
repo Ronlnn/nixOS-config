@@ -50,6 +50,7 @@
       rebuild = "/home/roninn/nix-backup.sh";
       fman = "compgen -c | fzf | xargs man";
       lg = "lazygit";
+      cat = "bat";
     };
     autocd = true;
     initContent = ''
