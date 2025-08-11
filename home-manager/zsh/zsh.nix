@@ -54,7 +54,7 @@
     };
     autocd = true;
     initContent = ''
-      export FZF_BASE="${pkgs.fzf}/share/fzf"
+      export ZSH_CUSTOM="${pkgs.zsh-powerlevel10k}/share"
       [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
     '';
 
