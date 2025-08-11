@@ -17,7 +17,6 @@
       highlighters = [
       "main"
       "brackets"
-      "cursor"
       "root"
       ];
     };
