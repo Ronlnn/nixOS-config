@@ -23,6 +23,13 @@
       strategy = ["history"];
       highlight = "fg=#ff00ff,bg=cyan,bold,underline";
     };
+    oh-my-zsh = {
+      enable = true;
+      theme = "powerlevel10k";
+      plugins = [
+        "git"
+      ];
+    };
     shellAliases = {
       rebuild = "/home/roninn/nix-backup.sh";
     };
