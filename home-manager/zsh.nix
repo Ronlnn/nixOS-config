@@ -26,5 +26,6 @@
     shellAliases = {
       rebuild = "/home/roninn/nix-backup.sh";
     };
+    autocd = true;
   };
 }
