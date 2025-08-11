@@ -48,7 +48,6 @@
     eza
     lsd
     bat
-    tabview
 
     # appimage-run
     appimage-run
@@ -108,7 +107,7 @@
     catppuccin-grub
     grub2
     wpa_supplicant
-    base16-schemes
+    scanmem
   ];
   fonts.packages = with pkgs; [
     font-awesome
