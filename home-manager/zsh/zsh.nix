@@ -25,7 +25,7 @@
     autosuggestion = {
       enable = true;
       strategy = ["history"];
-      highlight = "fg=#ff00ff,bg=cyan,bold,underline";
+      highlight = "fg=#3CF0DF,bg=cyan,bold,underline";
     };
     zplug = {
       enable = true;

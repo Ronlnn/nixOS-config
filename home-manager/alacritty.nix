@@ -1,7 +1,7 @@
 {
   programs.alacritty = {
     enable = true;
-    theme = "kanagawa_dragon";
+    theme = "dracula";
     settings = {
       window.opacity = 0.95;
     };
