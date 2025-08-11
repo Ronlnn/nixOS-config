@@ -37,7 +37,7 @@
       rebuild = "/home/roninn/nix-backup.sh";
     };
     autocd = true;
-    initExtra = ''
+    initContent = ''
       [[ ! -f ~/.p10k.zsh]] || source ~/.p10k.zsh
     '';
   };
