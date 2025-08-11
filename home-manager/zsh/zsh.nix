@@ -49,6 +49,7 @@
     shellAliases = {
       rebuild = "/home/roninn/nix-backup.sh";
       fman = "compgen -c | fzf | xargs man";
+      lg = "lazygit";
     };
     autocd = true;
     initContent = ''
