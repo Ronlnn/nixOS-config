@@ -24,16 +24,24 @@
       enable = true;
       strategy = ["history"];
     };
-    zplug = {
+    # zplug = {
+    #   enable = true;
+    #   plugins = [
+    #     {
+    #     name = "romkatv/powerlevel10k";
+    #     tags = [ "as:theme" "depth:1"];
+    #     }
+    #     {
+    #       name = "fzf";
+    #     }
+    #   ];
+    # };
+    oh-my-zsh = {
       enable = true;
+      theme = "powerlevel10k/powerlevel10k";
       plugins = [
-        {
-        name = "romkatv/powerlevel10k";
-        tags = [ "as:theme" "depth:1"];
-        }
-        {
-          name = "fzf";
-        }
+        "git"
+        "fzf"
       ];
     };
     shellAliases = {
