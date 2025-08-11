@@ -1,8 +1,9 @@
 {config, pkgs, ...}:
 {
-  home.packages = [ pkgs.zsh-powerlevel10k ];
-
-
+  home.file.".p10k.zsh" = {
+    source = ./.p10k.zsh;
+    executable = true;
+  };
   programs.zsh = {
     enable = true;
     syntaxHighlighting = {
