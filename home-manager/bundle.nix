@@ -8,5 +8,6 @@
     ./gtk.nix
     ./qt.nix
     ./zsh/zsh.nix
+    ./eza.nix
   ];
 }

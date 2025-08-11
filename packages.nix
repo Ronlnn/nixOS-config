@@ -45,6 +45,7 @@
     lazygit
     micro
     tldr
+    eza
 
     # appimage-run
     appimage-run
