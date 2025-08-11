@@ -4,6 +4,11 @@
     source = ./.p10k.zsh;
     executable = true;
   };
+  home.packages = with pkgs; [
+    fzf
+    zsh-powerlevel10k
+  ];
+
   programs.zsh = {
     enable = true;
     syntaxHighlighting = {
@@ -38,7 +43,7 @@
     # };
     oh-my-zsh = {
       enable = true;
-      theme = "powerlevel10k/powerlevel10k";
+      theme = "powerlevel10k";
       plugins = [
         "git"
         "fzf"
@@ -49,6 +54,7 @@
     };
     autocd = true;
     initContent = ''
+      export FZF_BASE="${pkgs.fzf}/share/fzf"
       [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
     '';
 
