@@ -6,7 +6,7 @@
   #
   programs.alacritty = {
     enable = true;
-    theme = "tokyonight";
+    theme = "tokyo_night";
     settings = {
       window.opacity = 0.95;
     };
