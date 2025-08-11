@@ -47,6 +47,7 @@
     tldr
     eza
     lsd
+    bat
 
     # appimage-run
     appimage-run
