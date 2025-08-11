@@ -6,6 +6,9 @@
   home.file.".oh-my-zsh/custom/themes/powerlevel10k".source =
     "${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k";
 
+  # Декларативный p10k конфиг
+  home.file.".p10k.zsh".source = ./p10k.zsh;
+
   programs.zsh = {
     enable = true;
     syntaxHighlighting = {
@@ -35,7 +38,6 @@
       plugins = [
         "git"
       ];
-      custom = "$HOME/.oh-my-zsh/custom";
     };
     shellAliases = {
       rebuild = "/home/roninn/nix-backup.sh";
