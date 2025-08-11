@@ -29,21 +29,17 @@
       enable = true;
       strategy = ["history"];
     };
-    # zplug = {
-    #   enable = true;
-    #   plugins = [
-    #     {
-    #     name = "romkatv/powerlevel10k";
-    #     tags = [ "as:theme" "depth:1"];
-    #     }
-    #     {
-    #       name = "fzf";
-    #     }
-    #   ];
-    # };
+    zplug = {
+      enable = true;
+      plugins = [
+        {
+        name = "romkatv/powerlevel10k";
+        tags = [ "as:theme" "depth:1"];
+        }
+      ];
+    };
     oh-my-zsh = {
       enable = true;
-      theme = "powerlevel10k";
       plugins = [
         "git"
         "fzf"
@@ -54,7 +50,6 @@
     };
     autocd = true;
     initContent = ''
-      export ZSH_CUSTOM="${pkgs.zsh-powerlevel10k}/share"
       [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
     '';
 
