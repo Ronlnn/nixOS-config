@@ -26,10 +26,15 @@
     };
     zplug = {
       enable = true;
-      plugins = [{
+      plugins = [
+        {
         name = "romkatv/powerlevel10k";
         tags = [ "as:theme" "depth:1"];
-      }];
+        }
+        {
+          name = "fzf";
+        }
+      ];
     };
     shellAliases = {
       rebuild = "/home/roninn/nix-backup.sh";

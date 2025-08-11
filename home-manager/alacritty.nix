@@ -1,4 +1,9 @@
 {
+
+  # My favorite themes:
+  # aura
+  # dracula
+  # 
   programs.alacritty = {
     enable = true;
     theme = "aura";
