@@ -2,12 +2,6 @@
 {
   home.packages = [ pkgs.zsh-powerlevel10k ];
 
-  # Линкуем тему в oh-my-zsh custom themes
-  home.file.".oh-my-zsh/custom/themes/powerlevel10k".source =
-    "${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k";
-
-  # Декларативный p10k конфиг
-  home.file.".p10k.zsh".source = ./p10k.zsh;
 
   programs.zsh = {
     enable = true;
@@ -32,16 +26,19 @@
       strategy = ["history"];
       highlight = "fg=#ff00ff,bg=cyan,bold,underline";
     };
-    oh-my-zsh = {
+    zplug = {
       enable = true;
-      theme = "powerlevel10k/powerlevel10k";
-      plugins = [
-        "git"
-      ];
+      plugins = [{
+        name = "romkatv/powerlevel10k";
+        tags = [ "as:theme" "depth:1"];
+      }];
     };
     shellAliases = {
       rebuild = "/home/roninn/nix-backup.sh";
     };
     autocd = true;
+    initExtra = ''
+      [[ ! -f ~/.p10k.zsh]] || source ~/.p10k.zsh
+    '';
   };
 }
