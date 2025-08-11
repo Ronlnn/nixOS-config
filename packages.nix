@@ -44,6 +44,7 @@
     openssl
     lazygit
     micro
+    tldr
 
     # appimage-run
     appimage-run
