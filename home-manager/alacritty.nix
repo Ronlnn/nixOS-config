@@ -6,7 +6,7 @@
   # tokyo_night
   programs.alacritty = {
     enable = true;
-    theme = "kanagawa_wave";
+    theme = "horizon_dark";
     settings = {
       window.opacity = 0.95;
     };
