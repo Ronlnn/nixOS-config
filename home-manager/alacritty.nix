@@ -1,7 +1,7 @@
 {
   programs.alacritty = {
     enable = true;
-    theme = "dracula";
+    theme = "aura";
     settings = {
       window.opacity = 0.95;
     };
