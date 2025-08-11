@@ -18,6 +18,11 @@
       "line"
       ];
     };
+    autosuggestion = {
+      enable = true;
+      strategy = ["history"];
+      highlight = "fg=#ff00ff,bg=cyan,bold,underline";
+    };
     shellAliases = {
       rebuild = "/home/roninn/nix-backup.sh";
     };
