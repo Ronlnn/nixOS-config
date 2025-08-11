@@ -46,6 +46,7 @@
     micro
     tldr
     eza
+    lsd
 
     # appimage-run
     appimage-run
