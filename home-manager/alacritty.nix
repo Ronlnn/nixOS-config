@@ -6,7 +6,7 @@
   # tokyo_night
   programs.alacritty = {
     enable = true;
-    theme = "citylights";
+    theme = "smoooooth";
     settings = {
       window.opacity = 0.95;
     };
