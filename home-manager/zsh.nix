@@ -1,5 +1,7 @@
 {config, pkgs, ...}:
 {
+  home.packages = [ pkgs.zsh-powerlevel10k ];
+
   programs.zsh = {
     enable = true;
     syntaxHighlighting = {
@@ -25,7 +27,7 @@
     };
     oh-my-zsh = {
       enable = true;
-      theme = "zsh-powerlevel10k";
+      theme = "powerlevel10k/powerlevel10k";
       plugins = [
         "git"
       ];
