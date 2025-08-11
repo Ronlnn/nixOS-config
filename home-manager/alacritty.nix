@@ -3,10 +3,10 @@
   # My favorite themes:
   # aura
   # dracula
-  # 
+  #
   programs.alacritty = {
     enable = true;
-    theme = "aura";
+    theme = "tokyonight";
     settings = {
       window.opacity = 0.95;
     };

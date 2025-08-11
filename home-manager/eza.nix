@@ -5,6 +5,5 @@
     enableZshIntegration = true;
     icons = "always";
     colors = "auto";
-    theme = ./tokyonight.json;
   };
 }
