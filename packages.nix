@@ -82,6 +82,7 @@
 
     # ZSH
     zsh
+    zsh-powerlevel10k
 
     # Звук
     pipewire
