@@ -2,6 +2,10 @@
 {
   home.packages = [ pkgs.zsh-powerlevel10k ];
 
+  # Линкуем тему в oh-my-zsh custom themes
+  home.file.".oh-my-zsh/custom/themes/powerlevel10k".source =
+    "${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k";
+
   programs.zsh = {
     enable = true;
     syntaxHighlighting = {
@@ -31,6 +35,7 @@
       plugins = [
         "git"
       ];
+      custom = "$HOME/.oh-my-zsh/custom";
     };
     shellAliases = {
       rebuild = "/home/roninn/nix-backup.sh";
