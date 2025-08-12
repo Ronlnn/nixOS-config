@@ -108,7 +108,7 @@
     grub2
     wpa_supplicant
     scanmem
-    numlockx
+    unrar
   ];
   fonts.packages = with pkgs; [
     font-awesome
