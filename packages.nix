@@ -109,9 +109,9 @@
     wpa_supplicant
     scanmem
     unrar
-    wine
+    wine64
     winetricks
-    winePackages.stable
+    wine64Packages.stable
   ];
   fonts.packages = with pkgs; [
     font-awesome
