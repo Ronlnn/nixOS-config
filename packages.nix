@@ -108,6 +108,7 @@
     grub2
     wpa_supplicant
     scanmem
+    numlockx
   ];
   fonts.packages = with pkgs; [
     font-awesome
