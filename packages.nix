@@ -111,6 +111,8 @@
     unrar
     wine
     winetricks
+    wineWowPackages.wayland
+    winePackages.stable
   ];
   fonts.packages = with pkgs; [
     font-awesome
