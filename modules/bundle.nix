@@ -10,7 +10,6 @@ with lib;
 		./nvidia.nix
 		./nix-ld.nix
 		./flatpak.nix
-		./steam.nix
 		./thunar.nix
 		./zsh.nix
 	];

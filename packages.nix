@@ -107,11 +107,8 @@
     catppuccin-grub
     grub2
     wpa_supplicant
-    scanmem
-    unrar
-    wine64
-    winetricks
-    wine64Packages.stable
+
+
   ];
   fonts.packages = with pkgs; [
     font-awesome
