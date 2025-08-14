@@ -107,7 +107,7 @@
     catppuccin-grub
     grub2
     wpa_supplicant
-
+    nixnote2
 
   ];
   fonts.packages = with pkgs; [
