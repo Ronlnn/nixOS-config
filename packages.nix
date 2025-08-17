@@ -107,7 +107,9 @@
     catppuccin-grub
     grub2
     wpa_supplicant
-
+    scanmem
+    wine
+    winetricks
 
   ];
   fonts.packages = with pkgs; [
