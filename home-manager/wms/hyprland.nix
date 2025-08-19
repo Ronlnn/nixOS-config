@@ -106,6 +106,13 @@
         "HDMI-A-2,1920x1080@74.97,0x0,1"
         "eDP-1,1920x1080@59.98,0x1080,1"
       ];
+      windowrule = [
+        "workspace 1, class:^(TelegramDesktop)$"
+        "workspace 2, class:^(obsidian)$"
+        "workspace 3, class:^(firefox)$"
+        "workspace 6, class:^(hiddify)$"
+        "workspace 4, class:^(code)$"
+      ];
       workspace = [
         "1, monitor:HDMI-A-2, persistent:true, default:true"
         "2, monitor:HDMI-A-2, persistent:true"
