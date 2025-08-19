@@ -107,7 +107,7 @@
         "eDP-1,1920x1080@59.98,0x1080,1"
       ];
       windowrule = [
-        "workspace 1, class:^(TelegramDesktop)$"
+        "workspace 1, class:^(org.telegram.desktop)$"
         "workspace 2, class:^(obsidian)$"
         "workspace 3, class:^(firefox)$"
         "workspace 6, class:^(hiddify)$"
