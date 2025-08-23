@@ -35,6 +35,7 @@
 
 
       bind = [
+        "SHIFT,ALT, switchxkblayout, next"
         "$mod, RETURN, exec, alacritty"
         "$mod, Q, killactive"
         "$mod, F, exec, firefox"
@@ -107,7 +108,7 @@
         "eDP-1,1920x1080@59.98,0x1080,1"
       ];
       windowrule = [
-        "workspace 1, class:^(org.telegram.desktop)$"
+        "workspace 1, class:^(org.telegram.йdesktop)$"
         "workspace 2, class:^(obsidian)$"
         "workspace 3, class:^(firefox)$"
         "workspace 6, class:^(hiddify)$"
@@ -227,9 +228,8 @@
 
       input {
         kb_layout = us,ru
-        kb_options = grp:alt_shift_toggle
         kb_model = pc104
-        resolve_binds_by_sym = true
+        resolve_binds_by_sym = false
         force_no_accel = false
         follow_mouse = 1
         focus_on_close = 0
