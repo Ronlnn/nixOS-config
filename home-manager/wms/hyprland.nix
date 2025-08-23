@@ -35,7 +35,6 @@
 
 
       bind = [
-        "SHIFT,ALT, switchxkblayout, next"
         "$mod, RETURN, exec, alacritty"
         "$mod, Q, killactive"
         "$mod, F, exec, firefox"
@@ -228,6 +227,7 @@
 
       input {
         kb_layout = us,ru
+        kb_options = grp:alt_shift_toggle
         kb_model = pc104
         resolve_binds_by_sym = false
         force_no_accel = false
