@@ -139,15 +139,6 @@
         "bash -c 'for i in 1 2 3 4 5; do hyprctl dispatch moveworkspacetomonitor $i HDMI-A-2; done'"
         "bash -c 'for i in 6 7 8 9 10; do hyprctl dispatch moveworkspacetomonitor $i eDP-1; done'"
 
-        # Запуск приложений на определенных рабочих пространствах
-        "hyprctl dispatch workspace 2"  # Автостарт на 2 воркспейсе
-        "telegram-desktop & sleep 1 && hyprctl dispatch movetoworkspacesilent 1,pid:$!"  # Телеграм на 1
-        "obsidian & sleep 1 && hyprctl dispatch movetoworkspacesilent 2,pid:$!"  # Обсидиан на 2
-        "firefox & sleep 1 && hyprctl dispatch movetoworkspacesilent 3,pid:$!"  # Firefox на 3
-        "hiddify & sleep 1 && hyprctl dispatch movetoworkspacesilent 6,pid:$!"  # Hiddify на 6
-        "code & sleep 1 && hyprctl dispatch movetoworkspacesilent 4,pid:$!"  # VSCode на 4
-
-        "numlockx on"
       ];
 
 
