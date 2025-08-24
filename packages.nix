@@ -110,6 +110,8 @@
     scanmem
     wine
     winetricks
+    joplin
+    logseq
 
   ];
   fonts.packages = with pkgs; [

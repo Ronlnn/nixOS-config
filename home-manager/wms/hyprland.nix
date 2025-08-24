@@ -127,7 +127,7 @@
       ];
       exec-once = [
          # Обои
-        "swww-daemon"
+        "swww-daemon"Q
         "swww init"
         "swww img -o HDMI-A-2 ~/Pictures/Walls/purp.jpg"
         "swww img -o eDP-1 ~/Pictures/Walls/purp.jpg"
